@@ -1,0 +1,2 @@
+# Output products list for <cdm_int_ext>
+cdm_int_ext_flist.txt

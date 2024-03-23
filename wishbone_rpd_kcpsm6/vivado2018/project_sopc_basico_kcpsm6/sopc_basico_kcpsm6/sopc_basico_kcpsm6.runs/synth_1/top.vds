@@ -1,0 +1,1108 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Feb 27 17:01:30 2024
+# Process ID: 12092
+# Current directory: D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.runs/synth_1/top.vds
+# Journal file: D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8292 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 353.664 ; gain = 83.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/top.vhd:64]
+INFO: [Synth 8-3491] module 'wbm_uart_kcpsm6' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/wbm_uart_kcpsm6.vhd:41' bound to instance 'Inst_wbm_uart_kcpsm6' of component 'wbm_uart_kcpsm6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/top.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'wbm_uart_kcpsm6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/wbm_uart_kcpsm6.vhd:70]
+	Parameter hwbuild bound to: 8'b00000000 
+	Parameter interrupt_vector bound to: 12'b001111111111 
+	Parameter scratch_pad_memory_size bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'kcpsm6' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:87' bound to instance 'processor' of component 'kcpsm6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/wbm_uart_kcpsm6.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'kcpsm6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:111]
+	Parameter hwbuild bound to: 8'b00000000 
+	Parameter interrupt_vector bound to: 12'b001111111111 
+	Parameter scratch_pad_memory_size bound to: 64 - type: integer 
+	Parameter INIT bound to: 64'b1111111111111111111101010101010100000000000000000000111011101110 
+INFO: [Synth 8-113] binding component instance 'reset_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:685]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'run_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:696]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'internal_reset_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:701]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'sync_sleep_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:706]
+	Parameter INIT bound to: 64'b0000000010000011000000000000101100000000110001000000000001001100 
+INFO: [Synth 8-113] binding component instance 't_state_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:711]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 't_state1_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:722]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 't_state2_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:727]
+	Parameter INIT bound to: 64'b0000000000010000000000000000000000000000000000000000100000000000 
+INFO: [Synth 8-113] binding component instance 'int_enable_type_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:733]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000001100101010101010 
+INFO: [Synth 8-113] binding component instance 'interrupt_enable_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:744]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'interrupt_enable_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:754]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'sync_interrupt_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:759]
+	Parameter INIT bound to: 64'b1100110000110011111111110000000010000000100000001000000010000000 
+INFO: [Synth 8-113] binding component instance 'active_interrupt_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:764]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'active_interrupt_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:775]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'interrupt_ack_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:780]
+	Parameter INIT bound to: 64'b0101101000111100111111111111111100000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_move_is_valid_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:804]
+	Parameter INIT bound to: 64'b0111011101110111000000100111011100000000000000000000001000000000 
+INFO: [Synth 8-113] binding component instance 'move_type_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:814]
+	Parameter INIT bound to: 64'b0000000000000000111100000000000000000000000000000010001111111111 
+INFO: [Synth 8-113] binding component instance 'pc_mode1_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:825]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111100000000000001000000000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_mode2_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:836]
+	Parameter INIT bound to: 64'b1111111111111111000100000000000000000000000000000010000000000000 
+INFO: [Synth 8-113] binding component instance 'push_pop_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:846]
+	Parameter INIT bound to: 64'b0000001111001010000000000000000000000100001000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'alu_decode0_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:861]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'alu_mux_sel0_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:872]
+	Parameter INIT bound to: 64'b0111011100001000000000000000000000000000000000000000111100000000 
+INFO: [Synth 8-113] binding component instance 'alu_decode1_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:877]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'alu_mux_sel1_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:888]
+	Parameter INIT bound to: 64'b1101000000000000000000000000000000000010000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'alu_decode2_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:894]
+	Parameter INIT bound to: 64'b0000000000000001001111110011111100000000000100001111011111001110 
+INFO: [Synth 8-113] binding component instance 'register_enable_type_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:909]
+	Parameter INIT bound to: 64'b1100000011001100000000000000000010100000101010100000000000000000 
+INFO: [Synth 8-113] binding component instance 'register_enable_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:920]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'flag_enable_flop' to cell 'FDR' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:931]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'register_enable_flop' to cell 'FDR' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:937]
+	Parameter INIT bound to: 64'b1000000000000000000000000000000000100000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'spm_enable_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:943]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'k_write_strobe_flop' to cell 'FDR' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:954]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'spm_enable_flop' to cell 'FDR' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:960]
+	Parameter INIT bound to: 64'b0100000000000000000000000000000000000001000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'read_strobe_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:966]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'write_strobe_flop' to cell 'FDR' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:977]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'read_strobe_flop' to cell 'FDR' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:983]
+	Parameter INIT bound to: 64'b0000000010000000000000100000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'regbank_type_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1001]
+	Parameter INIT bound to: 64'b1010110010101100111111110000000011111111000000001111111100000000 
+INFO: [Synth 8-113] binding component instance 'bank_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1011]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'bank_flop' to cell 'FDR' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1021]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'sx_addr4_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1027]
+INFO: [Synth 8-113] binding component instance 'arith_carry_xorcy' to cell 'XORCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1051]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'arith_carry_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1056]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000010000111011110000000000000000000 
+INFO: [Synth 8-113] binding component instance 'lower_parity_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1061]
+INFO: [Synth 8-113] binding component instance 'parity_muxcy' to cell 'MUXCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1072]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'upper_parity_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1078]
+INFO: [Synth 8-113] binding component instance 'parity_xorcy' to cell 'XORCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1088]
+	Parameter INIT bound to: 64'b1111111111111111101010101100110011110000111100001111000011110000 
+INFO: [Synth 8-113] binding component instance 'shift_carry_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1093]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'shift_carry_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1103]
+	Parameter INIT bound to: 64'b0011001100110011101010101100110011110000101010100000000000000000 
+INFO: [Synth 8-113] binding component instance 'carry_flag_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1108]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'carry_flag_flop' to cell 'FDRE' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1119]
+INFO: [Synth 8-113] binding component instance 'init_zero_muxcy' to cell 'MUXCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1126]
+	Parameter INIT bound to: 64'b1010001010000000000000000000000000000000111100000000000011110000 
+INFO: [Synth 8-113] binding component instance 'use_zero_flag_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1132]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'use_zero_flag_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1143]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-113] binding component instance 'lower_zero_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1148]
+INFO: [Synth 8-113] binding component instance 'lower_zero_muxcy' to cell 'MUXCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1159]
+	Parameter INIT bound to: 64'b0000000000000000000000000000110100000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'middle_zero_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1165]
+INFO: [Synth 8-113] binding component instance 'middle_zero_muxcy' to cell 'MUXCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1176]
+	Parameter INIT bound to: 64'b1111101111111111000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'upper_zero_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1182]
+INFO: [Synth 8-113] binding component instance 'upper_zero_muxcy' to cell 'MUXCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1192]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'zero_flag_flop' to cell 'FDRE' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1198]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1249]
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1264]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111100110011110011000000111100000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1350]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1366]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1371]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1249]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1440]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1249]
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1264]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1440]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1249]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1440]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1249]
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1264]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1440]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1249]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1440]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1249]
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1264]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1440]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1249]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1309]
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:1411]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000010101010000000000000000011001100110011001111000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000010101010000000000000000011001100110011001111000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000010101001010011010101010101010101010101010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1011111110111100100011111000110010110011101100001000001110000000 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_WCLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'kcpsm6' (1#1) [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/kcpsm6.vhd:111]
+	Parameter C_FAMILY bound to: 7S - type: string 
+	Parameter C_RAM_SIZE_KWORDS bound to: 2 - type: integer 
+	Parameter C_JTAG_LOADER_ENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'ROM_KCPSM6' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/sources_7series/ROM_KCPSM6.vhd:132' bound to instance 'program_rom' of component 'ROM_KCPSM6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/wbm_uart_kcpsm6.vhd:270]
+INFO: [Synth 8-638] synthesizing module 'ROM_KCPSM6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/sources_7series/ROM_KCPSM6.vhd:143]
+	Parameter C_FAMILY bound to: 7S - type: string 
+	Parameter C_RAM_SIZE_KWORDS bound to: 2 - type: integer 
+	Parameter C_JTAG_LOADER_ENABLE bound to: 0 - type: integer 
+	Parameter DOA_REG bound to: 0 - type: integer 
+	Parameter DOB_REG bound to: 0 - type: integer 
+	Parameter EN_ECC_READ bound to: 0 - type: bool 
+	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
+	Parameter INITP_00 bound to: 256'b0100101010100010100010101010101010101000101010101000001010101010101010101010001010101010100010101010001010110000110000110000110000110000110000110000110000110000110000110000110000110000110000110000110000001010000011000011000011000010101000000000001010101000 
+	Parameter INITP_01 bound to: 256'b0010100101010100101000100010001000100010001000100010001000100010101000100010001000100010001000100010001000100010101000100010001010100010101000100010101100000010100000001011000010101000101010100010100000110000010010001100001000110000100011001000110000001011 
+	Parameter INITP_02 bound to: 256'b1000100010001000100010001000100010001010001000100010001000100010001000100010001000100010001000100010101000100010001000100010001000100010101001101000100010001000100010001010100010001000100010001000100010001000101000100010001000100010001000100010001010101000 
+	Parameter INITP_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000100000001010101101100100100010011001110100100110011101001000100101110000000010000010001010001000100010001000 
+	Parameter INITP_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_07 bound to: 256'b1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_08 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_09 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_0A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_0B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_0C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_0D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_0E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_0F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0100000010000010001011111110000000011111000000011000000000000001000000010011110011011111000001100001111111111111000100100000000000010011000000000001110100000000000111100000000011011111000001001101111100000001110111110000000011011111000001110001111100000000 
+	Parameter INIT_01 bound to: 256'b0111111101001100000011110111000000100000011001000111111101101100000011110111000000111110111111010010000000001101110111110000011001111111111111111001111100000110010000001001111100101111111000000001111100000100010000000001101000101111111000000001111100000010 
+	Parameter INIT_02 bound to: 256'b0010000001010001011111110111001100001111011100000010000001001100011111110100000100001111011100000010000001001100011111110110000100001111011100000010000001101011011111110110100000001111011100000010000001101011011111110100100000001111011100000010000001100100 
+	Parameter INIT_03 bound to: 256'b0000111101110000001000000110000001111111010001000000111101110000001000000110000001111111011001000000111101110000001000000101011001111111010100100000111101110000001000000101011001111111011100100000111101110000001000000101000101111111010100110000111101110000 
+	Parameter INIT_04 bound to: 256'b0000000010111100000000001100000000000010111100000000000110001011010100000000000000100000011101000111111101011000000011110111000000100000011101000111111101111000000011110111000000100000011100000111111101010100000011110111000000100000011100000111111101110100 
+	Parameter INIT_05 bound to: 256'b0101000000000000000000001011110000000000111000000000000010101100000000001010100011011111000001000001111100000001110100100000001011010011000000110000000011000000010100000000000000000000101111000000000011000000000000111111000000000001100010110101000000000000 
+	Parameter INIT_06 bound to: 256'b0101000000000000000000001011110000000000110000000000000111110000000000011000101101010000000000000000000010111100000000001100100000000000110000000101111000000100000000001111000000000001100010110101000000000000000000001011110000000001000001000000000011000000 
+	Parameter INIT_07 bound to: 256'b1001111100000001000111110000010101010000000000000000000010111100000000010110111011011111000001110001111100000000000000000111111011011111000001110001111100000001000000010100111100000000110000000101000000000000000000001011110000000001001010110000000011000000 
+	Parameter INIT_08 bound to: 256'b0000100111000000011000001001000101111111000000100000111111010000001000001001011100001000110000000110000010001100011111110000000100100000100101110000011111000000011000001000100001001111111100000000111111010000001111101111111001010000000000000110000001111111 
+	Parameter INIT_09 bound to: 256'b0011111011111011010100000000000000000000101111000001110100000000010111100000001001010000000000000110111111000000000111110000110100011101000000010001110111111111001000001001011100001010110000000110000010010110011111110000001100001111110100000010000010010111 
+	Parameter INIT_0A bound to: 256'b1101111100000100000111110000000010010001000000101001000000000001010100000000000000100000101010000011111100000001100111110000000000100000101011100000000010101000110111110000010000011111000000111101000100000001110100000000000011010010000000101101001100000011 
+	Parameter INIT_0B bound to: 256'b0101000000000000000000001011000100011111001111100000000010110111010100000000000000000000101100010001111100001010000000001011000100011111000011010101000000000000110101000000010101100000101100100011111100000010100111110000010000000100111100000101000000000000 
+	Parameter INIT_0C bound to: 256'b0000111100010000000000001011000100011111001000000000000010110001000111110111001000000000101100010001111101010111000000001011011101010000000000000000000010110001000111110010000100000000101100010001111101101011000000001011000100011111010011110000000010110111 
+	Parameter INIT_0D bound to: 256'b0101000000000000000000001111100000001111001000000000000011111000000011110011000000000000101100010001111100100000000000001011000100011111011101000000000010110001000111110110000100000000101100010001111100100000000000001111100000001111000000000000000011111000 
+	Parameter INIT_0E bound to: 256'b0001111101110100000000001011000100011111011000010000000010110001000111110010000000000000111110000000111100000000000000001111100000001111000100000000000010110001000111110010000000000000101100010001111101100100000000001011000100011111010100100000000010110111 
+	Parameter INIT_0F bound to: 256'b0000111101010000000000001011000100000001101000010100111100001110010011110000111001001111000011100100111100001110000001011111000001010000000000000000000011111000000011110010000000000000111110000000111100110000000000001011000100011111001000000000000010110001 
+	Parameter INIT_10 bound to: 256'b0001111100111101000000001011000100011111001000000000000010110001000111110111001000000000101100010001111101100100000000001011000100011111011001000000000010110001000111110100000100000000101101110101000000000000000000001011000100000001101000010011111100001111 
+	Parameter INIT_11 bound to: 256'b0000000010110001000111110110000100000000101100010001111101110100000000001011000100011111011000010000000010110001000111110100010000000000101101110000000011111000000011110010000000000000111110000000111100110000000000001011000100011111001000000000000010110001 
+	Parameter INIT_12 bound to: 256'b0000000010110001000011111001000000000000101100010000111110000000000000001011011101010000000000000000000011111000000011110000000000000000111110000000111100010000000000001011000100011111001000000000000010110001000111110011110100000000101100010001111100100000 
+	Parameter INIT_13 bound to: 256'b0001111101010000000000001011000100011111010000010000000010110111010100000000000000000000101100010001111100110000000000011000101100000000101100010001111100100000000000001011000100011111011100110000000010110001000111110110100100000000101100010001111100100000 
+	Parameter INIT_14 bound to: 256'b0001111101010011010100000000000000000000101111000000000010110001000111110011000100000000101100010001111100110001000000001011000100011111001000000000000010110001000111110101010000000000101100010001111101010010000000001011000100011111010001010000000010110001 
+	Parameter INIT_15 bound to: 256'b0001111101100101000000001011000100011111011100110000000010110001000111110110010100000000101100010001111101010010000000001011000100011111001000000000000010110001000111110111010000000000101100010001111101100110000000001011000100011111011011110000000010110001 
+	Parameter INIT_16 bound to: 256'b0000000010110001000111110101001101010000000000000000000010110001000111110110100000000000101100010001111101100111000000001011000100011111011010010000000010110001000111110100100000000000101100010001111100100000000000001011000100011111011101000000000010110001 
+	Parameter INIT_17 bound to: 256'b0000000010110001000111110110010100000000101100010001111101110011000000001011000100011111011001010000000010110001000111110101001000000000101100010001111100100000000000001011000100011111011101000000000010110001000111110110011000000000101100010001111101101111 
+	Parameter INIT_18 bound to: 256'b0000000110011010000011111001000000001000111100000000000110011010000011111000000001010000000000000000000010110001000111110111011100000000101100010001111101101111000000001011000100011111010011000000000010110001000111110010000000000000101100010001111101110100 
+	Parameter INIT_19 bound to: 256'b1001111100110111010100000000000010011111001100001110000110011111100101000100000000000100111100000101000000000000000011111001000000100001100100111001100000000001000110010001000000100001100110000010100010000000001110000000111100111001000011110000100111110000 
+	Parameter INIT_1A bound to: 256'b0000000011000000011000011010100100010101000000010000000010110001000111110011000000001111010100000000000010110111000101011110101001010000000000000001111100110111010100000000000000011111001100001110000110100110100101000000101000000100111100000101000000000000 
+	Parameter INIT_1B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100100000000000100001111011000000001111000000001000000001011000100001111110000001001110000000011000001101111000001010000000000000000000010111100 
+	Parameter INIT_1C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_20 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_21 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_22 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_23 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_24 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_25 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_26 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_27 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_28 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_29 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_30 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_31 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_32 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_33 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_34 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_35 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_36 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_37 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_38 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_39 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3F bound to: 256'b0010000110110010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_40 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_41 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_42 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_43 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_44 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_45 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_46 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_47 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_48 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_49 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_4A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_4B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_4C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_4D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_4E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_4F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_50 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_51 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_52 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_53 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_54 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_55 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_56 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_57 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_58 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_59 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_5A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_5B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_5C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_5D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_5E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_5F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_60 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_61 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_62 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_63 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_64 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_65 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_66 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_67 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_68 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_69 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_6A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_6B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_6C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_6D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_6E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_6F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_70 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_71 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_72 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_73 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_74 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_75 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_76 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_77 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_78 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_79 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_7A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_7B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_7C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_7D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_7E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_7F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_A bound to: 36'b000000000000000000000000000000000000 
+	Parameter INIT_B bound to: 36'b000000000000000000000000000000000000 
+	Parameter INIT_FILE bound to: NONE - type: string 
+	Parameter IS_CLKARDCLK_INVERTED bound to: 1'b0 
+	Parameter IS_CLKBWRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_ENARDEN_INVERTED bound to: 1'b0 
+	Parameter IS_ENBWREN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTRAMARSTRAM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTRAMB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTREGARSTREG_INVERTED bound to: 1'b0 
+	Parameter IS_RSTREGB_INVERTED bound to: 1'b0 
+	Parameter RAM_EXTENSION_A bound to: NONE - type: string 
+	Parameter RAM_EXTENSION_B bound to: NONE - type: string 
+	Parameter RAM_MODE bound to: TDP - type: string 
+	Parameter RDADDR_COLLISION_HWCONFIG bound to: DELAYED_WRITE - type: string 
+	Parameter READ_WIDTH_A bound to: 18 - type: integer 
+	Parameter READ_WIDTH_B bound to: 18 - type: integer 
+	Parameter RSTREG_PRIORITY_A bound to: REGCE - type: string 
+	Parameter RSTREG_PRIORITY_B bound to: REGCE - type: string 
+	Parameter SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SRVAL_A bound to: 36'b000000000000000000000000000000000000 
+	Parameter SRVAL_B bound to: 36'b000000000000000000000000000000000000 
+	Parameter WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter WRITE_WIDTH_A bound to: 18 - type: integer 
+	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ROM_KCPSM6' (2#1) [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/sources_7series/ROM_KCPSM6.vhd:143]
+INFO: [Synth 8-3491] module 'uart_rx6' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/uart_rx6.vhd:84' bound to instance 'uartrx0' of component 'uart_rx6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/wbm_uart_kcpsm6.vhd:291]
+INFO: [Synth 8-638] synthesizing module 'uart_rx6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/uart_rx6.vhd:100]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111111100000000011111111100000001111111100000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111000011110000111000011110000011111000011110001111000011110000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1100110010010000011000001100110010101010010100000101000010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111010011111100111101001111110000000100000000000000010011000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000000001000000000000000010000000000000000000000000000000 
+	Parameter INIT bound to: 64'b1100110011110000000000000000000010101010110011000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1100101011111111110010101111111100000000000000001100000011000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111000011001100111111111111111111001100101010101111111111111111 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111000011001100111111111111111111001100101010101111111111111111 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111000011001100111111111111111111001100101010101111111111111111 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111000011001100111111111111111111001100101010101111111111111111 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0010111100101111101011111010111100000000000000001111111100000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0010001000100010000000001111000000000000000000000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0110110000000000000000000000000001011010000000000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0110110011001100000000000000000001011010101010100000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000010000000000000000000000010001000100010001000100010001000 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx6' (3#1) [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/uart_rx6.vhd:100]
+INFO: [Synth 8-3491] module 'uart_tx6' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/uart_tx6.vhd:84' bound to instance 'uarttx0' of component 'uart_tx6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/wbm_uart_kcpsm6.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'uart_tx6' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/uart_tx6.vhd:100]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111111100000000111111100000000011111111100000001111111100000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111000011110000111000011110000011111000011110001111000011110000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1100110010010000011000001100110010101010010100000101000010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1111010011111100111101001111110000000100000000000000010011000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000000001000000000000000010000000000000000000000000000000 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
+	Parameter INIT bound to: 64'b1100111110101010110011000000111100001111111111111111111111111111 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1000010101010000000000000000000010101010101010101010101010101010 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0010011001100001000000000000000011001100110011001100110011001100 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1000100001110000000000000000000011110000111100001111000011110000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b1000011101000100000000000000000011111111000000001111111100000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0110110000000000000000000000000001011010000000000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0111111110000000111111110000000001111000011110001111000011110000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx6' (4#1) [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/uart_tx6.vhd:100]
+WARNING: [Synth 8-6014] Unused sequential element UARTTX_DATA_IN_reg was removed.  [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/wbm_uart_kcpsm6.vhd:442]
+INFO: [Synth 8-4471] merging register 'UARTTX_EN_16_X_BAUD_reg' into 'UARTRX_EN_16_X_BAUD_reg' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/wbm_uart_kcpsm6.vhd:308]
+WARNING: [Synth 8-6014] Unused sequential element UARTTX_EN_16_X_BAUD_reg was removed.  [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/wbm_uart_kcpsm6.vhd:308]
+WARNING: [Synth 8-3848] Net INSTRUCTIONS_BUS_A in module/entity wbm_uart_kcpsm6 does not have driver. [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/wbm_uart_kcpsm6.vhd:151]
+INFO: [Synth 8-256] done synthesizing module 'wbm_uart_kcpsm6' (5#1) [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/wbm_uart_kcpsm6.vhd:70]
+INFO: [Synth 8-3491] module 'wbs' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:43' bound to instance 'inst_wbs' of component 'wbs' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/top.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'wbs' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:63]
+WARNING: [Synth 8-614] signal 'WE_I' is read in the process but is not in the sensitivity list [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:147]
+WARNING: [Synth 8-614] signal 'CYC_I_SHARED' is read in the process but is not in the sensitivity list [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:222]
+WARNING: [Synth 8-614] signal 'REGISTERS' is read in the process but is not in the sensitivity list [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:222]
+	Parameter ciclo bound to: 12800 - type: integer 
+INFO: [Synth 8-3491] module 'Pre_Scaler_Unit' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/Pre_Scaler_Unit.vhd:34' bound to instance 'Prescaler_unit' of component 'Pre_Scaler_Unit' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'Pre_Scaler_Unit' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/Pre_Scaler_Unit.vhd:45]
+	Parameter ciclo bound to: 12800 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Pre_Scaler_Unit' (6#1) [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/Pre_Scaler_Unit.vhd:45]
+INFO: [Synth 8-3491] module 'PWM_Unit' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/PWM_Unit.vhd:26' bound to instance 'PWM_U' of component 'PWM_Unit' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'PWM_Unit' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/PWM_Unit.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'PWM_Unit' (7#1) [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/PWM_Unit.vhd:38]
+INFO: [Synth 8-3491] module 'PWM_Unit' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/PWM_Unit.vhd:26' bound to instance 'PWM_U' of component 'PWM_Unit' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:248]
+INFO: [Synth 8-3491] module 'PWM_Unit' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/PWM_Unit.vhd:26' bound to instance 'PWM_U' of component 'PWM_Unit' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:248]
+INFO: [Synth 8-3491] module 'PWM_Unit' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/PWM_Unit.vhd:26' bound to instance 'PWM_U' of component 'PWM_Unit' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:248]
+INFO: [Synth 8-3491] module 'PWM_Unit' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/PWM_Unit.vhd:26' bound to instance 'PWM_U' of component 'PWM_Unit' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:248]
+INFO: [Synth 8-3491] module 'PWM_Unit' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/PWM_Unit.vhd:26' bound to instance 'PWM_U' of component 'PWM_Unit' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:248]
+INFO: [Synth 8-3491] module 'PWM_Unit' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/PWM_Unit.vhd:26' bound to instance 'PWM_U' of component 'PWM_Unit' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:248]
+INFO: [Synth 8-3491] module 'PWM_Unit' declared at 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/PWM_project/PWM_Unit.vhd:26' bound to instance 'PWM_U' of component 'PWM_Unit' [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:248]
+INFO: [Synth 8-256] done synthesizing module 'wbs' (8#1) [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/hdl/wb_slave_interface_rpd_add.vhd:63]
+WARNING: [Synth 8-3848] Net SEG1 in module/entity top does not have driver. [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/top.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'top' (9#1) [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/sources_1/imports/wishbone_rpd_kcpsm6/hdl_7series/top.vhd:64]
+WARNING: [Synth 8-3917] design top has port ENABLE2 driven by constant 1
+WARNING: [Synth 8-3917] design top has port ENABLE3 driven by constant 1
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[15]
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[14]
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[13]
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[12]
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[11]
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[10]
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[9]
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[8]
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[7]
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[6]
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[5]
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[4]
+WARNING: [Synth 8-3331] design wbs has unconnected port ADR_I[3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 414.066 ; gain = 143.793
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 414.066 ; gain = 143.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 414.066 ; gain = 143.793
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 248 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/constrs_1/imports/ucf/wb_intercon_p2p_zedboard.xdc]
+Finished Parsing XDC File [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/constrs_1/imports/ucf/wb_intercon_p2p_zedboard.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.srcs/constrs_1/imports/ucf/wb_intercon_p2p_zedboard.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 753.086 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 753.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 191 instances were transformed.
+  FD => FDRE: 86 instances
+  FDR => FDRE: 30 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 69 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 753.094 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 753.094 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:27 . Memory (MB): peak = 753.094 ; gain = 482.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:27 . Memory (MB): peak = 753.094 ; gain = 482.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:27 . Memory (MB): peak = 753.094 ; gain = 482.820
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "STB_O_OUT" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "UARTRX_READ_BUFFER_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "UARTTX_WRITE_BUFFER_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ACK_I_NODE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CONTROL_WB_IN_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DATA_WB_IN_7_0_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DATA_WB_IN_15_8_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "UART_STATUS_IN_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "GENERAL_OUTPUT_READ_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DATA_WB_OUT_7_0_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DATA_WB_OUT_15_8_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CONTROL_WB_OUT_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDR_WB_LOWEST_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDR_WB_HIGHEST_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "GENERAL_OUTPUT_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SOFT_RESET_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "UARTRX_EN_16_X_BAUD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "STB_O_OUT" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "UARTRX_READ_BUFFER_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "UARTTX_WRITE_BUFFER_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ACK_I_NODE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CONTROL_WB_IN_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DATA_WB_IN_7_0_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DATA_WB_IN_15_8_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "UART_STATUS_IN_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "GENERAL_OUTPUT_READ_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DATA_WB_OUT_7_0_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DATA_WB_OUT_15_8_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CONTROL_WB_OUT_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDR_WB_LOWEST_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDR_WB_HIGHEST_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "GENERAL_OUTPUT_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SOFT_RESET_CE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "UARTRX_EN_16_X_BAUD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "INPUTS_BUS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_wb" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_wb" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'act_wb_reg' in module 'wbs'
+INFO: [Synth 8-5544] ROM "ACK_O" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_wb" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             stb_in_wait |                               01 |                               00
+              write_data |                               10 |                               01
+               read_data |                               11 |                               10
+              send_ack_o |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'act_wb_reg' using encoding 'sequential' in module 'wbs'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:29 . Memory (MB): peak = 753.094 ; gain = 482.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 9     
++---Registers : 
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 17    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input     16 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 18    
+	   8 Input      1 Bit        Muxes := 13    
+	  13 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module wbm_uart_kcpsm6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   8 Input      1 Bit        Muxes := 13    
+	  13 Input      1 Bit        Muxes := 1     
+Module PWM_Unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module wbs 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Inst_wbm_uart_kcpsm6/UARTRX_EN_16_X_BAUD" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design top has port ENABLE0 driven by constant 0
+WARNING: [Synth 8-3917] design top has port ENABLE1 driven by constant 0
+WARNING: [Synth 8-3917] design top has port ENABLE2 driven by constant 1
+WARNING: [Synth 8-3917] design top has port ENABLE3 driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Inst_wbm_uart_kcpsm6/processor/sync_sleep_flop )
+WARNING: [Synth 8-3332] Sequential element (Inst_wbm_uart_kcpsm6/processor/sync_sleep_flop) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (Inst_wbm_uart_kcpsm6/processor/interrupt_ack_flop) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (Inst_wbm_uart_kcpsm6/processor/k_write_strobe_flop) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (Inst_wbm_uart_kcpsm6/processor/read_strobe_flop) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 753.094 ; gain = 482.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 769.984 ; gain = 499.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 771.539 ; gain = 501.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 797.434 ; gain = 527.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 797.434 ; gain = 527.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 797.434 ; gain = 527.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 797.434 ; gain = 527.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 797.434 ; gain = 527.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 797.434 ; gain = 527.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 797.434 ; gain = 527.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    16|
+|3     |LUT1     |     2|
+|4     |LUT2     |    19|
+|5     |LUT3     |    27|
+|6     |LUT4     |    96|
+|7     |LUT5     |    27|
+|8     |LUT6     |    98|
+|9     |LUT6_2   |    69|
+|10    |MUXCY    |    29|
+|11    |RAM32M   |     4|
+|12    |RAM64M   |     2|
+|13    |RAMB36E1 |     1|
+|14    |SRL16E   |    16|
+|15    |XORCY    |    27|
+|16    |FD       |    84|
+|17    |FDCE     |   129|
+|18    |FDPE     |     1|
+|19    |FDR      |    28|
+|20    |FDRE     |   104|
+|21    |IBUF     |     3|
+|22    |OBUF     |    21|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------+----------------+------+
+|      |Instance                   |Module          |Cells |
++------+---------------------------+----------------+------+
+|1     |top                        |                |   804|
+|2     |  Inst_wbm_uart_kcpsm6     |wbm_uart_kcpsm6 |   465|
+|3     |    processor              |kcpsm6          |   256|
+|4     |    program_rom            |ROM_KCPSM6      |     1|
+|5     |    uartrx0                |uart_rx6        |    48|
+|6     |    uarttx0                |uart_tx6        |    47|
+|7     |  inst_wbs                 |wbs             |   314|
+|8     |    Prescaler_unit         |Pre_Scaler_Unit |    46|
+|9     |    \forgenerate[0].PWM_U  |PWM_Unit        |     1|
+|10    |    \forgenerate[1].PWM_U  |PWM_Unit_0      |     1|
+|11    |    \forgenerate[2].PWM_U  |PWM_Unit_1      |     1|
+|12    |    \forgenerate[3].PWM_U  |PWM_Unit_2      |     1|
+|13    |    \forgenerate[4].PWM_U  |PWM_Unit_3      |     1|
+|14    |    \forgenerate[5].PWM_U  |PWM_Unit_4      |     1|
+|15    |    \forgenerate[6].PWM_U  |PWM_Unit_5      |     1|
+|16    |    \forgenerate[7].PWM_U  |PWM_Unit_6      |    82|
++------+---------------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 797.434 ; gain = 527.160
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 797.434 ; gain = 188.133
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 797.434 ; gain = 527.160
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 260 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 797.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 197 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 10 instances
+  FD => FDRE: 84 instances
+  FDR => FDRE: 28 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 69 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+192 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 797.434 ; gain = 527.160
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 797.434 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Master/SBM/wishbone_rpd_kcpsm6/vivado2018/project_sopc_basico_kcpsm6/sopc_basico_kcpsm6/sopc_basico_kcpsm6.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 27 17:02:16 2024...

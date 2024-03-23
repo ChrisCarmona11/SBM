@@ -1,0 +1,36 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\Docencia\Downloads\diseno_sincrono\diseno_sincrono\para proyecto\RAM
+#Date/Time:
+#:T   Tue Jan 30 16:03:34 2024
+#------------------------------
+	#Reading mult.ncd...
+	#Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "mult" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5
+	#Design creation date: 2024.01.30.15.03.06
+	#Building chip graphics...
+	#Loading speed info...
+	#ERROR:FPGAEditor:39 - Unable to open script file "mult_fpga_editor.rcv".
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'Mmult_salida_c_mult0000_submult_1'
+	#3
+unselect comp 'Mmult_salida_c_mult0000_submult_1'
+	#4
+select -k comp 'Mmult_salida_c_mult0000_submult_01'
+	#5
+unselect comp 'Mmult_salida_c_mult0000_submult_01'
+	#6
+select -k comp 'Mmult_salida_c_mult0000_submult_1'
+	#7
+unselect comp 'Mmult_salida_c_mult0000_submult_1'
+	#8
+select -k comp 'Mmult_salida_c_mult0000_submult_01'
+	#9
+unselect comp 'Mmult_salida_c_mult0000_submult_01'
+	#10
+select -k comp 'Mmult_salida_c_mult0000_submult_1'

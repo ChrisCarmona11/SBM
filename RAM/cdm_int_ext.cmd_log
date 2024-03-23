@@ -1,0 +1,2 @@
+xaw2spl {-intstyle ise} {C:/Users/Docencia/Downloads/diseno_sincrono/diseno_sincrono/para proyecto/RAM/ipcore_dir/cdm_int_ext.xaw} 
+spl2sym -intstyle ise -family spartan3e cdm_int_ext.spl {C:/Users/Docencia/Downloads/diseno_sincrono/diseno_sincrono/para proyecto/RAM/cdm_int_ext.sym} 

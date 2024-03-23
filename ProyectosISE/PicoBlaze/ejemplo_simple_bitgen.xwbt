@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Docencia\Downloads\SBM-Christopher\ProyectosISE\PicoBlaze\ejemplo_simple.ncd
+OUTFILE=C:\Users\Docencia\Downloads\SBM-Christopher\ProyectosISE\PicoBlaze\ejemplo_simple.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\Users\Docencia\Downloads\SBM-Christopher\ProyectosISE\PicoBlaze
+LICENSE=ISE
+USER_INFO=174123010_174123011_210662615_504

@@ -1,0 +1,61 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Master/SBM/ProyectosISE/PicoBlazeMasterSlave/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to D:/Master/SBM/ProyectosISE/PicoBlazeMasterSlave/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd" in Library work.
+Architecture low_level_definition of Entity kcuart_tx is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/bbfifo_16x8.vhd" in Library work.
+Architecture low_level_definition of Entity bbfifo_16x8 is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_rx.vhd" in Library work.
+Architecture low_level_definition of Entity kcuart_rx is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" in Library work.
+Architecture low_level_definition of Entity kcpsm3 is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/uart_rx.vhd" in Library work.
+Architecture macro_level_definition of Entity uart_rx is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/uart_tx.vhd" in Library work.
+Architecture macro_level_definition of Entity uart_tx is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" in Library work.
+Architecture constants of Entity constants is up to date.
+Architecture mix of Entity rom_kcpsm3 is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wbm_uart_kcpsm3.vhd" in Library work.
+Architecture arch of Entity wbm_uart_kcpsm3 is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wb_slave_interface_7seg_s3.vhd" in Library work.
+Architecture behavioral of Entity wb_slave_interface_7seg is up to date.
+Compiling vhdl file "D:/Master/SBM/ProyectosISE/PWM_project/Pre_Scaler_Unit.vhd" in Library work.
+Architecture behavioral of Entity pre_scaler_unit is up to date.
+Compiling vhdl file "D:/Master/SBM/ProyectosISE/PWM_project/PWM_Unit.vhd" in Library work.
+Architecture behavioral of Entity pwm_unit is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wb_slave_interface_rpd_add.vhd" in Library work.
+Entity <wb_slave_interface_pwm> compiled.
+Entity <wb_slave_interface_PWM> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wb_intercon_p2p_S3.vhd" in Library work.
+Entity <wb_intercon_p2p> compiled.
+Entity <wb_intercon_p2p> (Architecture <Alpha>) compiled.
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.76 secs
+ 
+--> 
+
+Total memory usage is 4517760 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

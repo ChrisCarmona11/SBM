@@ -1,0 +1,600 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml wb_intercon_p2p.twx wb_intercon_p2p.ncd -o
+wb_intercon_p2p.twr wb_intercon_p2p.pcf
+
+Design file:              wb_intercon_p2p.ncd
+Physical constraint file: wb_intercon_p2p.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "PIN_CLOCK_100" 50 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 16886 paths analyzed, 1615 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  11.970ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].register_bit (SLICE_X67Y50.CIN), 190 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     8.030ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_wbm_uart_kcpsm3/rom0/I18.bram.B (RAM)
+  Destination:          Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].register_bit (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      11.970ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         PIN_CLOCK_100_BUFGP rising at 0.000ns
+  Destination Clock:    PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_wbm_uart_kcpsm3/rom0/I18.bram.B to Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].register_bit
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y9.DOB5     Tbcko                 2.446   Inst_wbm_uart_kcpsm3/rom0/I18.bram
+                                                       Inst_wbm_uart_kcpsm3/rom0/I18.bram.B
+    SLICE_X54Y77.F2      net (fanout=10)       1.033   Inst_wbm_uart_kcpsm3/INSTRUCTIONS_BUS_A<5>
+    SLICE_X54Y77.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<7>
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[7].register_bit.SLICEM_F
+    SLICE_X55Y77.G3      net (fanout=1)        0.048   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<7>
+    SLICE_X55Y77.Y       Tilo                  0.612   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/logical_result<7>
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[7].operand_select_mux
+    SLICE_X55Y71.F1      net (fanout=12)       1.411   Inst_wbm_uart_kcpsm3/PORTS_ID<7>
+    SLICE_X55Y71.X       Tilo                  0.612   N25
+                                                       Inst_wbm_uart_kcpsm3/CONTROL_WB_OUT_not000111_SW0
+    SLICE_X66Y53.G2      net (fanout=2)        1.668   N25
+    SLICE_X66Y53.Y       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE1
+    SLICE_X66Y53.F3      net (fanout=6)        0.033   Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE
+    SLICE_X66Y53.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_lut
+    SLICE_X67Y49.BX      net (fanout=5)        0.586   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+    SLICE_X67Y49.COUT    Tbxcy                 0.669   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<0>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[0].lsb_count.count_muxcy
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].mid_count.count_muxcy
+    SLICE_X67Y50.CIN     net (fanout=1)        0.000   Inst_wbm_uart_kcpsm3/uarttx0/buf/count_carry<1>
+    SLICE_X67Y50.CLK     Tcinck                0.872   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<2>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].mid_count.count_muxcy
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].upper_count.count_xor
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].register_bit
+    -------------------------------------------------  ---------------------------
+    Total                                     11.970ns (7.191ns logic, 4.779ns route)
+                                                       (60.1% logic, 39.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.107ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_wbm_uart_kcpsm3/rom0/I18.bram.B (RAM)
+  Destination:          Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].register_bit (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      11.893ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         PIN_CLOCK_100_BUFGP rising at 0.000ns
+  Destination Clock:    PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_wbm_uart_kcpsm3/rom0/I18.bram.B to Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].register_bit
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y9.DOB5     Tbcko                 2.446   Inst_wbm_uart_kcpsm3/rom0/I18.bram
+                                                       Inst_wbm_uart_kcpsm3/rom0/I18.bram.B
+    SLICE_X52Y72.F2      net (fanout=10)       1.348   Inst_wbm_uart_kcpsm3/INSTRUCTIONS_BUS_A<5>
+    SLICE_X52Y72.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<1>
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[1].register_bit.SLICEM_F
+    SLICE_X53Y73.G4      net (fanout=1)        0.021   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<1>
+    SLICE_X53Y73.Y       Tilo                  0.612   N55
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[1].operand_select_mux
+    SLICE_X53Y57.F1      net (fanout=47)       1.738   Inst_wbm_uart_kcpsm3/PORTS_ID<1>
+    SLICE_X53Y57.X       Tilo                  0.612   N35
+                                                       Inst_wbm_uart_kcpsm3/CONTROL_WB_OUT_not000111_SW1
+    SLICE_X66Y53.G4      net (fanout=1)        0.976   N35
+    SLICE_X66Y53.Y       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE1
+    SLICE_X66Y53.F3      net (fanout=6)        0.033   Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE
+    SLICE_X66Y53.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_lut
+    SLICE_X67Y49.BX      net (fanout=5)        0.586   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+    SLICE_X67Y49.COUT    Tbxcy                 0.669   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<0>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[0].lsb_count.count_muxcy
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].mid_count.count_muxcy
+    SLICE_X67Y50.CIN     net (fanout=1)        0.000   Inst_wbm_uart_kcpsm3/uarttx0/buf/count_carry<1>
+    SLICE_X67Y50.CLK     Tcinck                0.872   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<2>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].mid_count.count_muxcy
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].upper_count.count_xor
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].register_bit
+    -------------------------------------------------  ---------------------------
+    Total                                     11.893ns (7.191ns logic, 4.702ns route)
+                                                       (60.5% logic, 39.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.196ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_wbm_uart_kcpsm3/rom0/I18.bram.B (RAM)
+  Destination:          Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].register_bit (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      11.804ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         PIN_CLOCK_100_BUFGP rising at 0.000ns
+  Destination Clock:    PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_wbm_uart_kcpsm3/rom0/I18.bram.B to Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].register_bit
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y9.DOB7     Tbcko                 2.446   Inst_wbm_uart_kcpsm3/rom0/I18.bram
+                                                       Inst_wbm_uart_kcpsm3/rom0/I18.bram.B
+    SLICE_X52Y72.F4      net (fanout=10)       1.259   Inst_wbm_uart_kcpsm3/INSTRUCTIONS_BUS_A<7>
+    SLICE_X52Y72.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<1>
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[1].register_bit.SLICEM_F
+    SLICE_X53Y73.G4      net (fanout=1)        0.021   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<1>
+    SLICE_X53Y73.Y       Tilo                  0.612   N55
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[1].operand_select_mux
+    SLICE_X53Y57.F1      net (fanout=47)       1.738   Inst_wbm_uart_kcpsm3/PORTS_ID<1>
+    SLICE_X53Y57.X       Tilo                  0.612   N35
+                                                       Inst_wbm_uart_kcpsm3/CONTROL_WB_OUT_not000111_SW1
+    SLICE_X66Y53.G4      net (fanout=1)        0.976   N35
+    SLICE_X66Y53.Y       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE1
+    SLICE_X66Y53.F3      net (fanout=6)        0.033   Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE
+    SLICE_X66Y53.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_lut
+    SLICE_X67Y49.BX      net (fanout=5)        0.586   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+    SLICE_X67Y49.COUT    Tbxcy                 0.669   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<0>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[0].lsb_count.count_muxcy
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].mid_count.count_muxcy
+    SLICE_X67Y50.CIN     net (fanout=1)        0.000   Inst_wbm_uart_kcpsm3/uarttx0/buf/count_carry<1>
+    SLICE_X67Y50.CLK     Tcinck                0.872   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<2>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].mid_count.count_muxcy
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].upper_count.count_xor
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[3].register_bit
+    -------------------------------------------------  ---------------------------
+    Total                                     11.804ns (7.191ns logic, 4.613ns route)
+                                                       (60.9% logic, 39.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].register_bit (SLICE_X67Y49.BX), 62 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     8.070ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_wbm_uart_kcpsm3/rom0/I18.bram.B (RAM)
+  Destination:          Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].register_bit (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      11.930ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         PIN_CLOCK_100_BUFGP rising at 0.000ns
+  Destination Clock:    PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_wbm_uart_kcpsm3/rom0/I18.bram.B to Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].register_bit
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y9.DOB5     Tbcko                 2.446   Inst_wbm_uart_kcpsm3/rom0/I18.bram
+                                                       Inst_wbm_uart_kcpsm3/rom0/I18.bram.B
+    SLICE_X54Y77.F2      net (fanout=10)       1.033   Inst_wbm_uart_kcpsm3/INSTRUCTIONS_BUS_A<5>
+    SLICE_X54Y77.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<7>
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[7].register_bit.SLICEM_F
+    SLICE_X55Y77.G3      net (fanout=1)        0.048   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<7>
+    SLICE_X55Y77.Y       Tilo                  0.612   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/logical_result<7>
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[7].operand_select_mux
+    SLICE_X55Y71.F1      net (fanout=12)       1.411   Inst_wbm_uart_kcpsm3/PORTS_ID<7>
+    SLICE_X55Y71.X       Tilo                  0.612   N25
+                                                       Inst_wbm_uart_kcpsm3/CONTROL_WB_OUT_not000111_SW0
+    SLICE_X66Y53.G2      net (fanout=2)        1.668   N25
+    SLICE_X66Y53.Y       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE1
+    SLICE_X66Y53.F3      net (fanout=6)        0.033   Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE
+    SLICE_X66Y53.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_lut
+    SLICE_X67Y49.BX      net (fanout=5)        0.586   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+    SLICE_X67Y49.CLK     Tdick                 1.501   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<0>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[0].lsb_count.count_muxcy
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].mid_count.count_xor
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].register_bit
+    -------------------------------------------------  ---------------------------
+    Total                                     11.930ns (7.151ns logic, 4.779ns route)
+                                                       (59.9% logic, 40.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.147ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_wbm_uart_kcpsm3/rom0/I18.bram.B (RAM)
+  Destination:          Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].register_bit (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      11.853ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         PIN_CLOCK_100_BUFGP rising at 0.000ns
+  Destination Clock:    PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_wbm_uart_kcpsm3/rom0/I18.bram.B to Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].register_bit
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y9.DOB5     Tbcko                 2.446   Inst_wbm_uart_kcpsm3/rom0/I18.bram
+                                                       Inst_wbm_uart_kcpsm3/rom0/I18.bram.B
+    SLICE_X52Y72.F2      net (fanout=10)       1.348   Inst_wbm_uart_kcpsm3/INSTRUCTIONS_BUS_A<5>
+    SLICE_X52Y72.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<1>
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[1].register_bit.SLICEM_F
+    SLICE_X53Y73.G4      net (fanout=1)        0.021   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<1>
+    SLICE_X53Y73.Y       Tilo                  0.612   N55
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[1].operand_select_mux
+    SLICE_X53Y57.F1      net (fanout=47)       1.738   Inst_wbm_uart_kcpsm3/PORTS_ID<1>
+    SLICE_X53Y57.X       Tilo                  0.612   N35
+                                                       Inst_wbm_uart_kcpsm3/CONTROL_WB_OUT_not000111_SW1
+    SLICE_X66Y53.G4      net (fanout=1)        0.976   N35
+    SLICE_X66Y53.Y       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE1
+    SLICE_X66Y53.F3      net (fanout=6)        0.033   Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE
+    SLICE_X66Y53.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_lut
+    SLICE_X67Y49.BX      net (fanout=5)        0.586   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+    SLICE_X67Y49.CLK     Tdick                 1.501   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<0>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[0].lsb_count.count_muxcy
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].mid_count.count_xor
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].register_bit
+    -------------------------------------------------  ---------------------------
+    Total                                     11.853ns (7.151ns logic, 4.702ns route)
+                                                       (60.3% logic, 39.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.236ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_wbm_uart_kcpsm3/rom0/I18.bram.B (RAM)
+  Destination:          Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].register_bit (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      11.764ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         PIN_CLOCK_100_BUFGP rising at 0.000ns
+  Destination Clock:    PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_wbm_uart_kcpsm3/rom0/I18.bram.B to Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].register_bit
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y9.DOB7     Tbcko                 2.446   Inst_wbm_uart_kcpsm3/rom0/I18.bram
+                                                       Inst_wbm_uart_kcpsm3/rom0/I18.bram.B
+    SLICE_X52Y72.F4      net (fanout=10)       1.259   Inst_wbm_uart_kcpsm3/INSTRUCTIONS_BUS_A<7>
+    SLICE_X52Y72.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<1>
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[1].register_bit.SLICEM_F
+    SLICE_X53Y73.G4      net (fanout=1)        0.021   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<1>
+    SLICE_X53Y73.Y       Tilo                  0.612   N55
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[1].operand_select_mux
+    SLICE_X53Y57.F1      net (fanout=47)       1.738   Inst_wbm_uart_kcpsm3/PORTS_ID<1>
+    SLICE_X53Y57.X       Tilo                  0.612   N35
+                                                       Inst_wbm_uart_kcpsm3/CONTROL_WB_OUT_not000111_SW1
+    SLICE_X66Y53.G4      net (fanout=1)        0.976   N35
+    SLICE_X66Y53.Y       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE1
+    SLICE_X66Y53.F3      net (fanout=6)        0.033   Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE
+    SLICE_X66Y53.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_lut
+    SLICE_X67Y49.BX      net (fanout=5)        0.586   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+    SLICE_X67Y49.CLK     Tdick                 1.501   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<0>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[0].lsb_count.count_muxcy
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].mid_count.count_xor
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].register_bit
+    -------------------------------------------------  ---------------------------
+    Total                                     11.764ns (7.151ns logic, 4.613ns route)
+                                                       (60.8% logic, 39.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].register_bit (SLICE_X67Y50.CIN), 190 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     8.384ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_wbm_uart_kcpsm3/rom0/I18.bram.B (RAM)
+  Destination:          Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].register_bit (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      11.616ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         PIN_CLOCK_100_BUFGP rising at 0.000ns
+  Destination Clock:    PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_wbm_uart_kcpsm3/rom0/I18.bram.B to Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].register_bit
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y9.DOB5     Tbcko                 2.446   Inst_wbm_uart_kcpsm3/rom0/I18.bram
+                                                       Inst_wbm_uart_kcpsm3/rom0/I18.bram.B
+    SLICE_X54Y77.F2      net (fanout=10)       1.033   Inst_wbm_uart_kcpsm3/INSTRUCTIONS_BUS_A<5>
+    SLICE_X54Y77.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<7>
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[7].register_bit.SLICEM_F
+    SLICE_X55Y77.G3      net (fanout=1)        0.048   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<7>
+    SLICE_X55Y77.Y       Tilo                  0.612   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/logical_result<7>
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[7].operand_select_mux
+    SLICE_X55Y71.F1      net (fanout=12)       1.411   Inst_wbm_uart_kcpsm3/PORTS_ID<7>
+    SLICE_X55Y71.X       Tilo                  0.612   N25
+                                                       Inst_wbm_uart_kcpsm3/CONTROL_WB_OUT_not000111_SW0
+    SLICE_X66Y53.G2      net (fanout=2)        1.668   N25
+    SLICE_X66Y53.Y       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE1
+    SLICE_X66Y53.F3      net (fanout=6)        0.033   Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE
+    SLICE_X66Y53.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_lut
+    SLICE_X67Y49.BX      net (fanout=5)        0.586   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+    SLICE_X67Y49.COUT    Tbxcy                 0.669   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<0>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[0].lsb_count.count_muxcy
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].mid_count.count_muxcy
+    SLICE_X67Y50.CIN     net (fanout=1)        0.000   Inst_wbm_uart_kcpsm3/uarttx0/buf/count_carry<1>
+    SLICE_X67Y50.CLK     Tcinck                0.518   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<2>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].mid_count.count_xor
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].register_bit
+    -------------------------------------------------  ---------------------------
+    Total                                     11.616ns (6.837ns logic, 4.779ns route)
+                                                       (58.9% logic, 41.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.461ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_wbm_uart_kcpsm3/rom0/I18.bram.B (RAM)
+  Destination:          Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].register_bit (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      11.539ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         PIN_CLOCK_100_BUFGP rising at 0.000ns
+  Destination Clock:    PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_wbm_uart_kcpsm3/rom0/I18.bram.B to Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].register_bit
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y9.DOB5     Tbcko                 2.446   Inst_wbm_uart_kcpsm3/rom0/I18.bram
+                                                       Inst_wbm_uart_kcpsm3/rom0/I18.bram.B
+    SLICE_X52Y72.F2      net (fanout=10)       1.348   Inst_wbm_uart_kcpsm3/INSTRUCTIONS_BUS_A<5>
+    SLICE_X52Y72.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<1>
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[1].register_bit.SLICEM_F
+    SLICE_X53Y73.G4      net (fanout=1)        0.021   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<1>
+    SLICE_X53Y73.Y       Tilo                  0.612   N55
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[1].operand_select_mux
+    SLICE_X53Y57.F1      net (fanout=47)       1.738   Inst_wbm_uart_kcpsm3/PORTS_ID<1>
+    SLICE_X53Y57.X       Tilo                  0.612   N35
+                                                       Inst_wbm_uart_kcpsm3/CONTROL_WB_OUT_not000111_SW1
+    SLICE_X66Y53.G4      net (fanout=1)        0.976   N35
+    SLICE_X66Y53.Y       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE1
+    SLICE_X66Y53.F3      net (fanout=6)        0.033   Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE
+    SLICE_X66Y53.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_lut
+    SLICE_X67Y49.BX      net (fanout=5)        0.586   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+    SLICE_X67Y49.COUT    Tbxcy                 0.669   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<0>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[0].lsb_count.count_muxcy
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].mid_count.count_muxcy
+    SLICE_X67Y50.CIN     net (fanout=1)        0.000   Inst_wbm_uart_kcpsm3/uarttx0/buf/count_carry<1>
+    SLICE_X67Y50.CLK     Tcinck                0.518   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<2>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].mid_count.count_xor
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].register_bit
+    -------------------------------------------------  ---------------------------
+    Total                                     11.539ns (6.837ns logic, 4.702ns route)
+                                                       (59.3% logic, 40.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     8.550ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_wbm_uart_kcpsm3/rom0/I18.bram.B (RAM)
+  Destination:          Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].register_bit (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      11.450ns (Levels of Logic = 7)
+  Clock Path Skew:      0.000ns
+  Source Clock:         PIN_CLOCK_100_BUFGP rising at 0.000ns
+  Destination Clock:    PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_wbm_uart_kcpsm3/rom0/I18.bram.B to Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].register_bit
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB16_X1Y9.DOB7     Tbcko                 2.446   Inst_wbm_uart_kcpsm3/rom0/I18.bram
+                                                       Inst_wbm_uart_kcpsm3/rom0/I18.bram.B
+    SLICE_X52Y72.F4      net (fanout=10)       1.259   Inst_wbm_uart_kcpsm3/INSTRUCTIONS_BUS_A<7>
+    SLICE_X52Y72.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<1>
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[1].register_bit.SLICEM_F
+    SLICE_X53Y73.G4      net (fanout=1)        0.021   Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<1>
+    SLICE_X53Y73.Y       Tilo                  0.612   N55
+                                                       Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[1].operand_select_mux
+    SLICE_X53Y57.F1      net (fanout=47)       1.738   Inst_wbm_uart_kcpsm3/PORTS_ID<1>
+    SLICE_X53Y57.X       Tilo                  0.612   N35
+                                                       Inst_wbm_uart_kcpsm3/CONTROL_WB_OUT_not000111_SW1
+    SLICE_X66Y53.G4      net (fanout=1)        0.976   N35
+    SLICE_X66Y53.Y       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE1
+    SLICE_X66Y53.F3      net (fanout=6)        0.033   Inst_wbm_uart_kcpsm3/UARTTX_WRITE_BUFFER_CE
+    SLICE_X66Y53.X       Tilo                  0.660   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_lut
+    SLICE_X67Y49.BX      net (fanout=5)        0.586   Inst_wbm_uart_kcpsm3/uarttx0/buf/valid_write
+    SLICE_X67Y49.COUT    Tbxcy                 0.669   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<0>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[0].lsb_count.count_muxcy
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[1].mid_count.count_muxcy
+    SLICE_X67Y50.CIN     net (fanout=1)        0.000   Inst_wbm_uart_kcpsm3/uarttx0/buf/count_carry<1>
+    SLICE_X67Y50.CLK     Tcinck                0.518   Inst_wbm_uart_kcpsm3/uarttx0/buf/pointer<2>
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].mid_count.count_xor
+                                                       Inst_wbm_uart_kcpsm3/uarttx0/buf/count_width_loop[2].register_bit
+    -------------------------------------------------  ---------------------------
+    Total                                     11.450ns (6.837ns logic, 4.613ns route)
+                                                       (59.7% logic, 40.3% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "PIN_CLOCK_100" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[2].msbs.delay16_srl (SLICE_X50Y6.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.607ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[1].data_reg (FF)
+  Destination:          Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[2].msbs.delay16_srl (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.610ns (Levels of Logic = 1)
+  Clock Path Skew:      0.003ns (0.010 - 0.007)
+  Source Clock:         PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Destination Clock:    PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[1].data_reg to Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[2].msbs.delay16_srl
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X50Y9.XQ       Tcko                  0.412   Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_reg_delay<1>
+                                                       Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[1].data_reg
+    SLICE_X50Y6.BY       net (fanout=1)        0.308   Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_reg_delay<1>
+    SLICE_X50Y6.CLK      Tdh         (-Th)     0.110   Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_reg_delay<3>
+                                                       Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[2].msbs.delay16_srl
+    -------------------------------------------------  ---------------------------
+    Total                                      0.610ns (0.302ns logic, 0.308ns route)
+                                                       (49.5% logic, 50.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[8].msbs.delay16_srl (SLICE_X50Y10.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.633ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[7].data_reg (FF)
+  Destination:          Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[8].msbs.delay16_srl (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.631ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.002ns (0.066 - 0.068)
+  Source Clock:         PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Destination Clock:    PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[7].data_reg to Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[8].msbs.delay16_srl
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y9.XQ       Tcko                  0.412   Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_reg_delay<7>
+                                                       Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[7].data_reg
+    SLICE_X50Y10.BY      net (fanout=1)        0.329   Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_reg_delay<7>
+    SLICE_X50Y10.CLK     Tdh         (-Th)     0.110   Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_reg_delay<8>
+                                                       Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[8].msbs.delay16_srl
+    -------------------------------------------------  ---------------------------
+    Total                                      0.631ns (0.302ns logic, 0.329ns route)
+                                                       (47.9% logic, 52.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[4].msbs.delay16_srl (SLICE_X48Y7.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.633ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[3].data_reg (FF)
+  Destination:          Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[4].msbs.delay16_srl (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.632ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.001ns (0.071 - 0.072)
+  Source Clock:         PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Destination Clock:    PIN_CLOCK_100_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[3].data_reg to Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[4].msbs.delay16_srl
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X50Y6.XQ       Tcko                  0.412   Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_reg_delay<3>
+                                                       Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[3].data_reg
+    SLICE_X48Y7.BY       net (fanout=1)        0.330   Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_reg_delay<3>
+    SLICE_X48Y7.CLK      Tdh         (-Th)     0.110   Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_reg_delay<5>
+                                                       Inst_wbm_uart_kcpsm3/uartrx0/kcuart/valid_loop[4].msbs.delay16_srl
+    -------------------------------------------------  ---------------------------
+    Total                                      0.632ns (0.302ns logic, 0.330ns route)
+                                                       (47.8% logic, 52.2% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "PIN_CLOCK_100" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 17.224ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.388ns (Trpw)
+  Physical resource: SLAVE_PWM/act_wb_FSM_FFd2/SR
+  Logical resource: SLAVE_PWM/act_wb_FSM_FFd2/SR
+  Location pin: SLICE_X35Y54.SR
+  Clock network: PIN_RESET_IBUF
+--------------------------------------------------------------------------------
+Slack: 17.224ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 1.388ns (Trpw)
+  Physical resource: SLAVE_PWM/act_wb_FSM_FFd2/SR
+  Logical resource: SLAVE_PWM/act_wb_FSM_FFd2/SR
+  Location pin: SLICE_X35Y54.SR
+  Clock network: PIN_RESET_IBUF
+--------------------------------------------------------------------------------
+Slack: 17.224ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.388ns (Trpw)
+  Physical resource: SLAVE_PWM/act_wb_FSM_FFd2/SR
+  Logical resource: SLAVE_PWM/act_wb_FSM_FFd1/SR
+  Location pin: SLICE_X35Y54.SR
+  Clock network: PIN_RESET_IBUF
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock PIN_CLOCK_100
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PIN_CLOCK_100  |   11.970|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 16886 paths, 0 nets, and 2383 connections
+
+Design statistics:
+   Minimum period:  11.970ns{1}   (Maximum frequency:  83.542MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu Feb 22 20:09:07 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4528 MB
+
+
+

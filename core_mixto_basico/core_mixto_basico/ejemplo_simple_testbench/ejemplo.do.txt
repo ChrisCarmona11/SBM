@@ -1,0 +1,3 @@
+vsim work.ejemplo_simple_tb
+add wave ejemplo_simple_tb/inst_ejemplo_simple/*
+run -all

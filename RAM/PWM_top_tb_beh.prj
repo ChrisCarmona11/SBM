@@ -1,0 +1,4 @@
+vhdl work "PWM_Unit.vhd"
+vhdl work "PreScaler.vhd"
+vhdl work "top_PWM.vhd"
+vhdl work "PWM_top_tb.vhd"

@@ -1,0 +1,1192 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: wb_intercon_p2p.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "wb_intercon_p2p.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "wb_intercon_p2p"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : wb_intercon_p2p
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd" in Library work.
+Architecture low_level_definition of Entity kcuart_tx is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/bbfifo_16x8.vhd" in Library work.
+Architecture low_level_definition of Entity bbfifo_16x8 is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_rx.vhd" in Library work.
+Architecture low_level_definition of Entity kcuart_rx is up to date.
+Compiling vhdl file "D:/Master/SBM/ProyectosISE/PWM_project/Pre_Scaler_Unit.vhd" in Library work.
+Architecture behavioral of Entity pre_scaler_unit is up to date.
+Compiling vhdl file "D:/Master/SBM/ProyectosISE/PWM_project/PWM_Unit.vhd" in Library work.
+Architecture behavioral of Entity pwm_unit is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" in Library work.
+Architecture low_level_definition of Entity kcpsm3 is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/uart_rx.vhd" in Library work.
+Architecture macro_level_definition of Entity uart_rx is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/uart_tx.vhd" in Library work.
+Architecture macro_level_definition of Entity uart_tx is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" in Library work.
+Architecture constants of Entity constants is up to date.
+Architecture mix of Entity rom_kcpsm3 is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wbm_uart_kcpsm3.vhd" in Library work.
+Architecture arch of Entity wbm_uart_kcpsm3 is up to date.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wb_slave_interface_rpd_add.vhd" in Library work.
+Entity <wb_slave_interface_pwm> compiled.
+Entity <wb_slave_interface_pwm> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wb_intercon_p2p_S3.vhd" in Library work.
+Entity <wb_intercon_p2p> compiled.
+Entity <wb_intercon_p2p> (Architecture <alpha>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <wb_intercon_p2p> in library <work> (architecture <alpha>).
+
+Analyzing hierarchy for entity <wbm_uart_kcpsm3> in library <WORK> (architecture <arch>).
+
+Analyzing hierarchy for entity <wb_slave_interface_PWM> in library <WORK> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <kcpsm3> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <uart_rx> in library <work> (architecture <macro_level_definition>).
+
+Analyzing hierarchy for entity <uart_tx> in library <work> (architecture <macro_level_definition>).
+
+Analyzing hierarchy for entity <ROM_KCPSM3> in library <work> (architecture <mix>).
+
+Analyzing hierarchy for entity <Pre_Scaler_Unit> in library <WORK> (architecture <behavioral>) with generics.
+	ciclo = 12800
+
+Analyzing hierarchy for entity <PWM_Unit> in library <WORK> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <kcuart_rx> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <bbfifo_16x8> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <kcuart_tx> in library <work> (architecture <low_level_definition>).
+
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 289: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 1200: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 452: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 483: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 606: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 614: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 381: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 423: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 525: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 597: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 682: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 1109: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 1136: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 1220: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 1269: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_rx.vhd" line 250: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/bbfifo_16x8.vhd" line 253: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd" line 266: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd" line 314: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 332: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 371: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 403: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 413: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 432: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 442: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 468: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 493: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 554: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 587: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 794: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 871: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 886: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 937: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 956: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 1244: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 1301: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 1311: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 1327: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 1415: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 1448: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_rx.vhd" line 232: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/bbfifo_16x8.vhd" line 154: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/bbfifo_16x8.vhd" line 235: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd" line 129: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd" line 277: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd" line 296: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd" line 350: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 828: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 1368: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd" line 906: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INITP_00> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INITP_01> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INITP_02> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INITP_03> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INITP_04> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INITP_05> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INITP_06> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INITP_07> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_00> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_01> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_02> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_03> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_04> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_05> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_06> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_07> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_08> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_09> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_0A> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_0B> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_0C> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_0D> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_0E> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_0F> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_10> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_11> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_12> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_13> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_14> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_15> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_16> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_17> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_18> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_19> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_1A> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_1B> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_1C> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_1D> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_1E> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_1F> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_20> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_21> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_22> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_23> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_24> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_25> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_26> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_27> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_28> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_29> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_2A> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_2B> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_2C> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_2D> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_2E> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_2F> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_30> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_31> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_32> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_33> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_34> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_35> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_36> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_37> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_38> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_39> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_3A> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_3B> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_3C> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_3D> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_3E> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2592 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd" line 235: generic/parameter on instance <INIT_3F> overrides attribute on instance. Attribute is ignored.
+WARNING:Xst:2591 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_rx.vhd" line 137: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <wb_intercon_p2p> in library <work> (Architecture <alpha>).
+WARNING:Xst:753 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wb_intercon_p2p_S3.vhd" line 165: Unconnected output port 'CYC_O' of component 'wbm_uart_kcpsm3'.
+WARNING:Xst:753 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wb_intercon_p2p_S3.vhd" line 165: Unconnected output port 'SOFT_RESET' of component 'wbm_uart_kcpsm3'.
+Entity <wb_intercon_p2p> analyzed. Unit <wb_intercon_p2p> generated.
+
+Analyzing Entity <wbm_uart_kcpsm3> in library <WORK> (Architecture <arch>).
+WARNING:Xst:753 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wbm_uart_kcpsm3.vhd" line 277: Unconnected output port 'reset' of component 'ROM_KCPSM3'.
+INFO:Xst:2679 - Register <UARTTX_DATA_IN> in unit <wbm_uart_kcpsm3> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+Entity <wbm_uart_kcpsm3> analyzed. Unit <wbm_uart_kcpsm3> generated.
+
+Analyzing Entity <kcpsm3> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  1" for instance <t_state_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <toggle_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  1" for instance <reset_flop1> in unit <kcpsm3>.
+    Set user-defined property "INIT =  1" for instance <reset_flop2> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <int_capture_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0080" for instance <int_pulse_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <int_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <ack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shadow_carry_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shadow_zero_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  EAAA" for instance <int_update_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  04" for instance <int_value_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <int_enable_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  7400" for instance <move_group_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  5A3C" for instance <condition_met_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  2F" for instance <normal_count_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  1000" for instance <call_type_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  5400" for instance <push_pop_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  D" for instance <valid_move_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  41FC" for instance <flag_type_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <flag_write_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  8" for instance <flag_enable_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0001" for instance <low_zero_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0001" for instance <high_zero_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  3F" for instance <sel_shadow_zero_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <zero_flag_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6996" for instance <low_parity_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6996" for instance <high_parity_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  F3FF" for instance <sel_parity_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  F3" for instance <sel_arith_carry_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  C" for instance <sel_shift_carry_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  3" for instance <sel_shadow_carry_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <carry_flag_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[0].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[0].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[0].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[1].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[1].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[1].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[2].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[2].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[2].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[3].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[3].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[3].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[4].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[4].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[4].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[5].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[5].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[5].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[6].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[6].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[6].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[7].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[7].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[7].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[8].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[8].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[8].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[9].vector_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <pc_loop[9].value_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pc_loop[9].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0145" for instance <register_type_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <register_write_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  8" for instance <register_enable_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[0].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[0].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[1].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[1].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[2].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[2].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[3].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[3].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[4].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[4].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[5].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[5].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[6].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[6].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000" for instance <reg_loop[7].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <reg_loop[7].operand_select_mux> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0400" for instance <memory_type_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <memory_write_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  8000" for instance <memory_enable_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[0].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[0].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[1].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[1].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[2].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[2].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[3].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[3].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[4].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[4].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[5].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[5].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[6].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[6].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0000000000000000" for instance <store_loop[7].memory_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <store_loop[7].store_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FFE2" for instance <sel_logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[0].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[0].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[1].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[1].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[2].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[2].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[3].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[3].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[4].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[4].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[5].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[5].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[6].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[6].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6E8A" for instance <logical_loop[7].logical_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <logical_loop[7].logical_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <high_shift_in_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <low_shift_in_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_carry_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <pipeline_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[0].lsb_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[0].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[1].mid_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[1].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[2].mid_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[2].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[3].mid_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[3].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[4].mid_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[4].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[5].mid_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[5].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[6].mid_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[6].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <shift_loop[7].msb_shift.shift_mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <shift_loop[7].shift_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  1F" for instance <sel_arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6C" for instance <arith_loop[0].lsb_arith.arith_carry_in_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[0].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[0].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[1].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[1].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[2].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[2].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[3].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[3].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[4].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[4].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[5].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[5].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[6].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[6].arith_flop> in unit <kcpsm3>.
+WARNING:Xst:1961 - The length of the hex value for the attribute INIT on instance arith_loop[7].msb_arith.arith_carry_out_lut should be 2 bits long. The current value set is 4 bits long.  Value has been truncated
+    Set user-defined property "INIT =  2" for instance <arith_loop[7].msb_arith.arith_carry_out_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[7].msb_arith.arith_carry_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  96" for instance <arith_loop[7].arith_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <arith_loop[7].arith_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0002" for instance <input_fetch_type_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <sel_group_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[0].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[0].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[1].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[1].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[2].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[2].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[3].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[3].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[4].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[4].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[5].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[5].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[6].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[6].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  FE" for instance <alu_mux_loop[7].or_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  E4" for instance <alu_mux_loop[7].mux_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0010" for instance <io_decode_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  4000" for instance <write_active_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <write_strobe_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0100" for instance <read_active_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <read_strobe_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[0].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[0].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[1].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[1].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[2].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[2].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[3].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[3].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[4].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[4].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[5].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[5].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[6].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[6].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[7].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[7].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[8].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[8].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  00000000" for instance <stack_ram_loop[9].stack_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_ram_loop[9].stack_flop> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_count_loop[0].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  6555" for instance <stack_count_loop[0].lsb_stack_count.count_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_count_loop[1].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  A999" for instance <stack_count_loop[1].mid_stack_count.count_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_count_loop[2].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  A999" for instance <stack_count_loop[2].mid_stack_count.count_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_count_loop[3].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  A999" for instance <stack_count_loop[3].mid_stack_count.count_lut> in unit <kcpsm3>.
+    Set user-defined property "INIT =  0" for instance <stack_count_loop[4].register_bit> in unit <kcpsm3>.
+    Set user-defined property "INIT =  A999" for instance <stack_count_loop[4].msb_stack_count.count_lut> in unit <kcpsm3>.
+Entity <kcpsm3> analyzed. Unit <kcpsm3> generated.
+
+Analyzing Entity <uart_rx> in library <work> (Architecture <macro_level_definition>).
+Entity <uart_rx> analyzed. Unit <uart_rx> generated.
+
+Analyzing Entity <kcuart_rx> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  0" for instance <sync_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <stop_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <data_loop[0].lsbs.delay15_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <data_loop[0].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <data_loop[1].lsbs.delay15_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <data_loop[1].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <data_loop[2].lsbs.delay15_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <data_loop[2].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <data_loop[3].lsbs.delay15_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <data_loop[3].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <data_loop[4].lsbs.delay15_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <data_loop[4].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <data_loop[5].lsbs.delay15_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <data_loop[5].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <data_loop[6].lsbs.delay15_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <data_loop[6].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <data_loop[7].msb.delay15_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <data_loop[7].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <start_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <start_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <edge_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <edge_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0040" for instance <valid_lut> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <valid_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  54" for instance <purge_lut> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <purge_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <valid_loop[0].lsb.delay15_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <valid_loop[0].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <valid_loop[1].msbs.delay16_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <valid_loop[1].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <valid_loop[2].msbs.delay16_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <valid_loop[2].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <valid_loop[3].msbs.delay16_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <valid_loop[3].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <valid_loop[4].msbs.delay16_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <valid_loop[4].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <valid_loop[5].msbs.delay16_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <valid_loop[5].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <valid_loop[6].msbs.delay16_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <valid_loop[6].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <valid_loop[7].msbs.delay16_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <valid_loop[7].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0000" for instance <valid_loop[8].msbs.delay16_srl> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <valid_loop[8].data_reg> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  8" for instance <strobe_lut> in unit <kcuart_rx>.
+    Set user-defined property "INIT =  0" for instance <strobe_reg> in unit <kcuart_rx>.
+Entity <kcuart_rx> analyzed. Unit <kcuart_rx> generated.
+
+Analyzing Entity <bbfifo_16x8> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  0000" for instance <data_width_loop[0].data_srl> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0000" for instance <data_width_loop[1].data_srl> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0000" for instance <data_width_loop[2].data_srl> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0000" for instance <data_width_loop[3].data_srl> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0000" for instance <data_width_loop[4].data_srl> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0000" for instance <data_width_loop[5].data_srl> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0000" for instance <data_width_loop[6].data_srl> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0000" for instance <data_width_loop[7].data_srl> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[0].register_bit> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  6606" for instance <count_width_loop[0].count_lut> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[1].register_bit> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  6606" for instance <count_width_loop[1].count_lut> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[2].register_bit> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  6606" for instance <count_width_loop[2].count_lut> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[3].register_bit> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  6606" for instance <count_width_loop[3].count_lut> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0001" for instance <zero_lut> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  8000" for instance <full_lut> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  BFA0" for instance <dp_lut> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  0" for instance <dp_flop> in unit <bbfifo_16x8>.
+    Set user-defined property "INIT =  C4" for instance <valid_lut> in unit <bbfifo_16x8>.
+Entity <bbfifo_16x8> analyzed. Unit <bbfifo_16x8> generated.
+
+Analyzing Entity <uart_tx> in library <work> (Architecture <macro_level_definition>).
+Entity <uart_tx> analyzed. Unit <uart_tx> generated.
+
+Analyzing Entity <kcuart_tx> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  E4FF" for instance <mux1_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  E4FF" for instance <mux2_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  E4FF" for instance <mux3_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  E4FF" for instance <mux4_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0" for instance <pipeline_serial> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[0].register_bit> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  8" for instance <count_width_loop[0].count_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[1].register_bit> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  8" for instance <count_width_loop[1].count_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[2].register_bit> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  8" for instance <count_width_loop[2].count_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  10" for instance <ready_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0190" for instance <start_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0" for instance <Tx_start_reg> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  1540" for instance <run_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0" for instance <Tx_run_reg> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  94" for instance <hot_state_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0" for instance <hot_state_reg> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0000" for instance <delay14_srl> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0" for instance <Tx_bit_reg> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0180" for instance <stop_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0" for instance <Tx_stop_reg> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  8" for instance <complete_lut> in unit <kcuart_tx>.
+    Set user-defined property "INIT =  0" for instance <Tx_complete_reg> in unit <kcuart_tx>.
+Entity <kcuart_tx> analyzed. Unit <kcuart_tx> generated.
+
+Analyzing Entity <ROM_KCPSM3> in library <work> (Architecture <mix>).
+    Set user-defined property "INITP_00 =  02D2F8E3EFEF3BF0EFEFF8AEF3BCEC30C30C30C30C30C30C30C303C30C3C02A8" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INITP_01 =  EF0FAA2CCCCCCCCCCCECCCCCCCCCCCECCCECECCAC0A02C3E2A8B081330CC3333" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INITP_02 =  333333333332CCCCCCCCCCCCCCCBCCCCCCCCEDF333333B333333333CCCCCCCCC" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INITP_03 =  00000000000000000000000000000000000000C302FDD3267499D235C030CB33" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INITP_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INITP_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INITP_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INITP_07 =  C000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_00 =  BFE00F02147DBFE00F01C0010137020003000D000E00CF04CF01CF00CF070F00" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_01 =  1F705066EF481F70505FEF4C1F70505FEF6C1F70AEFD400B149ABFE00F041415" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_02 =  EF721F70504CEF531F70504CEF731F705047EF411F705047EF611F705066EF68" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_03 =  506BEF541F70506BEF741F70505BEF441F70505BEF641F705051EF521F705051" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_04 =  00B700BB13F00186A00000B700BB12F00186A000506FEF581F70506FEF781F70" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_05 =  0186A00000B700FF00BBA00000B700DB00A700A3CF040F01C202C30300BBA000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_06 =  00BBA00000B7012600BBA00000B700BB11F00186A00000B700C300BBCE0410F0" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_07 =  DFF01FD0AEFEA000547ACF010F05A00000B70169CF070F000079CF070F01014A" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_08 =  1AC05491EF031FD0409219C0548CEF021FD0409218C05487EF01409217C05483" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_09 =  0F03C101C000C202C303AEFBA00000B70D00CE02B400FFC00F0D8D010DFF4092" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_0A =  54ADAF024F0414F0A000CF040F0041024001A00050A3AF014F0040A900A3CF04" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_0B =  00AC0F6B00AC0F4F00B2A00000AC0F3E00B2A00000AC0F0A00AC0F0DA000C405" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_0C =  00AC0F2000F31F0000F31F1000AC0F2000AC0F7200AC0F5700B2A00000AC0F21" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_0D =  00AC0F6400AC0F5200B2A00000F31F2000F31F3000AC0F2000AC0F7400AC0F61" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_0E =  00F31F3000AC0F2000AC0F7400AC0F6100AC0F2000F31F0000F31F1000AC0F20" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_0F =  00B2A00000AC019CAF0F1F5000AC019C0F0E0F0E0F0E0F0E15F0A00000F31F20" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_10 =  00F31F3000AC0F2000AC0F3D00AC0F2000AC0F7200AC0F6400AC0F6400AC0F41" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_11 =  0F2000AC0F3D00AC0F2000AC0F6100AC0F7400AC0F6100AC0F4400B200F31F20" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_12 =  0F7300AC0F6900AC0F2000AC1F9000AC1F8000B2A00000F31F0000F31F1000AC" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_13 =  00AC0F5200AC0F4500AC0F5000AC0F4100B2A00000AC8F30018600AC0F2000AC" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_14 =  00AC0F6600AC0F6F00AC0F53A00000B700AC0F3100AC0F3100AC0F2000AC0F54" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_15 =  00AC0F2000AC0F7400AC0F6500AC0F7300AC0F6500AC0F5200AC0F2000AC0F74" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_16 =  0F7400AC0F6600AC0F6F00AC0F53A00000AC0F6800AC0F6700AC0F6900AC0F48" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_17 =  0F4C00AC0F2000AC0F7400AC0F6500AC0F7300AC0F6500AC0F5200AC0F2000AC" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_18 =  5193B880A80FA90F19F001951F9018F001951F80A00000AC0F7700AC0F6F00AC" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_19 =  8F305DA1C40A14F0A000CF37A000CF305D9AC44014F0A0001F90418EC8018910" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_1A =  1FC04C0316F0A00000B700BB55A4850100AC8F301F5000B205EAA0008F37A000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_1B =  00000000000000000000000000000000000000000000000080011F600E0100AC" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_1C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_1D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_1E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_1F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_20 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_21 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_22 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_23 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_24 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_25 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_26 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_27 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_28 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_29 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_2A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_2B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_2C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_2D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_2E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_2F =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_30 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_31 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_32 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_33 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_34 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_35 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_36 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_37 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_38 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_39 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_3A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_3B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_3C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_3D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_3E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_3F =  41AD000000000000000000000000000000000000000000000000000000000000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_A =  000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "INIT_B =  00000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "SIM_COLLISION_CHECK =  ALL" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "SRVAL_A =  000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "SRVAL_B =  00000" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <I18.bram> in unit <ROM_KCPSM3>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <I18.bram> in unit <ROM_KCPSM3>.
+Entity <ROM_KCPSM3> analyzed. Unit <ROM_KCPSM3> generated.
+
+Analyzing Entity <wb_slave_interface_PWM> in library <WORK> (Architecture <behavioral>).
+WARNING:Xst:819 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wb_slave_interface_rpd_add.vhd" line 153: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <WE_I>
+WARNING:Xst:819 - "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wb_slave_interface_rpd_add.vhd" line 228: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <CYC_I_SHARED>, <REGISTERS>
+Entity <wb_slave_interface_PWM> analyzed. Unit <wb_slave_interface_PWM> generated.
+
+Analyzing generic Entity <Pre_Scaler_Unit> in library <WORK> (Architecture <behavioral>).
+	ciclo = 12800
+Entity <Pre_Scaler_Unit> analyzed. Unit <Pre_Scaler_Unit> generated.
+
+Analyzing Entity <PWM_Unit> in library <WORK> (Architecture <behavioral>).
+Entity <PWM_Unit> analyzed. Unit <PWM_Unit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Pre_Scaler_Unit>.
+    Related source file is "D:/Master/SBM/ProyectosISE/PWM_project/Pre_Scaler_Unit.vhd".
+    Found 18-bit up counter for signal <contador>.
+    Found 19-bit comparator less for signal <contador$cmp_gt0000> created at line 55.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <Pre_Scaler_Unit> synthesized.
+
+
+Synthesizing Unit <PWM_Unit>.
+    Related source file is "D:/Master/SBM/ProyectosISE/PWM_project/PWM_Unit.vhd".
+    Found 8-bit comparator greater for signal <pwm_out$cmp_gt0000> created at line 61.
+    Found 8-bit up counter for signal <TcSampleIndex>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <PWM_Unit> synthesized.
+
+
+Synthesizing Unit <wb_slave_interface_PWM>.
+    Related source file is "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wb_slave_interface_rpd_add.vhd".
+WARNING:Xst:647 - Input <ADR_I<15:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <ACK_O_OUT> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <act_wb>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK_I                     (rising_edge)        |
+    | Reset              | RST_I                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | stb_in_wait                                    |
+    | Power Up State     | stb_in_wait                                    |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit 8-to-1 multiplexer for signal <$varindex0000> created at line 231.
+    Found 128-bit register for signal <REGISTERS>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 128 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <wb_slave_interface_PWM> synthesized.
+
+
+Synthesizing Unit <kcpsm3>.
+    Related source file is "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd".
+Unit <kcpsm3> synthesized.
+
+
+Synthesizing Unit <ROM_KCPSM3>.
+    Related source file is "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd".
+WARNING:Xst:1305 - Output <reset> is never assigned. Tied to value 0.
+Unit <ROM_KCPSM3> synthesized.
+
+
+Synthesizing Unit <kcuart_rx>.
+    Related source file is "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_rx.vhd".
+Unit <kcuart_rx> synthesized.
+
+
+Synthesizing Unit <bbfifo_16x8>.
+    Related source file is "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/bbfifo_16x8.vhd".
+Unit <bbfifo_16x8> synthesized.
+
+
+Synthesizing Unit <kcuart_tx>.
+    Related source file is "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd".
+Unit <kcuart_tx> synthesized.
+
+
+Synthesizing Unit <uart_rx>.
+    Related source file is "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/uart_rx.vhd".
+Unit <uart_rx> synthesized.
+
+
+Synthesizing Unit <uart_tx>.
+    Related source file is "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/uart_tx.vhd".
+Unit <uart_tx> synthesized.
+
+
+Synthesizing Unit <wbm_uart_kcpsm3>.
+    Related source file is "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wbm_uart_kcpsm3.vhd".
+WARNING:Xst:1780 - Signal <reconf_ack_out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <UARTTX_DATA_IN> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <READ_STROBE> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <INTERRUPT_ACK> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <INSTRUCTIONS_BUS_B> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <CONTROL_WB_OUT<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <UARTTX_EN_16_X_BAUD> equivalent to <UARTRX_EN_16_X_BAUD> has been removed
+    Found finite state machine <FSM_1> for signal <act_wb>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | WB_CLK                    (rising_edge)        |
+    | Reset              | RST_I                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | stb_node_wait                                  |
+    | Power Up State     | stb_node_wait                                  |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <SOFT_RESET>.
+    Found 8-bit register for signal <ADDR_WB_HIGHEST>.
+    Found 8-bit register for signal <ADDR_WB_LOWEST>.
+    Found 8-bit up counter for signal <BAUD_COUNTER>.
+    Found 3-bit register for signal <CONTROL_WB_OUT>.
+    Found 8-bit register for signal <DATA_WB_IN_15_8>.
+    Found 8-bit register for signal <DATA_WB_IN_7_0>.
+    Found 8-bit register for signal <DATA_WB_OUT_15_8>.
+    Found 8-bit register for signal <DATA_WB_OUT_7_0>.
+    Found 8-bit register for signal <GENERAL_OUTPUT>.
+    Found 8-bit register for signal <INPUTS_BUS>.
+    Found 1-bit register for signal <UARTRX_EN_16_X_BAUD>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  69 D-type flip-flop(s).
+Unit <wbm_uart_kcpsm3> synthesized.
+
+
+Synthesizing Unit <wb_intercon_p2p>.
+    Related source file is "D:/Master/SBM/core_mixto_comandos/wishbone_rpd/hdl/wb_intercon_p2p_S3.vhd".
+WARNING:Xst:1306 - Output <PIN_DATA> is never assigned.
+WARNING:Xst:1780 - Signal <SEG1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <wb_intercon_p2p> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 10
+ 18-bit up counter                                     : 1
+ 8-bit up counter                                      : 9
+# Registers                                            : 26
+ 1-bit register                                        : 10
+ 16-bit register                                       : 8
+ 3-bit register                                        : 1
+ 8-bit register                                        : 7
+# Comparators                                          : 9
+ 19-bit comparator less                                : 1
+ 8-bit comparator greater                              : 8
+# Multiplexers                                         : 1
+ 16-bit 8-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <Inst_wbm_uart_kcpsm3/act_wb/FSM> on signal <act_wb[1:2]> with user encoding.
+--------------------------------
+ State              | Encoding
+--------------------------------
+ stb_node_wait      | 00
+ ack_wait           | 01
+ stb_node_zero_wait | 10
+--------------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <SLAVE_PWM/act_wb/FSM> on signal <act_wb[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ stb_in_wait | 00
+ write_data  | 01
+ read_data   | 11
+ send_ack_o  | 10
+-------------------------
+WARNING:Xst:2677 - Node <ADDR_WB_LOWEST_3> of sequential type is unconnected in block <Inst_wbm_uart_kcpsm3>.
+WARNING:Xst:2677 - Node <ADDR_WB_LOWEST_4> of sequential type is unconnected in block <Inst_wbm_uart_kcpsm3>.
+WARNING:Xst:2677 - Node <ADDR_WB_LOWEST_5> of sequential type is unconnected in block <Inst_wbm_uart_kcpsm3>.
+WARNING:Xst:2677 - Node <ADDR_WB_LOWEST_6> of sequential type is unconnected in block <Inst_wbm_uart_kcpsm3>.
+WARNING:Xst:2677 - Node <ADDR_WB_LOWEST_7> of sequential type is unconnected in block <Inst_wbm_uart_kcpsm3>.
+WARNING:Xst:2677 - Node <CONTROL_WB_OUT_2> of sequential type is unconnected in block <Inst_wbm_uart_kcpsm3>.
+WARNING:Xst:2677 - Node <CONTROL_WB_OUT_2> of sequential type is unconnected in block <wbm_uart_kcpsm3>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# Counters                                             : 10
+ 18-bit up counter                                     : 1
+ 8-bit up counter                                      : 9
+# Registers                                            : 316
+ Flip-Flops                                            : 316
+# Comparators                                          : 9
+ 19-bit comparator less                                : 1
+ 8-bit comparator greater                              : 8
+# Multiplexers                                         : 16
+ 1-bit 8-to-1 multiplexer                              : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2146 - In block <wb_slave_interface_PWM>, Counter <forgenerate[0].PWM_U/TcSampleIndex> <forgenerate[1].PWM_U/TcSampleIndex> <forgenerate[2].PWM_U/TcSampleIndex> <forgenerate[3].PWM_U/TcSampleIndex> <forgenerate[4].PWM_U/TcSampleIndex> <forgenerate[5].PWM_U/TcSampleIndex> <forgenerate[6].PWM_U/TcSampleIndex> <forgenerate[7].PWM_U/TcSampleIndex> are equivalent, XST will keep only <forgenerate[0].PWM_U/TcSampleIndex>.
+
+Optimizing unit <wb_intercon_p2p> ...
+
+Optimizing unit <kcpsm3> ...
+
+Optimizing unit <kcuart_rx> ...
+
+Optimizing unit <bbfifo_16x8> ...
+
+Optimizing unit <kcuart_tx> ...
+
+Optimizing unit <wb_slave_interface_PWM> ...
+
+Optimizing unit <wbm_uart_kcpsm3> ...
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_7> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_6> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_5> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_4> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_3> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_2> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_1> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_0> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/SOFT_RESET> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_LOWEST_7> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_LOWEST_6> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_LOWEST_5> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_LOWEST_4> of sequential type is unconnected in block <wb_intercon_p2p>.
+WARNING:Xst:2677 - Node <Inst_wbm_uart_kcpsm3/ADDR_WB_LOWEST_3> of sequential type is unconnected in block <wb_intercon_p2p>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block wb_intercon_p2p, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 340
+ Flip-Flops                                            : 340
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : wb_intercon_p2p.ngr
+Top Level Output File Name         : wb_intercon_p2p
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 32
+
+Cell Usage :
+# BELS                             : 740
+#      GND                         : 1
+#      INV                         : 15
+#      LUT1                        : 34
+#      LUT2                        : 98
+#      LUT2_L                      : 1
+#      LUT3                        : 117
+#      LUT3_L                      : 5
+#      LUT4                        : 153
+#      LUT4_D                      : 9
+#      LUT4_L                      : 6
+#      MULT_AND                    : 3
+#      MUXCY                       : 154
+#      MUXF5                       : 44
+#      MUXF6                       : 17
+#      VCC                         : 1
+#      XORCY                       : 82
+# FlipFlops/Latches                : 340
+#      FD                          : 28
+#      FDC                         : 2
+#      FDCE                        : 128
+#      FDE                         : 36
+#      FDR                         : 61
+#      FDRE                        : 72
+#      FDRS                        : 1
+#      FDRSE                       : 10
+#      FDS                         : 2
+# RAMS                             : 27
+#      RAM16X1D                    : 8
+#      RAM32X1S                    : 10
+#      RAM64X1S                    : 8
+#      RAMB16_S9_S18               : 1
+# Shift Registers                  : 36
+#      SRL16E                      : 36
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 2
+#      OBUF                        : 21
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      329  out of   4656     7%  
+ Number of Slice Flip Flops:            340  out of   9312     3%  
+ Number of 4 input LUTs:                542  out of   9312     5%  
+    Number used as logic:               438
+    Number used as Shift registers:      36
+    Number used as RAMs:                 68
+ Number of IOs:                          32
+ Number of bonded IOBs:                  24  out of    232    10%  
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+PIN_CLOCK_100                      | BUFGP                  | 403   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+PIN_RESET                          | IBUF                   | 130   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.308ns (Maximum Frequency: 97.009MHz)
+   Minimum input arrival time before clock: 4.382ns
+   Maximum output required time after clock: 7.583ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PIN_CLOCK_100'
+  Clock period: 10.308ns (frequency: 97.009MHz)
+  Total number of paths / destination ports: 15602 / 1040
+-------------------------------------------------------------------------
+Delay:               10.308ns (Levels of Logic = 9)
+  Source:            Inst_wbm_uart_kcpsm3/rom0/I18.bram (RAM)
+  Destination:       Inst_wbm_uart_kcpsm3/uartrx0/buf/count_width_loop[3].register_bit (FF)
+  Source Clock:      PIN_CLOCK_100 rising
+  Destination Clock: PIN_CLOCK_100 rising
+
+  Data Path: Inst_wbm_uart_kcpsm3/rom0/I18.bram to Inst_wbm_uart_kcpsm3/uartrx0/buf/count_width_loop[3].register_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S9_S18:CLKB->DOB7   10   2.436   0.750  Inst_wbm_uart_kcpsm3/rom0/I18.bram (Inst_wbm_uart_kcpsm3/INSTRUCTIONS_BUS_A<7>)
+     RAM16X1D:DPRA3->DPO    1   0.612   0.387  Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[4].register_bit (Inst_wbm_uart_kcpsm3/Inst_kcpsm3/sy<4>)
+     LUT3:I2->O           26   0.612   1.140  Inst_wbm_uart_kcpsm3/Inst_kcpsm3/reg_loop[4].operand_select_mux (Inst_wbm_uart_kcpsm3/PORTS_ID<4>)
+     LUT2:I1->O            3   0.612   0.454  Inst_wbm_uart_kcpsm3/GENERAL_OUTPUT_not00011_SW0 (N4)
+     LUT4_D:I3->O          5   0.612   0.607  Inst_wbm_uart_kcpsm3/UARTRX_READ_BUFFER_CE_cmp_eq00001 (Inst_wbm_uart_kcpsm3/UARTRX_READ_BUFFER_CE)
+     LUT4:I1->O            1   0.612   0.000  Inst_wbm_uart_kcpsm3/uartrx0/buf/count_width_loop[0].count_lut (Inst_wbm_uart_kcpsm3/uartrx0/buf/half_count<0>)
+     MUXCY:S->O            1   0.404   0.000  Inst_wbm_uart_kcpsm3/uartrx0/buf/count_width_loop[0].lsb_count.count_muxcy (Inst_wbm_uart_kcpsm3/uartrx0/buf/count_carry<0>)
+     MUXCY:CI->O           1   0.051   0.000  Inst_wbm_uart_kcpsm3/uartrx0/buf/count_width_loop[1].mid_count.count_muxcy (Inst_wbm_uart_kcpsm3/uartrx0/buf/count_carry<1>)
+     MUXCY:CI->O           0   0.051   0.000  Inst_wbm_uart_kcpsm3/uartrx0/buf/count_width_loop[2].mid_count.count_muxcy (Inst_wbm_uart_kcpsm3/uartrx0/buf/count_carry<2>)
+     XORCY:CI->O           1   0.699   0.000  Inst_wbm_uart_kcpsm3/uartrx0/buf/count_width_loop[3].upper_count.count_xor (Inst_wbm_uart_kcpsm3/uartrx0/buf/next_count<3>)
+     FDRE:D                    0.268          Inst_wbm_uart_kcpsm3/uartrx0/buf/count_width_loop[3].register_bit
+    ----------------------------------------
+    Total                     10.308ns (6.970ns logic, 3.338ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PIN_CLOCK_100'
+  Total number of paths / destination ports: 68 / 68
+-------------------------------------------------------------------------
+Offset:              4.382ns (Levels of Logic = 2)
+  Source:            PIN_RESET (PAD)
+  Destination:       Inst_wbm_uart_kcpsm3/INPUTS_BUS_7 (FF)
+  Destination Clock: PIN_CLOCK_100 rising
+
+  Data Path: PIN_RESET to Inst_wbm_uart_kcpsm3/INPUTS_BUS_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           191   1.106   1.268  PIN_RESET_IBUF (PIN_RESET_IBUF)
+     LUT3:I0->O            7   0.612   0.602  Inst_wbm_uart_kcpsm3/INPUTS_BUS_1_or00001 (Inst_wbm_uart_kcpsm3/INPUTS_BUS_1_or0000)
+     FDRE:R                    0.795          Inst_wbm_uart_kcpsm3/INPUTS_BUS_2
+    ----------------------------------------
+    Total                      4.382ns (2.513ns logic, 1.869ns route)
+                                       (57.3% logic, 42.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PIN_CLOCK_100'
+  Total number of paths / destination ports: 201 / 17
+-------------------------------------------------------------------------
+Offset:              7.583ns (Levels of Logic = 11)
+  Source:            SLAVE_PWM/forgenerate[0].PWM_U/TcSampleIndex_0 (FF)
+  Destination:       PIN_LED<7> (PAD)
+  Source Clock:      PIN_CLOCK_100 rising
+
+  Data Path: SLAVE_PWM/forgenerate[0].PWM_U/TcSampleIndex_0 to PIN_LED<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.514   0.849  SLAVE_PWM/forgenerate[0].PWM_U/TcSampleIndex_0 (SLAVE_PWM/forgenerate[0].PWM_U/TcSampleIndex_0)
+     LUT2:I0->O            1   0.612   0.000  SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_lut<0> (SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<0> (SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<1> (SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<2> (SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<3> (SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<4> (SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<5> (SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<6> (SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.399   0.357  SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<7> (SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<7>)
+     INV:I->O              1   0.612   0.357  SLAVE_PWM/forgenerate[0].PWM_U/Mcompar_pwm_out_cmp_gt0000_cy<7>_inv_INV_0 (PIN_LED_0_OBUF)
+     OBUF:I->O                 3.169          PIN_LED_0_OBUF (PIN_LED<0>)
+    ----------------------------------------
+    Total                      7.583ns (6.020ns logic, 1.563ns route)
+                                       (79.4% logic, 20.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.58 secs
+ 
+--> 
+
+Total memory usage is 4570624 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  161 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

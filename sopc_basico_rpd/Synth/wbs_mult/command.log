@@ -1,0 +1,10 @@
+puts "#HD: Running synthesis for block wbs_mult"
+create_project -in_memory -part xc7z020clg484-1 > ./Synth/wbs_mult/create_project.log
+set_property source_mgmt_mode All [current_project]
+add_files ./Sources/hdl/wbs_mult/wbs_mult.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/wbs_mult/wbs_mult.vhd]
+synth_design -mode out_of_context -flatten_hierarchy rebuilt -top wbs -part xc7z020clg484-1 > ./Synth/wbs_mult/wbs_synth_design.rds
+write_checkpoint -force ./Synth/wbs_mult/wbs_synth.dcp > ./Synth/wbs_mult/write_checkpoint.log
+report_utilization -file ./Synth/wbs_mult/wbs_utilization_synth.rpt > ./Synth/wbs_mult/temp.log
+close_project
+puts "#HD: Synthesis of module wbs_mult complete\n"

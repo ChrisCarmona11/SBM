@@ -1,0 +1,5 @@
+vhdl work "/home/ise/ISE_projects/ISE_Projects/PWM_project/PWM_Unit.vhd"
+vhdl work "/home/ise/ISE_projects/ISE_Projects/PWM_project/Pre_Scaler_Unit.vhd"
+vhdl work "/home/ise/ISE_projects/ISE_Projects/PWM_project/Top_PWM.vhd"
+vhdl work "/home/ise/ISE_projects/ISE_Projects/PWM_project/State_machine.vhd"
+vhdl work "/home/ise/ISE_projects/ISE_Projects/PWM_project/Top2_PWM.vhd"

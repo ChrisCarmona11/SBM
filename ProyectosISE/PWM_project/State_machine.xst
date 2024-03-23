@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/ISE_projects/ISE_Projects/PWM_project/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/ISE_projects/ISE_Projects/PWM_project/xst"
+elaborate
+-ifn State_machine.prj
+-ifmt mixed

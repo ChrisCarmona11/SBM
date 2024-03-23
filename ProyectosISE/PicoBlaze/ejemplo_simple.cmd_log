@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Docencia/Downloads/SBM-Christopher/ProyectosISE/PicoBlaze/ejemplo_simple.xst" -ofn "C:/Users/Docencia/Downloads/SBM-Christopher/ProyectosISE/PicoBlaze/ejemplo_simple.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Docencia/Downloads/SBM-Christopher/nexys2_500general_ucf/Nexys2_500_picoblaze.ucf -p xc3s500e-fg320-5 ejemplo_simple.ngc ejemplo_simple.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ejemplo_simple_map.ncd ejemplo_simple.ngd ejemplo_simple.pcf 
+par -w -intstyle ise -ol high -t 1 ejemplo_simple_map.ncd ejemplo_simple.ncd ejemplo_simple.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ejemplo_simple.twx ejemplo_simple.ncd -o ejemplo_simple.twr ejemplo_simple.pcf 
+bitgen -intstyle ise -f ejemplo_simple.ut ejemplo_simple.ncd 

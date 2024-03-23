@@ -1,0 +1,10 @@
+Command line:
+   Top_PWM_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56949
+
+Thu Feb 22 17:38:58 2024
+
+
+ Elaboration Time: 0.03 sec

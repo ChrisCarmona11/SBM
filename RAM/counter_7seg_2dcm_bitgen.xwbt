@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Docencia\Downloads\diseno_sincrono\diseno_sincrono\para proyecto\RAM\counter_7seg_2dcm.ncd
+OUTFILE=C:\Users\Docencia\Downloads\diseno_sincrono\diseno_sincrono\para proyecto\RAM\counter_7seg_2dcm.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\Users\Docencia\Downloads\diseno_sincrono\diseno_sincrono\para proyecto\RAM
+LICENSE=ISE
+USER_INFO=174123010_174123011_210662615_504

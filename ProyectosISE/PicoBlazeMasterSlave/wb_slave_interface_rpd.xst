@@ -1,0 +1,5 @@
+set -tmpdir "D:/Master/SBM/ProyectosISE/PicoBlazeMasterSlave/xst/projnav.tmp"
+set -xsthdpdir "D:/Master/SBM/ProyectosISE/PicoBlazeMasterSlave/xst"
+elaborate
+-ifn wb_slave_interface_rpd.prj
+-ifmt mixed

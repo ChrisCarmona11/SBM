@@ -1,0 +1,133 @@
+V3 74
+FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/ejemplo_simple_top.vhd 2024/02/15.17:28:28 P.20131013
+EN work/ejemplo_simple 1708015727 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/ejemplo_simple_top.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/ejemplo_simple/Alpha 1708015728 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/ejemplo_simple_top.vhd \
+      EN work/ejemplo_simple 1708015727 CP kcpsm CP rom0 CP SRL16
+FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd 2004/05/28.11:26:18 P.20131013
+EN work/data_bus_mux4 1708015695 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/data_bus_mux4/low_level_definition 1708015696 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/data_bus_mux4 1708015695 CP LUT3 CP FD CP string CP label CP MUXF5
+EN work/shift_rotate_process 1708015697 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/shift_rotate_process/low_level_definition 1708015698 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/shift_rotate_process 1708015697 CP LUT3 CP MUXF5 CP string CP label \
+      CP FD
+EN work/logical_bus_processing 1708015699 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/logical_bus_processing/low_level_definition 1708015700 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/logical_bus_processing 1708015699 CP string CP label CP LUT4 CP FD
+EN work/arithmetic_process 1708015701 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/arithmetic_process/low_level_definition 1708015702 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/arithmetic_process 1708015701 CP LUT3 CP string CP label CP MUXCY \
+      CP XORCY CP FD CP LUT2
+EN work/flag_logic 1708015703 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/flag_logic/low_level_definition 1708015704 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/flag_logic 1708015703 CP LUT4 CP LUT2 CP MUXCY CP FD CP LUT3 CP FDRE
+EN work/data_bus_mux2 1708015705 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/data_bus_mux2/low_level_definition 1708015706 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/data_bus_mux2 1708015705 CP LUT4 CP string CP label CP LUT3
+EN work/ALU_control_mux2 1708015707 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/ALU_control_mux2/low_level_definition 1708015708 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/ALU_control_mux2 1708015707 CP string CP label CP LUT3
+EN work/data_register_bank 1708015709 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/data_register_bank/low_level_definition 1708015710 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/data_register_bank 1708015709 CP LUT4 CP FD CP LUT2 CP string CP label \
+      CP RAM16X1D
+EN work/T_state_and_Reset 1708015711 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/T_state_and_Reset/low_level_definition 1708015712 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/T_state_and_Reset 1708015711 CP FDS CP LUT1 CP FDR
+EN work/interrupt_logic 1708015713 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/interrupt_logic/low_level_definition 1708015714 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/interrupt_logic 1708015713 CP LUT3 CP LUT4 CP MUXCY CP LUT2 CP FDRE \
+      CP FDR CP FDE
+EN work/IO_strobe_logic 1708015715 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/IO_strobe_logic/low_level_definition 1708015716 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/IO_strobe_logic 1708015715 CP LUT2 CP LUT4 CP FDR
+EN work/stack_ram 1708015717 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/stack_ram/low_level_definition 1708015718 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/stack_ram 1708015717 CP INV CP string CP label CP RAM16X1S CP FD
+EN work/stack_counter 1708015719 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/stack_counter/low_level_definition 1708015720 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/stack_counter 1708015719 CP INV CP LUT2 CP LUT4 CP LUT3 CP MUXCY CP FDRE \
+      CP string CP label CP XORCY
+EN work/program_counter 1708015721 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/program_counter/low_level_definition 1708015722 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/program_counter 1708015721 CP LUT4 CP LUT2 CP LUT3 CP MUXCY CP INV \
+      CP string CP label CP FDRSE CP XORCY
+EN work/kcpsm 1708015723 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/kcpsm/macro_level_definition 1708015724 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd \
+      EN work/kcpsm 1708015723 CP T_state_and_Reset CP interrupt_logic \
+      CP IO_strobe_logic CP data_register_bank CP data_bus_mux2 CP ALU_control_mux2 \
+      CP logical_bus_processing CP arithmetic_process CP shift_rotate_process \
+      CP data_bus_mux4 CP flag_logic CP stack_ram CP stack_counter \
+      CP program_counter
+FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd 2024/02/15.17:07:42 P.20131013
+EN work/ROM0 1708015725 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/ROM0/low_level_definition 1708015726 \
+      FL C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd \
+      EN work/ROM0 1708015725 CP RAMB4_S16

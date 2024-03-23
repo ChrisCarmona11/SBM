@@ -1,0 +1,468 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: Top2_PWM.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top2_PWM.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top2_PWM"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-vq100
+
+---- Source Options
+Top Module Name                    : Top2_PWM
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/ISE_projects/ISE_Projects/PWM_project/Pre_Scaler_Unit.vhd" in Library work.
+Architecture behavioral of Entity pre_scaler_unit is up to date.
+Compiling vhdl file "/home/ise/ISE_projects/ISE_Projects/PWM_project/PWM_Unit.vhd" in Library work.
+Architecture behavioral of Entity pwm_unit is up to date.
+Compiling vhdl file "/home/ise/ISE_projects/ISE_Projects/PWM_project/State_machine.vhd" in Library work.
+Architecture behavioral of Entity state_machine is up to date.
+Compiling vhdl file "/home/ise/ISE_projects/ISE_Projects/PWM_project/Top_PWM.vhd" in Library work.
+Architecture behavioral of Entity top_pwm is up to date.
+Compiling vhdl file "/home/ise/ISE_projects/ISE_Projects/PWM_project/Top2_PWM.vhd" in Library work.
+Architecture behavioral of Entity top2_pwm is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Top2_PWM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <State_machine> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Top_PWM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Pre_Scaler_Unit> in library <work> (architecture <behavioral>) with generics.
+	ciclo = 128
+
+Analyzing hierarchy for entity <PWM_Unit> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Top2_PWM> in library <work> (Architecture <behavioral>).
+Entity <Top2_PWM> analyzed. Unit <Top2_PWM> generated.
+
+Analyzing Entity <State_machine> in library <work> (Architecture <behavioral>).
+Entity <State_machine> analyzed. Unit <State_machine> generated.
+
+Analyzing Entity <Top_PWM> in library <work> (Architecture <behavioral>).
+Entity <Top_PWM> analyzed. Unit <Top_PWM> generated.
+
+Analyzing generic Entity <Pre_Scaler_Unit> in library <work> (Architecture <behavioral>).
+	ciclo = 128
+Entity <Pre_Scaler_Unit> analyzed. Unit <Pre_Scaler_Unit> generated.
+
+Analyzing Entity <PWM_Unit> in library <work> (Architecture <behavioral>).
+Entity <PWM_Unit> analyzed. Unit <PWM_Unit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <State_machine>.
+    Related source file is "/home/ise/ISE_projects/ISE_Projects/PWM_project/State_machine.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk_in                    (rising_edge)        |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <State_machine> synthesized.
+
+
+Synthesizing Unit <Pre_Scaler_Unit>.
+    Related source file is "/home/ise/ISE_projects/ISE_Projects/PWM_project/Pre_Scaler_Unit.vhd".
+    Found 18-bit up counter for signal <contador>.
+    Found 19-bit comparator less for signal <contador$cmp_gt0000> created at line 55.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <Pre_Scaler_Unit> synthesized.
+
+
+Synthesizing Unit <PWM_Unit>.
+    Related source file is "/home/ise/ISE_projects/ISE_Projects/PWM_project/PWM_Unit.vhd".
+    Found 8-bit comparator greater for signal <pwm_out$cmp_gt0000> created at line 61.
+    Found 8-bit up counter for signal <TcSampleIndex>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <PWM_Unit> synthesized.
+
+
+Synthesizing Unit <Top_PWM>.
+    Related source file is "/home/ise/ISE_projects/ISE_Projects/PWM_project/Top_PWM.vhd".
+Unit <Top_PWM> synthesized.
+
+
+Synthesizing Unit <Top2_PWM>.
+    Related source file is "/home/ise/ISE_projects/ISE_Projects/PWM_project/Top2_PWM.vhd".
+    Found 64-bit register for signal <duty_cycle_register_q>.
+    Found 8-bit register for signal <num_pwm_module>.
+    Summary:
+	inferred  72 D-type flip-flop(s).
+Unit <Top2_PWM> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 16
+ 18-bit up counter                                     : 8
+ 8-bit up counter                                      : 8
+# Registers                                            : 9
+ 8-bit register                                        : 9
+# Comparators                                          : 16
+ 19-bit comparator less                                : 8
+ 8-bit comparator greater                              : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <MaquinaEstados/state/FSM> on signal <state[1:2]> with user encoding.
+----------------------------------
+ State                | Encoding
+----------------------------------
+ idle                 | 00
+ write_num_pwm_module | 01
+ write_dc_module      | 10
+----------------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 16
+ 18-bit up counter                                     : 8
+ 8-bit up counter                                      : 8
+# Registers                                            : 72
+ Flip-Flops                                            : 72
+# Comparators                                          : 16
+ 19-bit comparator less                                : 8
+ 8-bit comparator greater                              : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Top2_PWM> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top2_PWM, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 282
+ Flip-Flops                                            : 282
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Top2_PWM.ngr
+Top Level Output File Name         : Top2_PWM
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 916
+#      GND                         : 1
+#      INV                         : 24
+#      LUT1                        : 192
+#      LUT2                        : 81
+#      LUT3                        : 17
+#      LUT4                        : 56
+#      MUXCY                       : 336
+#      VCC                         : 1
+#      XORCY                       : 208
+# FlipFlops/Latches                : 282
+#      FDE                         : 136
+#      FDR                         : 146
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 10
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-5 
+
+ Number of Slices:                      227  out of   4656     4%  
+ Number of Slice Flip Flops:            282  out of   9312     3%  
+ Number of 4 input LUTs:                370  out of   9312     3%  
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of     66    28%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_in                             | BUFGP                  | 282   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.279ns (Maximum Frequency: 233.691MHz)
+   Minimum input arrival time before clock: 2.435ns
+   Maximum output required time after clock: 7.265ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_in'
+  Clock period: 4.279ns (frequency: 233.691MHz)
+  Total number of paths / destination ports: 5540 / 491
+-------------------------------------------------------------------------
+Delay:               4.279ns (Levels of Logic = 6)
+  Source:            LogicaPorLed[7].ModuloPWM/UnidadPreScaler/contador_0 (FF)
+  Destination:       LogicaPorLed[7].ModuloPWM/UnidadPreScaler/contador_0 (FF)
+  Source Clock:      clk_in rising
+  Destination Clock: clk_in rising
+
+  Data Path: LogicaPorLed[7].ModuloPWM/UnidadPreScaler/contador_0 to LogicaPorLed[7].ModuloPWM/UnidadPreScaler/contador_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.514   0.603  LogicaPorLed[7].ModuloPWM/UnidadPreScaler/contador_0 (LogicaPorLed[7].ModuloPWM/UnidadPreScaler/contador_0)
+     LUT4:I0->O            1   0.612   0.000  LogicaPorLed[7].ModuloPWM/UnidadPreScaler/Mcompar_contador_cmp_gt0000_lut<0> (LogicaPorLed[7].ModuloPWM/UnidadPreScaler/Mcompar_contador_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  LogicaPorLed[7].ModuloPWM/UnidadPreScaler/Mcompar_contador_cmp_gt0000_cy<0> (LogicaPorLed[7].ModuloPWM/UnidadPreScaler/Mcompar_contador_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  LogicaPorLed[7].ModuloPWM/UnidadPreScaler/Mcompar_contador_cmp_gt0000_cy<1> (LogicaPorLed[7].ModuloPWM/UnidadPreScaler/Mcompar_contador_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  LogicaPorLed[7].ModuloPWM/UnidadPreScaler/Mcompar_contador_cmp_gt0000_cy<2> (LogicaPorLed[7].ModuloPWM/UnidadPreScaler/Mcompar_contador_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  LogicaPorLed[7].ModuloPWM/UnidadPreScaler/Mcompar_contador_cmp_gt0000_cy<3> (LogicaPorLed[7].ModuloPWM/UnidadPreScaler/Mcompar_contador_cmp_gt0000_cy<3>)
+     MUXCY:CI->O          18   0.289   0.908  LogicaPorLed[7].ModuloPWM/UnidadPreScaler/Mcompar_contador_cmp_gt0000_cy<4> (LogicaPorLed[7].ModuloPWM/UnidadPreScaler/Mcompar_contador_cmp_gt0000_cy<4>)
+     FDR:R                     0.795          LogicaPorLed[7].ModuloPWM/UnidadPreScaler/contador_0
+    ----------------------------------------
+    Total                      4.279ns (2.768ns logic, 1.511ns route)
+                                       (64.7% logic, 35.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_in'
+  Total number of paths / destination ports: 75 / 75
+-------------------------------------------------------------------------
+Offset:              2.435ns (Levels of Logic = 2)
+  Source:            boton1_in (PAD)
+  Destination:       MaquinaEstados/state_FSM_FFd2 (FF)
+  Destination Clock: clk_in rising
+
+  Data Path: boton1_in to MaquinaEstados/state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.449  boton1_in_IBUF (boton1_in_IBUF)
+     LUT2:I1->O            1   0.612   0.000  MaquinaEstados/state_FSM_FFd2-In11 (MaquinaEstados/state_FSM_FFd2-In1)
+     FDR:D                     0.268          MaquinaEstados/state_FSM_FFd2
+    ----------------------------------------
+    Total                      2.435ns (1.986ns logic, 0.449ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_in'
+  Total number of paths / destination ports: 192 / 8
+-------------------------------------------------------------------------
+Offset:              7.265ns (Levels of Logic = 11)
+  Source:            LogicaPorLed[7].ModuloPWM/UnidadPWM/TcSampleIndex_0 (FF)
+  Destination:       PWM_Led_out<7> (PAD)
+  Source Clock:      clk_in rising
+
+  Data Path: LogicaPorLed[7].ModuloPWM/UnidadPWM/TcSampleIndex_0 to PWM_Led_out<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.514   0.532  LogicaPorLed[7].ModuloPWM/UnidadPWM/TcSampleIndex_0 (LogicaPorLed[7].ModuloPWM/UnidadPWM/TcSampleIndex_0)
+     LUT2:I0->O            1   0.612   0.000  LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_lut<0> (LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<0> (LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<1> (LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<2> (LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<3> (LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<4> (LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<5> (LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<6> (LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.399   0.357  LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<7> (LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<7>)
+     INV:I->O              1   0.612   0.357  LogicaPorLed[7].ModuloPWM/UnidadPWM/Mcompar_pwm_out_cmp_gt0000_cy<7>_inv_INV_0 (PWM_Led_out_7_OBUF)
+     OBUF:I->O                 3.169          PWM_Led_out_7_OBUF (PWM_Led_out<7>)
+    ----------------------------------------
+    Total                      7.265ns (6.020ns logic, 1.246ns route)
+                                       (82.9% logic, 17.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 3.85 secs
+ 
+--> 
+
+
+Total memory usage is 618220 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

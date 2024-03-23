@@ -1,0 +1,10 @@
+AR top_pwm behavioral /home/ise/ISE_projects/ISE_Projects/PWM_project/Top_PWM.vhd sub00/vhpl07 1707922931
+AR pwm_unit behavioral /home/ise/ISE_projects/ISE_Projects/PWM_project/PWM_Unit.vhd sub00/vhpl03 1707922927
+AR top2_pwm behavioral /home/ise/ISE_projects/ISE_Projects/PWM_project/Top2_PWM.vhd sub00/vhpl09 1707922933
+EN top2_pwm NULL /home/ise/ISE_projects/ISE_Projects/PWM_project/Top2_PWM.vhd sub00/vhpl08 1707922932
+EN pwm_unit NULL /home/ise/ISE_projects/ISE_Projects/PWM_project/PWM_Unit.vhd sub00/vhpl02 1707922926
+AR pre_scaler_unit behavioral /home/ise/ISE_projects/ISE_Projects/PWM_project/Pre_Scaler_Unit.vhd sub00/vhpl01 1707922925
+AR state_machine behavioral /home/ise/ISE_projects/ISE_Projects/PWM_project/State_machine.vhd sub00/vhpl05 1707922929
+EN pre_scaler_unit NULL /home/ise/ISE_projects/ISE_Projects/PWM_project/Pre_Scaler_Unit.vhd sub00/vhpl00 1707922924
+EN top_pwm NULL /home/ise/ISE_projects/ISE_Projects/PWM_project/Top_PWM.vhd sub00/vhpl06 1707922930
+EN state_machine NULL /home/ise/ISE_projects/ISE_Projects/PWM_project/State_machine.vhd sub00/vhpl04 1707922928

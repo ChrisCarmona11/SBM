@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="RAM.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PWM_top_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PWM_top_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="PWM_top_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="block_ram_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="cdm_int_ext.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_UCF" xil_pn:name="cdm_int_ext_arwz.ucf" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="circ_arit_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="counter_7seg_1dcm_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="counter_7seg_2dcm_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_UCF" xil_pn:name="dcm_int_ext_arwz.ucf" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_UCF" xil_pn:name="dcm_internal_deskew_arwz.ucf" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="mult_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="ram_distr_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="top_PWM_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1707842411" xil_pn:in_ck="-1762220008699474475" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1707842411">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="PWM_Unit.vhd"/>
+      <outfile xil_pn:name="PWM_top_tb.vhd"/>
+      <outfile xil_pn:name="PreScaler.vhd"/>
+      <outfile xil_pn:name="top_PWM.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1707840077" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5756255100860335953" xil_pn:start_ts="1707840077">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1707840077" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1747063961001447315" xil_pn:start_ts="1707840077">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1707840077" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7292009459232576722" xil_pn:start_ts="1707840077">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1707842411" xil_pn:in_ck="-1762220008699474475" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1707842411">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="PWM_Unit.vhd"/>
+      <outfile xil_pn:name="PWM_top_tb.vhd"/>
+      <outfile xil_pn:name="PreScaler.vhd"/>
+      <outfile xil_pn:name="top_PWM.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1707842413" xil_pn:in_ck="-1762220008699474475" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4989870313478564636" xil_pn:start_ts="1707842411">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="PWM_top_tb_beh.prj"/>
+      <outfile xil_pn:name="PWM_top_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1707842414" xil_pn:in_ck="-4216081587539575894" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8155727022310931439" xil_pn:start_ts="1707842413">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="PWM_top_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+  </transforms>
+
+</generated_project>

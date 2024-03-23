@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="MapLib" num="562" delta="new" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="864" delta="new" >The following Virtex Blockram(s) is/are being retargeted to Virtex2 Blockram(s). This will waste 75% of Virtex2 Blockram capacity. To obtain better utilization, Please re-run memory generator to retarget to Virtex2 Blockram modules:
+<arg fmt="%s" index="1">RAMB4_S16 symbol &quot;Inst_rom0/ram_256_x_16&quot; (output signal=INSTRUCTIONS_BUS&lt;15&gt;)</arg>
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="new" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+</messages>
+

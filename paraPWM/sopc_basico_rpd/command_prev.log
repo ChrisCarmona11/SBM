@@ -1,0 +1,66 @@
+file mkdir ./Synth
+file delete -force ./Synth/Static
+file mkdir ./Synth/Static
+puts "#HD: Running synthesis for block Static"
+create_project -in_memory -part xc7z020clg484-1 > ./Synth/Static/create_project.log
+set_property source_mgmt_mode All [current_project]
+add_files ./Sources/hdl/top/kcpsm6.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/top/kcpsm6.vhd]
+add_files ./Sources/hdl/top/ROM_KCPSM6.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/top/ROM_KCPSM6.vhd]
+add_files ./Sources/hdl/top/top.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/top/top.vhd]
+add_files ./Sources/hdl/top/uart_rx6.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/top/uart_rx6.vhd]
+add_files ./Sources/hdl/top/uart_tx6.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/top/uart_tx6.vhd]
+add_files ./Sources/hdl/top/wbm_uart_kcpsm6.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/top/wbm_uart_kcpsm6.vhd]
+synth_design -mode default -flatten_hierarchy rebuilt -top top -part xc7z020clg484-1 > ./Synth/Static/top_synth_design.rds
+write_checkpoint -force ./Synth/Static/top_synth.dcp > ./Synth/Static/write_checkpoint.log
+report_utilization -file ./Synth/Static/top_utilization_synth.rpt > ./Synth/Static/temp.log
+close_project
+puts "#HD: Synthesis of module Static complete\n"
+file mkdir ./Synth
+file delete -force ./Synth/wbs_add
+file mkdir ./Synth/wbs_add
+puts "#HD: Running synthesis for block wbs_add"
+create_project -in_memory -part xc7z020clg484-1 > ./Synth/wbs_add/create_project.log
+set_property source_mgmt_mode All [current_project]
+add_files ./Sources/hdl/wbs_add/wbs_add.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/wbs_add/wbs_add.vhd]
+synth_design -mode out_of_context -flatten_hierarchy rebuilt -top wbs -part xc7z020clg484-1 > ./Synth/wbs_add/wbs_synth_design.rds
+write_checkpoint -force ./Synth/wbs_add/wbs_synth.dcp > ./Synth/wbs_add/write_checkpoint.log
+report_utilization -file ./Synth/wbs_add/wbs_utilization_synth.rpt > ./Synth/wbs_add/temp.log
+close_project
+puts "#HD: Synthesis of module wbs_add complete\n"
+file mkdir ./Synth
+file delete -force ./Synth/wbs_mult
+file mkdir ./Synth/wbs_mult
+puts "#HD: Running synthesis for block wbs_mult"
+create_project -in_memory -part xc7z020clg484-1 > ./Synth/wbs_mult/create_project.log
+set_property source_mgmt_mode All [current_project]
+add_files ./Sources/hdl/wbs_mult/wbs_mult.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/wbs_mult/wbs_mult.vhd]
+synth_design -mode out_of_context -flatten_hierarchy rebuilt -top wbs -part xc7z020clg484-1 > ./Synth/wbs_mult/wbs_synth_design.rds
+write_checkpoint -force ./Synth/wbs_mult/wbs_synth.dcp > ./Synth/wbs_mult/write_checkpoint.log
+report_utilization -file ./Synth/wbs_mult/wbs_utilization_synth.rpt > ./Synth/wbs_mult/temp.log
+close_project
+puts "#HD: Synthesis of module wbs_mult complete\n"
+file mkdir ./Synth
+file delete -force ./Synth/wbs_pwm
+file mkdir ./Synth/wbs_pwm
+puts "#HD: Running synthesis for block wbs_pwm"
+create_project -in_memory -part xc7z020clg484-1 > ./Synth/wbs_pwm/create_project.log
+set_property source_mgmt_mode All [current_project]
+add_files ./Sources/hdl/wbs_pwm/Pre_Scaler_Unit.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/wbs_pwm/Pre_Scaler_Unit.vhd]
+add_files ./Sources/hdl/wbs_pwm/PWM_Unit.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/wbs_pwm/PWM_Unit.vhd]
+add_files ./Sources/hdl/wbs_pwm/wbs_pwm.vhd
+set_property LIBRARY work [get_files ./Sources/hdl/wbs_pwm/wbs_pwm.vhd]
+synth_design -mode out_of_context -flatten_hierarchy rebuilt -top wbs -part xc7z020clg484-1 > ./Synth/wbs_pwm/wbs_synth_design.rds
+write_checkpoint -force ./Synth/wbs_pwm/wbs_synth.dcp > ./Synth/wbs_pwm/write_checkpoint.log
+report_utilization -file ./Synth/wbs_pwm/wbs_utilization_synth.rpt > ./Synth/wbs_pwm/temp.log
+close_project
+puts "#HD: Synthesis of module wbs_pwm complete\n"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Docencia\Downloads\SBM-Christopher\core_mixto_comandos\picoblaze_multicore\wb_intercon_p2p.ncd
+OUTFILE=C:\Users\Docencia\Downloads\SBM-Christopher\core_mixto_comandos\picoblaze_multicore\wb_intercon_p2p.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\Users\Docencia\Downloads\SBM-Christopher\core_mixto_comandos\picoblaze_multicore
+LICENSE=ISE
+USER_INFO=174123010_174123011_210662615_504

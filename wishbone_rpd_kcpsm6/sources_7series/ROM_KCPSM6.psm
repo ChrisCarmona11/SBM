@@ -1,0 +1,925 @@
+;SPR YES
+;PCR YES
+;MTM_CODE START,0
+;--===========================================================================--
+;--
+;--  MASTER SEA CONTROL
+;--
+;--  - FEB 20011
+;--  - UPV / EHU.  
+;--
+;-- Design units 	: GENERAL WISHBONE MODULES
+;--
+;-- File name    	: wbm_uart_v02_ROM0.asm
+;--
+;-- Purpose      	: emoteldi control/debug
+;--                  
+;-- Library      	: -
+;--
+;-- Languaje	: ASSEMBLER FOR kcpsm3
+;--
+;-- Assembler 	: TRA
+;--
+;-- Debugger	: pblazeide
+;--===========================================================================--
+;-------------------------------------------------------------------------------
+;-- Revision list
+;-- Version   Author                 Date           Changes
+;--
+;-- 081113	  Armando Astarloa   13 Nov	2008      Initial version
+;-- 090429	  Armando Astarloa   29 Abril 2009      Display hex values
+;-- 091127	  Armando Astarloa   27 Noviembre 2009      Command soft reset
+;-- 110202	  Armando Astarloa   2 Februrary 2011      Master version
+;-- 220214	  Armando Astarloa   2 Februrary 2022      Hertbeat in general output
+;-- 220215	  Armando Astarloa   15 Februrary 2022     kcspm6
+;--								    
+;-------------------------------------------------------------------------------
+;-- Description    :  INTELIGENT WISHBONE / SERIE INTERFACE
+;-------------------------------------------------------------------------------
+;--ROM 0 (program memory bank 0)
+;VHDL "ROM_BLANK.vhd","ROM_KCPSM3.vhd","ROM_KCPSM3"
+;--
+;-- CONSTANT DEFINITIONS
+;--
+
+;
+; ASCII CODES
+;
+CONSTANT cero    ,     30             ;ASCII 0
+CONSTANT uno    	,     31             ;ASCII 0
+CONSTANT cuatro  	,     34				;ASCII 4
+CONSTANT ocho  	,     38				;ASCII 8
+CONSTANT a_ascii       ,     61             ;ASCII a
+CONSTANT BSPACE  ,     08             ;ASCII control H
+CONSTANT CRETURN ,     0D             ;ASCII carriage return
+CONSTANT LFEED   ,     0A             ;ASCII line feed
+CONSTANT Amay    ,     41             ;ASCII A
+CONSTANT d_ascii       ,     64             ;ASCII d
+CONSTANT Dmay   	,     44            	;ASCII D
+CONSTANT Emay   	,     45            	;ASCII E
+CONSTANT e_ascii   	,     65				;ASCII e
+CONSTANT f_ascii   	,     66				;ASCII f
+CONSTANT g   	,     67				;ASCII g
+CONSTANT h   	,     68             ;ASCII h
+CONSTANT Hmay   	,     48             ;ASCII H
+CONSTANT l    	,     6c             ;ASCII l
+CONSTANT Lmay    ,     4c             ;ASCII L
+CONSTANT r       ,     72             ;ASCII r
+CONSTANT arrow   ,     3E				;ASCII >
+CONSTANT Omay    ,     4F				;ASCII O
+CONSTANT o		,     	6F				;ASCII O
+CONSTANT Pmay    ,     50             ;ASCII P
+CONSTANT Rmay    ,     52             ;ASCII R
+CONSTANT s		,     73             ;ASCII s
+CONSTANT Smay    ,     53             ;ASCII S
+CONSTANT x		,     78             ;ASCII x
+CONSTANT Xmay    ,     58             ;ASCII X
+CONSTANT t		,     74             ;ASCII t
+CONSTANT w		,     77             ;ASCII t
+CONSTANT k       ,     6B
+CONSTANT exclamation   ,       21
+CONSTANT Wmay    ,     57
+CONSTANT space   ,     20
+CONSTANT i       ,     69
+CONSTANT Imay    ,     49
+CONSTANT n       ,     6E
+CONSTANT Tmay    ,     54             ;ASCII T
+CONSTANT equal	,		3D				;ASCII =
+
+CONSTANT Mmay	,		4D				;ASCII = M
+CONSTANT m		,		6D				;ASCII = m
+CONSTANT pipe	,		7c				;ASCII = |
+CONSTANT heartb	,		AA
+
+;
+CONSTANT sw_rst_high_instruction_cycles	,		05				;Number of instruction cycles
+														; that soft_reset is high
+;
+
+NAMEREG s0,DATA_WB_7_0_REG     	 	   	  		;for input and outputs
+NAMEREG s1,DATA_WB_15_8_REG    		   	  		;for input and outputs
+NAMEREG s2,ADDR_WB_LOW_REG           	; s2 ->
+NAMEREG s3,ADDR_WB_HIGH_REG        		; s3 ->
+NAMEREG s4,TMP1                    		; s4 ->
+NAMEREG s5,TMP2                      	; s5 ->
+NAMEREG s6,SAVE_ACCUM               	; s6 ->
+NAMEREG s7,FIFO0                    	 ; s7 -> TMP DATA STORAGE
+NAMEREG s8,FIFO1                     	; s7 -> TMP DATA STORAGE
+NAMEREG s9,FIFO2                   		; s7 -> TMP DATA STORAGE
+NAMEREG sA,FIFO3                     	; s7 -> TMP DATA STORAGE
+NAMEREG sD,FIFO_POINTER              	; s7 -> TMP DATA STORAGE
+NAMEREG sC,RECEIVED_DATA           		; sD -> received data register
+NAMEREG sE,MY_STATUS                	; MY_STATUS -> my_status
+CONSTANT                STA_IDLE      , 00
+CONSTANT		STA_DATA_RECEIVED     , 01
+CONSTANT		STA_COMMAND_TO_PROC   , 02
+CONSTANT 		DATA_TO_WRITE_IN_WB   , 04
+
+NAMEREG sF,accumulator     				; sF -> accumulator
+
+;
+;--
+;-- OUTPUT PORTS
+;--
+		;--
+		;-- WISHBONE INTERFACE PORTS - OUTPUTS
+		;--
+CONSTANT                 DATA_WB_OUT_7_0        ,   00
+CONSTANT                 DATA_WB_OUT_15_8        ,   01
+CONSTANT                 ADDR_WB_LOWEST         ,    02
+CONSTANT                ADDR_WB_HIGHEST          ,   03
+CONSTANT                 CONTROL_WB_OUT          ,   04
+							; D7 =
+							; D6 =
+							; D5 =
+							; D4 =
+							; D3 = 
+							; D2 = 
+							; D1 = WE_O
+							; D0 = STB_O
+							; STB_O = 1 & W_WE=0  = 0
+ CONSTANT                                                        READ_SLAVE      ,     01
+							; STB_O = 1  & W_WE=1  = 0
+ CONSTANT                                                        WRITE_SLAVE     ,     03
+							; STB_O = 1  & W_WE=1  = 0
+       
+CONSTANT                 UART_TX_DATA     ,    05
+CONSTANT                 GENERAL_OUTPUT  ,    06
+                
+		;SOFT RESET ACTIVATION PORT
+CONSTANT 			  SOFT_RESET	,		 07
+			  
+;--
+;-- IN PORTS
+;--
+
+		;--
+		;-- WISHBONE INTERFACE PORTS - INS
+		;--
+CONSTANT                CONTROL_WB_IN   ,     00
+							; D7 =
+							; D6 =
+							; D5 =
+							; D4 =
+							; D3 =
+							; D2 =
+							; D1 =
+							; D0 = ACK_I
+							;
+							;CONSTANT ACK_I,01
+ CONSTANT                                                       ACK_I   ,     01
+		;--
+		;-- WISHBONE INTERFACE PORTS - INS
+		;--
+CONSTANT                DATA_WB_IN_7_0          ,    01
+CONSTANT                 DATA_WB_IN_15_8         ,    02
+CONSTANT 		UARTRX_DATA             ,    03
+CONSTANT 		UART_STATUS             ,    04
+							; D7 = UARTRX_BUFFER_DATA_PRESENT
+							; D6 = UARTRX_BUFFER_FULL 
+							; D5 = UARTRX_BUFFER_HALF_FULL 
+							; D4 = - (0)
+							; D3 = - (0)
+							; D2 = - (0)
+							; D1 = UARTTX_BUFFER_FULL
+							; D0 = UARTTX_BUFFER_HALF_FULL
+							;
+
+;--
+;-- REGISTERS INITIALIZATION
+;--
+inicialization:
+		;
+		; WISHBONE BUS INIZIALIZATION
+		;
+		LOAD 	accumulator,00
+		OUTPUT	accumulator,SOFT_RESET
+		OUTPUT	accumulator,DATA_WB_OUT_7_0
+		OUTPUT	accumulator,DATA_WB_OUT_15_8
+		OUTPUT	accumulator,CONTROL_WB_OUT
+		LOAD MY_STATUS,00
+                LOAD FIFO_POINTER,00
+                LOAD ADDR_WB_HIGH_REG,00
+                LOAD ADDR_WB_LOW_REG,00
+
+        ; HEART BEAT INITIALIZATION
+        LOAD 		accumulator,FF
+		OUTPUT		accumulator, GENERAL_OUTPUT
+ 		;
+		;
+		;ENABLE INTERRUPT
+				CALL	 msg_command_inicio
+                ENABLE INTERRUPT
+                ;
+                ; MAIN PROGRAMM
+                ;
+main:
+                ;
+                ; CHECK FOR RECEIVED DATA
+                ;
+                LOAD    accumulator,STA_DATA_RECEIVED
+                AND     accumulator,MY_STATUS
+                CALL    NZ,process_fifo
+                ;
+                ; MOVE TO INTERRUPT ROUTINE (TOO LARGE???)
+                ;
+                ; CHECK FOR COMMAND RECEIVED
+                ;
+                LOAD    accumulator,STA_COMMAND_TO_PROC
+                AND     accumulator,MY_STATUS
+                CALL    NZ,process_commands
+                ;
+                ; CHECK FOR DATA TO SEND THROUGH WB IF
+                ;
+                LOAD    accumulator,DATA_TO_WRITE_IN_WB
+                AND     accumulator,MY_STATUS
+                CALL    NZ,send_through_wb_interface
+                ;
+                INPUT	accumulator,GENERAL_OUTPUT
+				XOR 	accumulator,FF
+				OUTPUT		accumulator,GENERAL_OUTPUT
+                JUMP    main
+                
+ 		;
+		; PROCESS COMMANDS
+		;
+process_commands:
+                ;
+                ; RESET STA_COMMAND_TO_PROC FLAG
+                ;
+                AND     MY_STATUS,FD
+                ; L,l
+                LOAD    accumulator,FIFO0
+                ; detect command l
+                XOR     accumulator,l
+                JUMP    Z,command_L
+                LOAD    accumulator,FIFO0
+                ; detect command L
+                XOR     accumulator,Lmay
+                JUMP    Z,command_L
+                ; H,h
+				LOAD    accumulator,FIFO0
+                ; detect command H
+                XOR     accumulator,Hmay
+                JUMP    Z,command_H
+                LOAD    accumulator,FIFO0
+                ; detect command h
+                XOR     accumulator,h
+                JUMP    Z,command_H
+                ; a,A
+                LOAD    accumulator,FIFO0
+                ; detect command a
+                XOR     accumulator,a_ascii
+                JUMP    Z,command_a
+                LOAD    accumulator,FIFO0
+                ; detect command A
+                XOR     accumulator,Amay
+                JUMP    Z,command_a
+                ; s,S
+                LOAD    accumulator,FIFO0
+				; detect command s
+                XOR     accumulator,s
+                JUMP    Z,command_s
+                LOAD    accumulator,FIFO0
+                ; detect command S
+                XOR     accumulator,Smay
+                JUMP    Z,command_s
+                ; r,R
+                LOAD    accumulator,FIFO0
+                ; detect command r
+                XOR     accumulator,r
+                JUMP    Z,command_r
+                LOAD    accumulator,FIFO0
+                ; detect command R
+                XOR     accumulator,Rmay
+                JUMP    Z,command_r
+                ; d,D
+                LOAD    accumulator,FIFO0
+                ; detect command d
+                XOR     accumulator,d_ascii
+                JUMP    Z,command_d
+                LOAD    accumulator,FIFO0
+                ; detect command D
+                XOR     accumulator,Dmay
+                JUMP    Z,command_d
+                ; t,T
+                LOAD    accumulator,FIFO0
+                ; detect command t
+                XOR     accumulator,t
+                JUMP    Z,command_t
+                LOAD    accumulator,FIFO0
+                ; detect command T
+                XOR     accumulator,Tmay
+                JUMP    Z,command_t
+                ; x,X
+                LOAD    accumulator,FIFO0
+                ; detect command x
+                XOR     accumulator,x
+                JUMP    Z,command_x
+                LOAD    accumulator,FIFO0
+                ; detect command X
+                XOR     accumulator,Xmay
+                JUMP    Z,command_x
+                ;
+                ; no command
+                ;
+                RETURN
+command_a:
+                ;
+				; COMMAND a
+				; WB address LSB
+                ;
+                ; store the ADR (7..0) data value
+				;
+                ; convert ascii values to binary
+                CALL    convert_2hex_to_bin
+                ; LOAD WB DATA mP Internal registers
+                LOAD    ADDR_WB_LOW_REG,accumulator
+                CALL    msg_ok
+                CALL    msg_prompt
+                RETURN
+command_s:
+                ;
+				; COMMAND s
+				; WB address MSB
+                ;
+                ; store the ADR (15..8) data value
+				;
+                ; convert ascii values to binary
+                CALL    convert_2hex_to_bin
+                ; LOAD WB DATA mP Internal registers
+                LOAD    ADDR_WB_HIGH_REG,accumulator
+				CALL    msg_ok
+                CALL    msg_prompt
+                RETURN
+
+command_r:
+                ;
+				; COMMAND r
+				; read data from ADR(15..0) address
+                ;
+                CALL    msg_ok
+
+                OUTPUT   ADDR_WB_HIGH_REG,ADDR_WB_HIGHEST
+                OUTPUT   ADDR_WB_LOW_REG,ADDR_WB_LOWEST
+				LOAD  accumulator,READ_SLAVE
+				OUTPUT  accumulator,CONTROL_WB_OUT
+				CALL  wait_for_the_ack
+				;load data from wb in registers and clear read r,est
+				CALL  data_available_on_wb_master
+				;display the r,ested data
+				CALL  msg_command_r
+                CALL  msg_prompt
+                RETURN
+                
+command_d:
+                ;
+				; COMMAND d
+				; read actual address from registers
+                ;
+                CALL    msg_ok
+                CALL    msg_command_d
+                CALL  	msg_prompt
+                RETURN
+
+command_L:
+        ;
+		; COMMAND L
+		; WB data LSB
+                ;
+                ; store the WB (7..0) data value
+                ; into the registers and set
+                ; the flag to write them into
+                ; the wb bus
+                ;
+                ; convert ascii values to binary
+                CALL    convert_2hex_to_bin
+                ; LOAD WB DATA mP Internal registers
+				LOAD   DATA_WB_7_0_REG,accumulator
+                OR      MY_STATUS,DATA_TO_WRITE_IN_WB
+                CALL    msg_ok
+                CALL 	msg_command_H
+                CALL    msg_prompt
+                RETURN
+
+command_H:
+		;
+		; COMMAND H
+		; WB data MSB
+                ;
+                ; store the WB (15..0) data value
+                ; into the registers
+				;
+                ; convert ascii values to binary
+                CALL    convert_2hex_to_bin
+                ; LOAD WB DATA mP Internal registers
+				LOAD   DATA_WB_15_8_REG,accumulator
+                CALL    msg_ok
+                CALL    msg_prompt
+                RETURN
+
+command_t:
+		;
+		; COMMAND t
+		; 
+                ;
+                ; RETURNurns the ASCII value of the hexadecimal
+				; value entered (for recognizing what must
+				; RETURNurn Laa and R)
+                CALL    msg_ok
+  				CALL	msg_command_t
+                CALL    msg_prompt
+				RETURN	
+command_x:
+		;
+		; COMMAND x
+		;
+                ;
+                ; Set sw_rst output high
+                ; for sw_rst_high_instruction_cycles*8 (clocik clycles)
+                ;
+                CALL    msg_ok
+  				CALL	msg_command_high_soft_reset
+				LOAD	accumulator,01
+				OUTPUT		accumulator,SOFT_RESET
+				CALL	wait
+				LOAD	accumulator,00
+				OUTPUT		accumulator,SOFT_RESET
+   				CALL	msg_command_low_soft_reset
+                CALL    msg_prompt
+				RETURN	
+wait:
+	 			LOAD 	accumulator,sw_rst_high_instruction_cycles
+dummy_loop:
+		   		SUB     accumulator, 01
+		   		JUMP    NZ, dummy_loop
+		   		RETURN
+
+			
+process_fifo:
+                ;
+                ; RESET STA_DATA_RECEIVED FLAG
+                ;
+                AND     MY_STATUS,FE
+                ; LEVEL 0?
+                LOAD    accumulator,FIFO_POINTER
+                OR     accumulator,accumulator
+                JUMP    NZ,level_1
+                ; is level 0
+                ; this register is used for
+                ; the command
+                LOAD    FIFO0,RECEIVED_DATA
+                JUMP    check_cr
+  level_1:
+                ; LEVEL 1?
+                 XOR     accumulator,01
+                 JUMP    NZ,level_2
+                ; is level 1
+                LOAD    FIFO1,RECEIVED_DATA
+                JUMP    check_cr
+  level_2:
+                ; LEVEL 2?
+                 LOAD    accumulator,FIFO_POINTER
+                 XOR     accumulator,02
+                 JUMP    NZ,level_3
+                ; is level 2
+                LOAD    FIFO2,RECEIVED_DATA
+                JUMP    check_cr
+  level_3:
+                ; LEVEL 3?
+                 LOAD    accumulator,FIFO_POINTER
+                 XOR     accumulator,03
+                 JUMP    NZ,level_4
+                ; is level 2
+                LOAD    FIFO3,RECEIVED_DATA
+                JUMP    check_cr
+   level_4:
+                ; RESET FIFO
+                LOAD    FIFO_POINTER,FF
+
+   check_cr:
+                ; CHECK IF LF IS RECEIVED (CR-LF)
+                ADD     FIFO_POINTER,01
+                LOAD    accumulator,CRETURN
+                XOR     accumulator,RECEIVED_DATA
+                ; No LF
+                RETURN     NZ     
+                ; Set the flag to process
+                ; the command
+                OR      MY_STATUS,STA_COMMAND_TO_PROC
+                LOAD    FIFO_POINTER,00
+				CALL	msg_prompt
+                ; RETURN TO THE MAIN PROGRAMM
+                RETURN
+
+                
+send_through_wb_interface:
+                ;
+                ; RESET STA_COMMAND_TO_PROC FLAG
+                ;
+                AND   MY_STATUS,FB
+                OUTPUT   ADDR_WB_HIGH_REG,ADDR_WB_HIGHEST
+                OUTPUT   ADDR_WB_LOW_REG,ADDR_WB_LOWEST
+				OUTPUT  DATA_WB_7_0_REG,DATA_WB_OUT_7_0
+				OUTPUT  DATA_WB_15_8_REG,DATA_WB_OUT_15_8
+				LOAD  accumulator,WRITE_SLAVE
+				OUTPUT  accumulator,CONTROL_WB_OUT
+				CALL  wait_for_the_ack
+				JUMP  clr_ctrl_wb_out
+
+wait_for_the_ack:
+		;
+		; CONTROL_WB_IN -> TMP (s6)
+		;
+		INPUT     accumulator,CONTROL_WB_IN
+		;
+		AND    accumulator,ACK_I
+		JUMP   Z,wait_for_the_ack
+		RETURN
+
+data_available_on_wb_master:
+		; This part is not necessary into write operations
+		INPUT DATA_WB_7_0_REG,DATA_WB_IN_7_0
+		INPUT DATA_WB_15_8_REG,DATA_WB_IN_15_8
+		;continues with clr_ctrl_wb_out
+clr_ctrl_wb_out:
+		; DISABLE RD/WR OPERATION R,EST
+		LOAD   accumulator,00
+		OUTPUT   accumulator,CONTROL_WB_OUT
+		RETURN
+
+ 		;
+		; PROCESS COMMANDS   (NO)
+		;
+			
+tx_char:
+                ;
+                ; Byte TX
+                ; input: accumulator (byte to tx)
+                LOAD  TMP1,accumulator
+check_tx_buffer:
+                INPUT    accumulator,UART_STATUS
+				; CHECK THAT THE TX BUFFER IS EMPTY
+				AND   accumulator,02
+				JUMP  NZ,check_tx_buffer
+				; send the received character (ECHO)
+				OUTPUT  TMP1,UART_TX_DATA
+                RETURN
+
+tx_crlf:
+                ; send CR+LF chars
+                LOAD    accumulator,CRETURN
+                CALL    tx_char
+                LOAD    accumulator,LFEED
+                CALL    tx_char
+                RETURN
+
+msg_prompt:
+                CALL    tx_crlf
+                LOAD    accumulator,arrow
+                CALL    tx_char
+                RETURN
+
+msg_ok:
+                ; SEND TEXT MESSAGE
+                CALL    tx_crlf
+                LOAD    accumulator,Omay
+                CALL    tx_char
+                LOAD    accumulator,k
+                CALL    tx_char
+                LOAD    accumulator,exclamation
+                CALL    tx_char
+                RETURN
+
+msg_command_H:
+                ; SEND TEXT MESSAGE
+                CALL    tx_crlf
+                LOAD    accumulator,Wmay
+                CALL    tx_char
+                LOAD    accumulator,r
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+                LOAD    accumulator,DATA_WB_15_8_REG
+                ; convert to ASCII
+                CALL    tx_char_hex_bin
+                LOAD    accumulator,DATA_WB_7_0_REG
+                ; convert to ASCII
+                CALL    tx_char_hex_bin
+                LOAD    accumulator,space
+                CALL    tx_char
+                LOAD    accumulator,a_ascii
+                CALL    tx_char
+                LOAD    accumulator,t
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+                LOAD    accumulator,ADDR_WB_HIGH_REG
+                ; convert to ASCII
+                CALL    tx_char_hex_bin
+                LOAD    accumulator,ADDR_WB_LOW_REG
+                ; convert to ASCII
+                CALL    tx_char_hex_bin
+                RETURN
+
+msg_command_r:
+                ; SEND TEXT MESSAGE
+                CALL    tx_crlf
+                LOAD    accumulator,Rmay
+                CALL    tx_char
+                LOAD    accumulator,d_ascii
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+                LOAD    accumulator,DATA_WB_15_8_REG
+                ; convert to ASCII
+
+                CALL    tx_char_hex_bin
+                LOAD    accumulator,DATA_WB_7_0_REG
+                ; convert to ASCII
+                CALL    tx_char_hex_bin
+                LOAD    accumulator,space
+                CALL    tx_char
+                LOAD    accumulator,a_ascii
+                CALL    tx_char
+                LOAD    accumulator,t
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+                LOAD    accumulator,ADDR_WB_HIGH_REG
+                ; convert to ASCII
+                CALL    tx_char_hex_bin
+                LOAD    accumulator,ADDR_WB_LOW_REG
+                ; convert to ASCII
+                CALL    tx_char_hex_bin
+                RETURN
+tx_char_hex_bin:
+				LOAD	TMP2,accumulator
+				; tx ascii that reprensents in hex 4 most significant bits
+				SR0	 	accumulator;  	
+				SR0	 	accumulator;
+				SR0	 	accumulator;
+				SR0	 	accumulator;
+                CALL	bintoasciihex
+                CALL    tx_char
+				LOAD	accumulator,TMP2
+				; tx ascii that reprensents in hex 4 LEAST significant bits
+				AND	 	accumulator,0F;
+                CALL	bintoasciihex;
+                CALL    tx_char
+				RETURN
+				
+msg_command_d:
+                ; SEND ADDRESS REGISTERS
+                CALL    tx_crlf
+                LOAD    accumulator,Amay
+                CALL    tx_char
+                LOAD    accumulator,d_ascii
+                CALL    tx_char
+                LOAD    accumulator,d_ascii
+                CALL    tx_char
+                LOAD    accumulator,r
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+                LOAD    accumulator,equal
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+
+                LOAD    accumulator,ADDR_WB_HIGH_REG
+                ; convert to ASCII
+                CALL    tx_char_hex_bin
+                LOAD    accumulator,ADDR_WB_LOW_REG
+                ; convert to ASCII
+                CALL    tx_char_hex_bin
+
+                ; SEND DATA REGISTERS
+                CALL    tx_crlf
+                LOAD    accumulator,Dmay
+                CALL    tx_char
+                LOAD    accumulator,a_ascii
+                CALL    tx_char
+                LOAD    accumulator,t
+                CALL    tx_char
+                LOAD    accumulator,a_ascii
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+                LOAD    accumulator,equal
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+
+				LOAD    accumulator,DATA_WB_15_8_REG
+                ; convert to ASCII
+                CALL    tx_char_hex_bin
+                LOAD    accumulator,DATA_WB_7_0_REG
+                ; convert to ASCII
+                CALL    tx_char_hex_bin
+				RETURN
+
+msg_command_t:
+  				CALL	tx_crlf
+				LOAD	accumulator,FIFO1
+				CALL	tx_char
+				LOAD	accumulator,FIFO2
+				CALL	tx_char
+				LOAD	accumulator,space
+				CALL	tx_char
+				LOAD	accumulator,i
+				CALL	tx_char
+				LOAD	accumulator,s
+				CALL	tx_char
+				LOAD	accumulator,space
+				CALL	tx_char
+
+                ; convert ASCII values to binary
+                CALL    convert_2hex_to_bin
+                ; convert to ASCII
+                ADD     accumulator,30
+                CALL    tx_char
+                RETURN
+
+msg_command_inicio:
+                ; SEND TEXT MESSAGE
+                CALL    tx_crlf
+                LOAD    accumulator,Amay
+                CALL    tx_char
+                LOAD    accumulator,Pmay
+                CALL    tx_char
+                LOAD    accumulator,Emay
+                CALL    tx_char
+                LOAD    accumulator,Rmay
+                CALL    tx_char
+                LOAD    accumulator,Tmay
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+                
+                LOAD    accumulator,uno
+                CALL    tx_char
+                LOAD    accumulator,uno
+                CALL    tx_char
+				CALL	msg_prompt
+				RETURN
+
+msg_command_high_soft_reset:
+
+                LOAD    accumulator,Smay
+                CALL    tx_char
+                LOAD    accumulator,o
+                CALL    tx_char
+                LOAD    accumulator,f_ascii
+                CALL    tx_char
+                LOAD    accumulator,t
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+                LOAD    accumulator,Rmay
+                CALL    tx_char
+                LOAD    accumulator,e_ascii
+                CALL    tx_char
+                LOAD    accumulator,s
+                CALL    tx_char
+                LOAD    accumulator,e_ascii
+                CALL    tx_char
+                LOAD    accumulator,t
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+                LOAD    accumulator,Hmay
+                CALL    tx_char
+                LOAD    accumulator,i
+                CALL    tx_char
+                LOAD    accumulator,g
+                CALL    tx_char
+                LOAD    accumulator,h
+                CALL    tx_char
+				RETURN
+				
+msg_command_low_soft_reset:
+
+                LOAD    accumulator,Smay
+                CALL    tx_char
+                LOAD    accumulator,o
+                CALL    tx_char
+                LOAD    accumulator,f_ascii
+                CALL    tx_char
+                LOAD    accumulator,t
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+                LOAD    accumulator,Rmay
+                CALL    tx_char
+                LOAD    accumulator,e_ascii
+                CALL    tx_char
+                LOAD    accumulator,s
+                CALL    tx_char
+                LOAD    accumulator,e_ascii
+                CALL    tx_char
+                LOAD    accumulator,t
+                CALL    tx_char
+                LOAD    accumulator,space
+                CALL    tx_char
+                LOAD    accumulator,Lmay
+                CALL    tx_char
+                LOAD    accumulator,o
+                CALL    tx_char
+                LOAD    accumulator,w
+                CALL    tx_char
+				RETURN
+                
+convert_2hex_to_bin:
+                ; convert two HEX codes
+                ; to 1 binary
+                ; INPUT  : FIFO1,FIF02 ASCII codes
+                ; OUTPUT : accumulator (binary code)
+                ; convert ascii values to binary codes
+                ; MSB
+                LOAD    accumulator,FIFO1
+                CALL    asciihextobin
+                LOAD    FIFO1,accumulator
+                ; LSB
+                LOAD    accumulator,FIFO2
+                CALL    asciihextobin
+                LOAD    FIFO2,accumulator
+                ;MSB
+				AND		FIFO2,0F		 ;CLEAR LEFT NIBBLE (only 0-F values)
+				AND		FIFO1,0F		 ;CLEAR LEFT NIBBLE (only 0-F values)
+do_conversion:
+                AND     FIFO1,FIFO1
+                JUMP    Z,end_conversion
+                ADD     FIFO2,10
+                SUB     FIFO1,01
+                JUMP    do_conversion
+end_conversion:
+                ; binary data into the FIFO2 reg
+                LOAD    accumulator,FIFO2
+                RETURN
+
+asciihextobin:
+                ; convert an ASCII with hex value
+                ; to 1 bin
+                ; INPUT  : accumulator  (ASCII codes)
+                ; OUTPUT : accumulator (binary code)
+                LOAD    TMP1,accumulator
+                SUB     TMP1,40
+                JUMP    NC,subtract_37
+                SUB     accumulator,30
+                RETURN
+subtract_37:
+                SUB     accumulator,37
+                RETURN
+bintoasciihex:
+                ; convert a bin to an ASCII hex value
+                ; INPUT  : accumulator  (binary code)
+                ; OUTPUT : accumulator (ASCII codes)
+                LOAD    TMP1,accumulator
+                SUB     TMP1,0A
+                ; IF < A => ADD 30
+                ; IF => A
+                JUMP    NC,add_37
+                ADD     accumulator,30
+                RETURN
+add_37:
+                ADD     accumulator,37
+                RETURN
+
+saca_tabla:
+				;
+				; SACA LOS CARACTERES QUE REPRESENTARAN LOS VALORES DE 0 A 255
+				;EN ASCII CUANDO LOS SAQUE POR LA PANTALLA (LES SUMA 30)
+				;
+		LOAD TMP2,EA
+sigue:	CALL tx_crlf
+		LOAD accumulator,TMP2
+		ADD	 accumulator,30 ;CONVIERTE A ASCII
+		CALL tx_char		 ;LO TRANSMITE
+		ADD	 TMP2,01
+		JUMP NZ,sigue
+		CALL msg_ok
+		CALL msg_prompt
+		RETURN
+
+;
+;HEMOS DUPLICADO LA RUTINA DE ATENCIÓN
+;
+attention_int:	
+		LOAD  SAVE_ACCUM,accumulator
+		; READ THE DATA FROM THE UART
+		INPUT    RECEIVED_DATA,UARTRX_DATA
+		; send the received character (ECHO)
+                LOAD  accumulator,RECEIVED_DATA
+                CALL  tx_char
+                ; set received data flag
+                LOAD MY_STATUS,STA_DATA_RECEIVED
+				LOAD  accumulator,SAVE_ACCUM
+                RETURNI  ENABLE
+
+		ADDRESS 3FF
+interrupt:	
+		JUMP attention_int
+;MTM_CODE STOP,0
+
+

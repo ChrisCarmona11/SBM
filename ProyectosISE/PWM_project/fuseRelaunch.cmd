@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/ISE_projects/ISE_Projects/PWM_project/Top_PWM_tb_isim_beh.exe" -prj "/home/ise/ISE_projects/ISE_Projects/PWM_project/Top_PWM_tb_beh.prj" "work.Top_PWM_tb" 

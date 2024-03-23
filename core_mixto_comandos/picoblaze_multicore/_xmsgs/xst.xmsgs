@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 289:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 1200:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 452:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 483:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 606:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 614:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 381:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 423:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 525:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 597:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 682:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 1109:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 1136:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 1220:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 1269:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcuart_rx.vhd&quot; line 250:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/bbfifo_16x8.vhd&quot; line 253:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd&quot; line 266:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd&quot; line 314:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 332:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 371:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 403:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 413:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 432:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 442:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 468:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 493:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 554:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 587:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 794:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 871:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 886:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 937:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 956:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 1244:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 1301:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 1311:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 1327:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 1415:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 1448:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcuart_rx.vhd&quot; line 232:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/bbfifo_16x8.vhd&quot; line 154:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/bbfifo_16x8.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd&quot; line 129:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd&quot; line 277:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd&quot; line 296:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcuart_tx.vhd&quot; line 350:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 828:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 1368:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcpsm3.vhd&quot; line 906:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INITP_00</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INITP_01</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INITP_02</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INITP_03</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INITP_04</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INITP_05</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INITP_06</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INITP_07</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_00</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_01</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_02</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_03</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_04</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_05</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_06</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_07</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_08</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_09</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_0A</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_0B</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_0C</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_0D</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_0E</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_0F</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_10</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_11</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_12</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_13</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_14</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_15</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_16</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_17</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_18</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_19</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_1A</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_1B</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_1C</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_1D</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_1E</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_1F</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_20</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_21</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_22</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_23</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_24</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_25</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_26</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_27</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_28</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_29</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_2A</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_2B</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_2C</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_2D</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_2E</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_2F</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_30</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_31</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_32</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_33</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_34</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_35</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_36</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_37</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_38</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_39</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_3A</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_3B</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_3C</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_3D</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_3E</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2592" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/sources/version_kcpsm3/ROM_KCPSM3.vhd&quot; line 235:</arg> <arg fmt="%s" index="2">generic/parameter on instance</arg> &lt;<arg fmt="%s" index="3">INIT_3F</arg>&gt; overrides <arg fmt="%s" index="4">attribute on instance</arg>. Attribute is ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="new" ><arg fmt="%s" index="1">&quot;C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/kcuart_rx.vhd&quot; line 137:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">INIT</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on component</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/wb_intercon_p2p_S3.vhd</arg>&quot; line <arg fmt="%d" index="2">137</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CYC_O</arg>&apos; of component &apos;<arg fmt="%s" index="4">wbm_uart_kcpsm3</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/wb_intercon_p2p_S3.vhd</arg>&quot; line <arg fmt="%d" index="2">137</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">SOFT_RESET</arg>&apos; of component &apos;<arg fmt="%s" index="4">wbm_uart_kcpsm3</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/wishbone_rpd/hdl/wbm_uart_kcpsm3.vhd</arg>&quot; line <arg fmt="%d" index="2">277</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">reset</arg>&apos; of component &apos;<arg fmt="%s" index="4">ROM_KCPSM3</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">UARTTX_DATA_IN</arg>&gt; in unit &lt;<arg fmt="%s" index="2">wbm_uart_kcpsm3</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="1961" delta="new" >The length of the hex value for the attribute <arg fmt="%s" index="1">INIT</arg> on instance <arg fmt="%s" index="2">arith_loop[7].msb_arith.arith_carry_out_lut</arg> should be <arg fmt="%d" index="3">2</arg> bits long. The current value set is <arg fmt="%d" index="4">4</arg> bits long.  Value has been truncated
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">WE_I</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ADR_I&lt;15:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">reconf_ack_out</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">DATA_IN_NODE</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="new" >Output &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">reconf_ack_out</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">UARTTX_DATA_IN</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">READ_STROBE</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">INTERRUPT_ACK</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">INSTRUCTIONS_BUS_B</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">CONTROL_WB_OUT&lt;2&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_7_0_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_7_0_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_7_0_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_7_0_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_7_0_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_7_0_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_7_0_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_7_0_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_15_8_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_15_8_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_15_8_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_15_8_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_15_8_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_15_8_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_15_8_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DATA_WB_IN_15_8_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Inst_wbm_uart_kcpsm3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADDR_WB_LOWEST_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_wbm_uart_kcpsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADDR_WB_LOWEST_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_wbm_uart_kcpsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADDR_WB_LOWEST_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_wbm_uart_kcpsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADDR_WB_LOWEST_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_wbm_uart_kcpsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADDR_WB_LOWEST_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_wbm_uart_kcpsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADDR_WB_LOWEST_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_wbm_uart_kcpsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ADDR_WB_LOWEST_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_wbm_uart_kcpsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CONTROL_WB_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_wbm_uart_kcpsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DATA_WB_OUT_7_0_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_wbm_uart_kcpsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DATA_WB_OUT_7_0_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_wbm_uart_kcpsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DATA_WB_OUT_7_0_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_wbm_uart_kcpsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CONTROL_WB_OUT_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wbm_uart_kcpsm3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_15_8_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_15_8_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_15_8_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_15_8_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_15_8_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_15_8_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_15_8_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_15_8_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_7_0_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_7_0_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_7_0_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_7_0_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_7_0_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_7_0_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_7_0_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_IN_7_0_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">wb_intercon_p2p</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_OUT_7_0_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_OUT_7_0_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_OUT_7_0_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_HIGHEST_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_OUT_15_8_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_OUT_15_8_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_OUT_15_8_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_OUT_15_8_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_OUT_15_8_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_OUT_15_8_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_OUT_15_8_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/DATA_WB_OUT_15_8_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/SOFT_RESET</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_LOWEST_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_LOWEST_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_LOWEST_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_LOWEST_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_LOWEST_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_LOWEST_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_wbm_uart_kcpsm3/ADDR_WB_LOWEST_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">wb_intercon_p2p</arg>&gt;.
+</msg>
+
+</messages>
+

@@ -1,0 +1,868 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: ejemplo_simple.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ejemplo_simple.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ejemplo_simple"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : ejemplo_simple
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" in Library work.
+Entity <data_bus_mux4> compiled.
+Entity <data_bus_mux4> (Architecture <low_level_definition>) compiled.
+Entity <shift_rotate_process> compiled.
+Entity <shift_rotate_process> (Architecture <low_level_definition>) compiled.
+Entity <logical_bus_processing> compiled.
+Entity <logical_bus_processing> (Architecture <low_level_definition>) compiled.
+Entity <arithmetic_process> compiled.
+Entity <arithmetic_process> (Architecture <low_level_definition>) compiled.
+Entity <flag_logic> compiled.
+Entity <flag_logic> (Architecture <low_level_definition>) compiled.
+Entity <data_bus_mux2> compiled.
+Entity <data_bus_mux2> (Architecture <low_level_definition>) compiled.
+Entity <ALU_control_mux2> compiled.
+Entity <ALU_control_mux2> (Architecture <low_level_definition>) compiled.
+Entity <data_register_bank> compiled.
+Entity <data_register_bank> (Architecture <low_level_definition>) compiled.
+Entity <T_state_and_Reset> compiled.
+Entity <T_state_and_Reset> (Architecture <low_level_definition>) compiled.
+Entity <interrupt_logic> compiled.
+Entity <interrupt_logic> (Architecture <low_level_definition>) compiled.
+Entity <IO_strobe_logic> compiled.
+Entity <IO_strobe_logic> (Architecture <low_level_definition>) compiled.
+Entity <stack_ram> compiled.
+Entity <stack_ram> (Architecture <low_level_definition>) compiled.
+Entity <stack_counter> compiled.
+Entity <stack_counter> (Architecture <low_level_definition>) compiled.
+Entity <program_counter> compiled.
+Entity <program_counter> (Architecture <low_level_definition>) compiled.
+Entity <kcpsm> compiled.
+Entity <kcpsm> (Architecture <macro_level_definition>) compiled.
+Compiling vhdl file "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" in Library work.
+Entity <ROM0> compiled.
+Entity <ROM0> (Architecture <low_level_definition>) compiled.
+Compiling vhdl file "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/ejemplo_simple_top.vhd" in Library work.
+Entity <ejemplo_simple> compiled.
+Entity <ejemplo_simple> (Architecture <Alpha>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ejemplo_simple> in library <work> (architecture <Alpha>).
+
+Analyzing hierarchy for entity <kcpsm> in library <work> (architecture <macro_level_definition>).
+
+Analyzing hierarchy for entity <rom0> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <T_state_and_Reset> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <interrupt_logic> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <IO_strobe_logic> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <data_register_bank> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <data_bus_mux2> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <ALU_control_mux2> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <logical_bus_processing> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <arithmetic_process> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <shift_rotate_process> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <data_bus_mux4> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <flag_logic> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <stack_ram> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <stack_counter> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <program_counter> in library <work> (architecture <low_level_definition>).
+
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1138: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1254: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1351: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 574: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1524: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1769: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1807: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1223: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 924: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 482: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 555: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 113: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 724: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 750: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1543: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1552: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1798: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1232: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1277: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1359: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1375: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1032: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 903: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 401: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 679: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 714: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 762: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 796: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 816: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 831: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1532: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1596: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1629: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1757: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1064: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd" line 1440: attribute on instance <INIT> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_00> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_01> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_02> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_03> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_04> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_05> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_06> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_07> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_08> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_09> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_0A> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_0B> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_0C> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_0D> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_0E> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd" line 69: attribute on instance <INIT_0F> overrides generic/parameter on component. It is possible that simulator will not take this attribute into account.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ejemplo_simple> in library <work> (Architecture <Alpha>).
+INFO:Xst:1561 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/ejemplo_simple_top.vhd" line 160: Mux is complete : default of case is discarded
+WARNING:Xst:2211 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/ejemplo_simple_top.vhd" line 173: Instantiating black box module <SRL16>.
+    Set user-defined property "INIT =  0001" for instance <clock_divider0> in unit <ejemplo_simple>.
+WARNING:Xst:2211 - "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/ejemplo_simple_top.vhd" line 187: Instantiating black box module <SRL16>.
+    Set user-defined property "INIT =  0000" for instance <clock_divider1> in unit <ejemplo_simple>.
+Entity <ejemplo_simple> analyzed. Unit <ejemplo_simple> generated.
+
+Analyzing Entity <kcpsm> in library <work> (Architecture <macro_level_definition>).
+Entity <kcpsm> analyzed. Unit <kcpsm> generated.
+
+Analyzing Entity <T_state_and_Reset> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  1" for instance <delay_flop1> in unit <T_state_and_Reset>.
+    Set user-defined property "INIT =  1" for instance <delay_flop2> in unit <T_state_and_Reset>.
+    Set user-defined property "INIT =  1" for instance <invert_lut> in unit <T_state_and_Reset>.
+    Set user-defined property "INIT =  0" for instance <toggle_flop> in unit <T_state_and_Reset>.
+Entity <T_state_and_Reset> analyzed. Unit <T_state_and_Reset> generated.
+
+Analyzing Entity <interrupt_logic> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  AE" for instance <en_a_lut> in unit <interrupt_logic>.
+    Set user-defined property "INIT =  ABAA" for instance <en_b_lut> in unit <interrupt_logic>.
+    Set user-defined property "INIT =  4" for instance <value_lut> in unit <interrupt_logic>.
+    Set user-defined property "INIT =  0" for instance <enable_flop> in unit <interrupt_logic>.
+    Set user-defined property "INIT =  0" for instance <capture_flop> in unit <interrupt_logic>.
+    Set user-defined property "INIT =  0080" for instance <pulse_lut> in unit <interrupt_logic>.
+    Set user-defined property "INIT =  0" for instance <active_flop> in unit <interrupt_logic>.
+    Set user-defined property "INIT =  0" for instance <shadow_carry_flop> in unit <interrupt_logic>.
+    Set user-defined property "INIT =  0" for instance <shadow_zero_flop> in unit <interrupt_logic>.
+Entity <interrupt_logic> analyzed. Unit <interrupt_logic> generated.
+
+Analyzing Entity <IO_strobe_logic> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  8" for instance <IO_type_lut> in unit <IO_strobe_logic>.
+    Set user-defined property "INIT =  1000" for instance <write_lut> in unit <IO_strobe_logic>.
+    Set user-defined property "INIT =  0" for instance <write_flop> in unit <IO_strobe_logic>.
+    Set user-defined property "INIT =  0100" for instance <read_lut> in unit <IO_strobe_logic>.
+    Set user-defined property "INIT =  0" for instance <read_flop> in unit <IO_strobe_logic>.
+Entity <IO_strobe_logic> analyzed. Unit <IO_strobe_logic> generated.
+
+Analyzing Entity <data_register_bank> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  1455" for instance <decode_lut> in unit <data_register_bank>.
+    Set user-defined property "INIT =  0" for instance <decode_pipe> in unit <data_register_bank>.
+    Set user-defined property "INIT =  8" for instance <gating_lut> in unit <data_register_bank>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[0].data_register_bit> in unit <data_register_bank>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[1].data_register_bit> in unit <data_register_bank>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[2].data_register_bit> in unit <data_register_bank>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[3].data_register_bit> in unit <data_register_bank>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[4].data_register_bit> in unit <data_register_bank>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[5].data_register_bit> in unit <data_register_bank>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[6].data_register_bit> in unit <data_register_bank>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[7].data_register_bit> in unit <data_register_bank>.
+Entity <data_register_bank> analyzed. Unit <data_register_bank> generated.
+
+Analyzing Entity <data_bus_mux2> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  9800" for instance <decode_lut> in unit <data_bus_mux2>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[0].mux_lut> in unit <data_bus_mux2>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[1].mux_lut> in unit <data_bus_mux2>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[2].mux_lut> in unit <data_bus_mux2>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[3].mux_lut> in unit <data_bus_mux2>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[4].mux_lut> in unit <data_bus_mux2>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[5].mux_lut> in unit <data_bus_mux2>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[6].mux_lut> in unit <data_bus_mux2>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[7].mux_lut> in unit <data_bus_mux2>.
+Entity <data_bus_mux2> analyzed. Unit <data_bus_mux2> generated.
+
+Analyzing Entity <ALU_control_mux2> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[0].mux_lut> in unit <ALU_control_mux2>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[1].mux_lut> in unit <ALU_control_mux2>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[2].mux_lut> in unit <ALU_control_mux2>.
+Entity <ALU_control_mux2> analyzed. Unit <ALU_control_mux2> generated.
+
+Analyzing Entity <logical_bus_processing> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  6E8A" for instance <bus_width_loop[0].logical_lut> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[0].pipeline_bit> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  6E8A" for instance <bus_width_loop[1].logical_lut> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[1].pipeline_bit> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  6E8A" for instance <bus_width_loop[2].logical_lut> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[2].pipeline_bit> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  6E8A" for instance <bus_width_loop[3].logical_lut> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[3].pipeline_bit> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  6E8A" for instance <bus_width_loop[4].logical_lut> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[4].pipeline_bit> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  6E8A" for instance <bus_width_loop[5].logical_lut> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[5].pipeline_bit> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  6E8A" for instance <bus_width_loop[6].logical_lut> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[6].pipeline_bit> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  6E8A" for instance <bus_width_loop[7].logical_lut> in unit <logical_bus_processing>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[7].pipeline_bit> in unit <logical_bus_processing>.
+Entity <logical_bus_processing> analyzed. Unit <logical_bus_processing> generated.
+
+Analyzing Entity <arithmetic_process> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  78" for instance <carry_input_lut> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  96" for instance <bus_width_loop[0].arithmetic_lut> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[0].pipeline_bit> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  96" for instance <bus_width_loop[1].arithmetic_lut> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[1].pipeline_bit> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  96" for instance <bus_width_loop[2].arithmetic_lut> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[2].pipeline_bit> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  96" for instance <bus_width_loop[3].arithmetic_lut> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[3].pipeline_bit> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  96" for instance <bus_width_loop[4].arithmetic_lut> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[4].pipeline_bit> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  96" for instance <bus_width_loop[5].arithmetic_lut> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[5].pipeline_bit> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  96" for instance <bus_width_loop[6].arithmetic_lut> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[6].pipeline_bit> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  96" for instance <bus_width_loop[7].arithmetic_lut> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[7].pipeline_bit> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  6" for instance <carry_output_lut> in unit <arithmetic_process>.
+    Set user-defined property "INIT =  0" for instance <pipeline_bit> in unit <arithmetic_process>.
+Entity <arithmetic_process> analyzed. Unit <arithmetic_process> generated.
+
+Analyzing Entity <shift_rotate_process> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  E4" for instance <high_mux_lut> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  E4" for instance <low_mux_lut> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[0].lsb_shift.mux_lut> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[0].pipeline_bit> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[1].mid_shift.mux_lut> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[1].pipeline_bit> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[2].mid_shift.mux_lut> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[2].pipeline_bit> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[3].mid_shift.mux_lut> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[3].pipeline_bit> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[4].mid_shift.mux_lut> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[4].pipeline_bit> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[5].mid_shift.mux_lut> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[5].pipeline_bit> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[6].mid_shift.mux_lut> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[6].pipeline_bit> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[7].msb_shift.mux_lut> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[7].pipeline_bit> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  E4" for instance <carry_out_mux_lut> in unit <shift_rotate_process>.
+    Set user-defined property "INIT =  0" for instance <pipeline_bit> in unit <shift_rotate_process>.
+Entity <shift_rotate_process> analyzed. Unit <shift_rotate_process> generated.
+
+Analyzing Entity <data_bus_mux4> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  E0" for instance <decode_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  0" for instance <sel1_pipe> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  0" for instance <sel0a_pipe> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  0" for instance <sel0b_pipe> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[0].high_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[0].low_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[1].high_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[1].low_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[2].high_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[2].low_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[3].high_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[3].low_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[4].high_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[4].low_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[5].high_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[5].low_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[6].high_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[6].low_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[7].high_mux_lut> in unit <data_bus_mux4>.
+    Set user-defined property "INIT =  E4" for instance <bus_width_loop[7].low_mux_lut> in unit <data_bus_mux4>.
+Entity <data_bus_mux4> analyzed. Unit <data_bus_mux4> generated.
+
+Analyzing Entity <flag_logic> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  F002" for instance <en1a_lut> in unit <flag_logic>.
+    Set user-defined property "INIT =  4" for instance <en1b_lut> in unit <flag_logic>.
+    Set user-defined property "INIT =  0" for instance <enable1_flop> in unit <flag_logic>.
+    Set user-defined property "INIT =  10FF" for instance <en2a_lut> in unit <flag_logic>.
+    Set user-defined property "INIT =  FE" for instance <en2b_lut> in unit <flag_logic>.
+    Set user-defined property "INIT =  0" for instance <enable2_flop> in unit <flag_logic>.
+    Set user-defined property "INIT =  A8" for instance <flag_enable_lut> in unit <flag_logic>.
+    Set user-defined property "INIT =  0001" for instance <lower_zero_lut> in unit <flag_logic>.
+    Set user-defined property "INIT =  0001" for instance <upper_zero_lut> in unit <flag_logic>.
+    Set user-defined property "INIT =  F4B0" for instance <zero_select_lut> in unit <flag_logic>.
+    Set user-defined property "INIT =  0" for instance <zero_flag_flop> in unit <flag_logic>.
+    Set user-defined property "INIT =  2000" for instance <operation_lut> in unit <flag_logic>.
+    Set user-defined property "INIT =  0" for instance <operation_pipe> in unit <flag_logic>.
+    Set user-defined property "INIT =  EC20" for instance <carry_status_lut> in unit <flag_logic>.
+    Set user-defined property "INIT =  F4B0" for instance <carry_select_lut> in unit <flag_logic>.
+    Set user-defined property "INIT =  0" for instance <carry_flag_flop> in unit <flag_logic>.
+Entity <flag_logic> analyzed. Unit <flag_logic> generated.
+
+Analyzing Entity <stack_ram> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[0].stack_ram_bit> in unit <stack_ram>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[0].stack_ram_flop> in unit <stack_ram>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[1].stack_ram_bit> in unit <stack_ram>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[1].stack_ram_flop> in unit <stack_ram>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[2].stack_ram_bit> in unit <stack_ram>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[2].stack_ram_flop> in unit <stack_ram>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[3].stack_ram_bit> in unit <stack_ram>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[3].stack_ram_flop> in unit <stack_ram>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[4].stack_ram_bit> in unit <stack_ram>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[4].stack_ram_flop> in unit <stack_ram>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[5].stack_ram_bit> in unit <stack_ram>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[5].stack_ram_flop> in unit <stack_ram>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[6].stack_ram_bit> in unit <stack_ram>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[6].stack_ram_flop> in unit <stack_ram>.
+    Set user-defined property "INIT =  0000" for instance <bus_width_loop[7].stack_ram_bit> in unit <stack_ram>.
+    Set user-defined property "INIT =  0" for instance <bus_width_loop[7].stack_ram_flop> in unit <stack_ram>.
+Entity <stack_ram> analyzed. Unit <stack_ram> generated.
+
+Analyzing Entity <stack_counter> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  D" for instance <valid_move_lut> in unit <stack_counter>.
+    Set user-defined property "INIT =  0200" for instance <call_lut> in unit <stack_counter>.
+    Set user-defined property "INIT =  F2" for instance <pp_a_lut> in unit <stack_counter>.
+    Set user-defined property "INIT =  10" for instance <pp_b_lut> in unit <stack_counter>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[0].register_bit> in unit <stack_counter>.
+    Set user-defined property "INIT =  6555" for instance <count_width_loop[0].lsb_count.count_lut> in unit <stack_counter>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[1].register_bit> in unit <stack_counter>.
+    Set user-defined property "INIT =  A999" for instance <count_width_loop[1].mid_count.count_lut> in unit <stack_counter>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[2].register_bit> in unit <stack_counter>.
+    Set user-defined property "INIT =  A999" for instance <count_width_loop[2].mid_count.count_lut> in unit <stack_counter>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[3].register_bit> in unit <stack_counter>.
+    Set user-defined property "INIT =  A999" for instance <count_width_loop[3].msb_count.count_lut> in unit <stack_counter>.
+Entity <stack_counter> analyzed. Unit <stack_counter> generated.
+
+Analyzing Entity <program_counter> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT =  5A3C" for instance <condition_lut> in unit <program_counter>.
+    Set user-defined property "INIT =  E" for instance <decode_a_lut> in unit <program_counter>.
+    Set user-defined property "INIT =  10" for instance <decode_b_lut> in unit <program_counter>.
+    Set user-defined property "INIT =  2F" for instance <count_lut> in unit <program_counter>.
+    Set user-defined property "INIT =  1" for instance <increment_lut> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[0].value_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[0].count_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[0].register_bit> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[1].value_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[1].count_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[1].register_bit> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[2].value_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[2].count_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[2].register_bit> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[3].value_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[3].count_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[3].register_bit> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[4].value_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[4].count_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[4].register_bit> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[5].value_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[5].count_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[5].register_bit> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[6].value_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[6].count_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[6].register_bit> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[7].value_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  E4" for instance <count_width_loop[7].count_select_mux> in unit <program_counter>.
+    Set user-defined property "INIT =  0" for instance <count_width_loop[7].register_bit> in unit <program_counter>.
+Entity <program_counter> analyzed. Unit <program_counter> generated.
+
+Analyzing Entity <rom0> in library <work> (Architecture <low_level_definition>).
+    Set user-defined property "INIT_00 =  0000000000000000000000000000810332FF9505600100FFE200803002AA0300" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_02 =  000000000000000000000000000000000000000000000000000080F0E3014301" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_03 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_04 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_05 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_06 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_07 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_08 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_09 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_0A =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_0B =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_0C =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_0D =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_0E =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+    Set user-defined property "INIT_0F =  8120000000000000000000000000000000000000000000000000000000000000" for instance <ram_256_x_16> in unit <rom0>.
+Entity <rom0> analyzed. Unit <rom0> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <rom0>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/mi_programa.vhd".
+Unit <rom0> synthesized.
+
+
+Synthesizing Unit <T_state_and_Reset>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <T_state_and_Reset> synthesized.
+
+
+Synthesizing Unit <interrupt_logic>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <interrupt_logic> synthesized.
+
+
+Synthesizing Unit <IO_strobe_logic>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <IO_strobe_logic> synthesized.
+
+
+Synthesizing Unit <data_register_bank>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <data_register_bank> synthesized.
+
+
+Synthesizing Unit <data_bus_mux2>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <data_bus_mux2> synthesized.
+
+
+Synthesizing Unit <ALU_control_mux2>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <ALU_control_mux2> synthesized.
+
+
+Synthesizing Unit <logical_bus_processing>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <logical_bus_processing> synthesized.
+
+
+Synthesizing Unit <arithmetic_process>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <arithmetic_process> synthesized.
+
+
+Synthesizing Unit <shift_rotate_process>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <shift_rotate_process> synthesized.
+
+
+Synthesizing Unit <data_bus_mux4>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <data_bus_mux4> synthesized.
+
+
+Synthesizing Unit <flag_logic>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <flag_logic> synthesized.
+
+
+Synthesizing Unit <stack_ram>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <stack_ram> synthesized.
+
+
+Synthesizing Unit <stack_counter>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <stack_counter> synthesized.
+
+
+Synthesizing Unit <program_counter>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <program_counter> synthesized.
+
+
+Synthesizing Unit <kcpsm>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/kcpsm.vhd".
+Unit <kcpsm> synthesized.
+
+
+Synthesizing Unit <ejemplo_simple>.
+    Related source file is "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_basico/core_mixto_basico/ejemplo_simple_top.vhd".
+WARNING:Xst:646 - Signal <READ_STROBE> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PORTS_ID<7:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit register for signal <COUNTER_PORT>.
+    Found 8-bit register for signal <WAVEFORM_PORT>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <ejemplo_simple> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2
+ 8-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ejemplo_simple> ...
+
+Optimizing unit <interrupt_logic> ...
+
+Optimizing unit <data_register_bank> ...
+
+Optimizing unit <data_bus_mux2> ...
+
+Optimizing unit <logical_bus_processing> ...
+
+Optimizing unit <arithmetic_process> ...
+
+Optimizing unit <shift_rotate_process> ...
+
+Optimizing unit <data_bus_mux4> ...
+
+Optimizing unit <flag_logic> ...
+
+Optimizing unit <stack_ram> ...
+
+Optimizing unit <stack_counter> ...
+
+Optimizing unit <program_counter> ...
+
+Optimizing unit <kcpsm> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ejemplo_simple, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ejemplo_simple.ngr
+Top Level Output File Name         : ejemplo_simple
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 189
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 1
+#      LUT2                        : 10
+#      LUT3                        : 71
+#      LUT4                        : 28
+#      MUXCY                       : 37
+#      MUXF5                       : 9
+#      VCC                         : 1
+#      XORCY                       : 28
+# FlipFlops/Latches                : 81
+#      FD                          : 41
+#      FDCE                        : 16
+#      FDE                         : 2
+#      FDR                         : 5
+#      FDRE                        : 7
+#      FDRSE                       : 8
+#      FDS                         : 2
+# RAMS                             : 17
+#      RAM16X1D                    : 8
+#      RAM16X1S                    : 8
+#      RAMB4_S16                   : 1
+# Shift Registers                  : 2
+#      SRL16                       : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 1
+#      OBUF                        : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       78  out of   4656     1%  
+ Number of Slice Flip Flops:             81  out of   9312     0%  
+ Number of 4 input LUTs:                139  out of   9312     1%  
+    Number used as logic:               113
+    Number used as Shift registers:       2
+    Number used as RAMs:                 24
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    232     9%  
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLOCK                              | BUFGP                  | 100   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RESET                              | IBUF                   | 16    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.135ns (Maximum Frequency: 109.472MHz)
+   Minimum input arrival time before clock: 2.809ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK'
+  Clock period: 9.135ns (frequency: 109.472MHz)
+  Total number of paths / destination ports: 3009 / 279
+-------------------------------------------------------------------------
+Delay:               9.135ns (Levels of Logic = 13)
+  Source:            Inst_rom0/ram_256_x_16 (RAM)
+  Destination:       micro/address_counter/count_width_loop[7].register_bit (FF)
+  Source Clock:      CLOCK rising
+  Destination Clock: CLOCK rising
+
+  Data Path: Inst_rom0/ram_256_x_16 to micro/address_counter/count_width_loop[7].register_bit
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB4_S16:CLK->DO8   37   2.436   1.143  Inst_rom0/ram_256_x_16 (INSTRUCTIONS_BUS<8>)
+     LUT2:I1->O            1   0.612   0.000  micro/address_counter/decode_a_lut (micro/address_counter/decode_a)
+     MUXCY:S->O            1   0.404   0.000  micro/address_counter/decode_a_muxcy (micro/address_counter/decode_a_carry)
+     MUXCY:CI->O           1   0.399   0.387  micro/address_counter/decode_b_cymux (micro/address_counter/move_group)
+     LUT3:I2->O            9   0.612   0.849  micro/address_counter/count_lut (micro/address_counter/normal_count)
+     LUT3:I0->O            1   0.612   0.000  micro/address_counter/count_width_loop[0].count_select_mux (micro/address_counter/selected_count_value<0>)
+     MUXCY:S->O            1   0.404   0.000  micro/address_counter/count_width_loop[0].lsb_carry.count_inc_carry (micro/address_counter/inc_count_value_carry<0>)
+     MUXCY:CI->O           1   0.051   0.000  micro/address_counter/count_width_loop[1].mid_carry.count_inc_carry (micro/address_counter/inc_count_value_carry<1>)
+     MUXCY:CI->O           1   0.051   0.000  micro/address_counter/count_width_loop[2].mid_carry.count_inc_carry (micro/address_counter/inc_count_value_carry<2>)
+     MUXCY:CI->O           1   0.051   0.000  micro/address_counter/count_width_loop[3].mid_carry.count_inc_carry (micro/address_counter/inc_count_value_carry<3>)
+     MUXCY:CI->O           1   0.051   0.000  micro/address_counter/count_width_loop[4].mid_carry.count_inc_carry (micro/address_counter/inc_count_value_carry<4>)
+     MUXCY:CI->O           1   0.051   0.000  micro/address_counter/count_width_loop[5].mid_carry.count_inc_carry (micro/address_counter/inc_count_value_carry<5>)
+     MUXCY:CI->O           0   0.051   0.000  micro/address_counter/count_width_loop[6].mid_carry.count_inc_carry (micro/address_counter/inc_count_value_carry<6>)
+     XORCY:CI->O           1   0.699   0.000  micro/address_counter/count_width_loop[7].msb_carry.count_inc_xor (micro/address_counter/inc_count_value<7>)
+     FDRSE:D                   0.268          micro/address_counter/count_width_loop[7].register_bit
+    ----------------------------------------
+    Total                      9.135ns (6.756ns logic, 2.379ns route)
+                                       (74.0% logic, 26.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.809ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       micro/basic_control/delay_flop1 (FF)
+  Destination Clock: CLOCK rising
+
+  Data Path: RESET to micro/basic_control/delay_flop1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.106   0.908  RESET_IBUF (RESET_IBUF)
+     FDS:S                     0.795          micro/basic_control/delay_flop1
+    ----------------------------------------
+    Total                      2.809ns (1.901ns logic, 0.908ns route)
+                                       (67.7% logic, 32.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            COUNTER_PORT_7 (FF)
+  Destination:       PIN_CONTADOR<7> (PAD)
+  Source Clock:      CLOCK rising
+
+  Data Path: COUNTER_PORT_7 to PIN_CONTADOR<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.514   0.357  COUNTER_PORT_7 (COUNTER_PORT_7)
+     OBUF:I->O                 3.169          PIN_CONTADOR_7_OBUF (PIN_CONTADOR<7>)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.20 secs
+ 
+--> 
+
+Total memory usage is 4554660 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   56 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,1 @@
+vhdtdtfi -prj RAM -o "C:/Users/Docencia/Downloads/diseno_sincrono/diseno_sincrono/para proyecto/RAM/PWM_Unit.vhi" -module PWM_Unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PWM_Unit.vhd 

@@ -1,0 +1,160 @@
+Command: pr_verify Implement/Config_wbs_add_implement/top_route_design.dcp Implement/Config_wbs_mult_import/top_route_design.dcp
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 2265.715 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 2265.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2265.715 ; gain = 0.000
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3 (64-bit) build 2405991
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 2411.590 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 2411.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2411.590 ; gain = 0.000
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3 (64-bit) build 2405991
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: Implement/Config_wbs_add_implement/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 0
+  Number of static tiles compared           = 1428
+  Number of static sites compared           = 110
+  Number of static cells compared           = 558
+  Number of static routed nodes compared    = 7019
+  Number of static routed pips compared     = 6504
+
+DCP2: Implement/Config_wbs_mult_import/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 0
+  Number of static tiles compared           = 1428
+  Number of static sites compared           = 110
+  Number of static cells compared           = 558
+  Number of static routed nodes compared    = 7019
+  Number of static routed pips compared     = 6504
+INFO: [Vivado 12-3253] PR_VERIFY: check points Implement/Config_wbs_add_implement/top_route_design.dcp and Implement/Config_wbs_mult_import/top_route_design.dcp are compatible
+
+pr_verify Implement/Config_wbs_add_implement/top_route_design.dcp Implement/Config_wbs_pwm_import/top_route_design.dcp
+Command: pr_verify Implement/Config_wbs_add_implement/top_route_design.dcp Implement/Config_wbs_pwm_import/top_route_design.dcp
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 2411.590 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 2411.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2411.590 ; gain = 0.000
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3 (64-bit) build 2405991
+INFO: [Netlist 29-17] Analyzing 92 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 2546.848 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 2546.848 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2546.848 ; gain = 0.000
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3 (64-bit) build 2405991
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: Implement/Config_wbs_add_implement/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 0
+  Number of static tiles compared           = 1428
+  Number of static sites compared           = 110
+  Number of static cells compared           = 558
+  Number of static routed nodes compared    = 7019
+  Number of static routed pips compared     = 6504
+
+DCP2: Implement/Config_wbs_pwm_import/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 0
+  Number of static tiles compared           = 1428
+  Number of static sites compared           = 110
+  Number of static cells compared           = 558
+  Number of static routed nodes compared    = 7019
+  Number of static routed pips compared     = 6504
+INFO: [Vivado 12-3253] PR_VERIFY: check points Implement/Config_wbs_add_implement/top_route_design.dcp and Implement/Config_wbs_pwm_import/top_route_design.dcp are compatible
+pr_verify: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2549.633 ; gain = 138.043
+pr_verify Implement/Config_wbs_mult_import/top_route_design.dcp Implement/Config_wbs_pwm_import/top_route_design.dcp
+Command: pr_verify Implement/Config_wbs_mult_import/top_route_design.dcp Implement/Config_wbs_pwm_import/top_route_design.dcp
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 2549.633 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 2549.633 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2549.633 ; gain = 0.000
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3 (64-bit) build 2405991
+INFO: [Netlist 29-17] Analyzing 92 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 2549.633 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 2549.633 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2549.633 ; gain = 0.000
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3 (64-bit) build 2405991
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: Implement/Config_wbs_mult_import/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 0
+  Number of static tiles compared           = 1428
+  Number of static sites compared           = 110
+  Number of static cells compared           = 558
+  Number of static routed nodes compared    = 7019
+  Number of static routed pips compared     = 6504
+
+DCP2: Implement/Config_wbs_pwm_import/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 0
+  Number of static tiles compared           = 1428
+  Number of static sites compared           = 110
+  Number of static cells compared           = 558
+  Number of static routed nodes compared    = 7019
+  Number of static routed pips compared     = 6504
+INFO: [Vivado 12-3253] PR_VERIFY: check points Implement/Config_wbs_mult_import/top_route_design.dcp and Implement/Config_wbs_pwm_import/top_route_design.dcp are compatible

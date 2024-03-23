@@ -1,0 +1,27 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/ise/ISE_projects/ISE_Projects/PWM_project/Top_PWM_tb_isim_beh.exe -prj /home/ise/ISE_projects/ISE_Projects/PWM_project/Top_PWM_tb_beh.prj work.Top_PWM_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/ise/ISE_projects/ISE_Projects/PWM_project/PWM_Unit.vhd" into library work
+Parsing VHDL file "/home/ise/ISE_projects/ISE_Projects/PWM_project/Pre_Scaler_Unit.vhd" into library work
+Parsing VHDL file "/home/ise/ISE_projects/ISE_Projects/PWM_project/Top_PWM.vhd" into library work
+Parsing VHDL file "/home/ise/ISE_projects/ISE_Projects/PWM_project/Top_PWM_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 96748 KB
+Fuse CPU Usage: 1020 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity Pre_Scaler_Unit [\Pre_Scaler_Unit(128)\]
+Compiling architecture behavioral of entity PWM_Unit [pwm_unit_default]
+Compiling architecture behavioral of entity Top_PWM [top_pwm_default]
+Compiling architecture behavior of entity top_pwm_tb
+Time Resolution for simulation is 1ps.
+Compiled 11 VHDL Units
+Built simulation executable /home/ise/ISE_projects/ISE_Projects/PWM_project/Top_PWM_tb_isim_beh.exe
+Fuse Memory Usage: 111940 KB
+Fuse CPU Usage: 1130 ms
+GCC CPU Usage: 260 ms

@@ -1,0 +1,121 @@
+V3 81
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/bbfifo_16x8.vhd 2013/02/05.20:26:24 P.20131013
+EN work/bbfifo_16x8 1709045461 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/bbfifo_16x8.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/bbfifo_16x8/low_level_definition 1709045462 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/bbfifo_16x8.vhd \
+      EN work/bbfifo_16x8 1709045461 CP string CP label CP SRL16E CP FDRE CP LUT4 \
+      CP MUXCY CP XORCY CP FDR CP LUT3
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/kcpsm3.vhd 2013/02/05.20:26:24 P.20131013
+EN work/kcpsm3 1709045469 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/kcpsm3.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/kcpsm3/low_level_definition 1709045470 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/kcpsm3.vhd \
+      EN work/kcpsm3 1709045469 CP LUT1 CP FDR CP FDS CP LUT4 CP FD CP FDE CP LUT3 \
+      CP FDRE CP LUT2 CP MUXCY CP XORCY CP INV CP string CP label CP FDRSE CP RAM16X1D \
+      CP RAM64X1S CP MUXF5 CP RAM32X1S
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/kcuart_rx.vhd 2013/02/05.20:26:24 P.20131013
+EN work/kcuart_rx 1709045463 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/kcuart_rx.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/kcuart_rx/low_level_definition 1709045464 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/kcuart_rx.vhd \
+      EN work/kcuart_rx 1709045463 CP FD CP string CP label CP SRL16E CP FDE CP LUT4 \
+      CP LUT3 CP LUT2
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/kcuart_tx.vhd 2013/02/05.20:26:24 P.20131013
+EN work/kcuart_tx 1709045459 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/kcuart_tx.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/kcuart_tx/low_level_definition 1709045460 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/kcuart_tx.vhd \
+      EN work/kcuart_tx 1709045459 CP LUT4 CP MUXF5 CP MUXF6 CP FDRS CP string \
+      CP label CP FDRE CP LUT2 CP MULT_AND CP MUXCY CP XORCY CP LUT3 CP FDE CP SRL16E \
+      CP FD
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/Pre_Scaler_Unit.vhd 2024/02/13.22:35:14 P.20131013
+EN work/Pre_Scaler_Unit 1709045465 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/Pre_Scaler_Unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/Pre_Scaler_Unit/Behavioral 1709045466 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/Pre_Scaler_Unit.vhd \
+      EN work/Pre_Scaler_Unit 1709045465
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/PWM_Unit.vhd 2024/02/13.22:35:54 P.20131013
+EN work/PWM_Unit 1709045467 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/PWM_Unit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/PWM_Unit/Behavioral 1709045468 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/PWM_Unit.vhd \
+      EN work/PWM_Unit 1709045467
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/ROM_KCPSM3.vhd 2013/02/05.20:26:24 P.20131013
+PH work/constants 1709045475 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/ROM_KCPSM3.vhd \
+      PB ieee/std_logic_1164 1381692176
+PB work/constants 1709045476 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/ROM_KCPSM3.vhd \
+      PH work/constants 1709045475
+EN work/ROM_KCPSM3 1709045477 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/ROM_KCPSM3.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182 \
+      PB work/constants 1709045476
+AR work/ROM_KCPSM3/mix 1709045478 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/ROM_KCPSM3.vhd \
+      EN work/ROM_KCPSM3 1709045477 CP label CP RAMB16_S9_S18 CP RAMB4_S8_S16 \
+      CP std_logic_vector CP RAMB4_S4_S4
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/uart_rx.vhd 2013/02/05.20:26:24 P.20131013
+EN work/uart_rx 1709045471 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/uart_rx.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/uart_rx/macro_level_definition 1709045472 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/uart_rx.vhd \
+      EN work/uart_rx 1709045471 CP kcuart_rx CP bbfifo_16x8
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/uart_tx.vhd 2013/02/05.20:26:24 P.20131013
+EN work/uart_tx 1709045473 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/uart_tx.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/uart_tx/macro_level_definition 1709045474 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/uart_tx.vhd \
+      EN work/uart_tx 1709045473 CP kcuart_tx CP bbfifo_16x8
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/wbm_uart_kcpsm3.vhd 2013/10/14.16:58:50 P.20131013
+EN work/wbm_uart_kcpsm3 1709045479 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/wbm_uart_kcpsm3.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/wbm_uart_kcpsm3/arch 1709045480 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/wbm_uart_kcpsm3.vhd \
+      EN work/wbm_uart_kcpsm3 1709045479 CP kcpsm3 CP UART_RX CP UART_TX \
+      CP ROM_KCPSM3
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/wb_intercon_p2p_S3.vhd 2024/02/22.21:04:50 P.20131013
+EN work/wb_intercon_p2p 1709045485 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/wb_intercon_p2p_S3.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/wb_intercon_p2p/Alpha 1709045486 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/wb_intercon_p2p_S3.vhd \
+      EN work/wb_intercon_p2p 1709045485 CP wbm_uart_kcpsm3 \
+      CP wb_slave_interface_7seg CP wb_slave_interface_PWM
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/wb_slave_interface_7seg_s3.vhd 2024/02/27.15:50:56 P.20131013
+EN work/wb_slave_interface_7seg 1709045481 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/wb_slave_interface_7seg_s3.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/wb_slave_interface_7seg/Behavioral 1709045482 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/wb_slave_interface_7seg_s3.vhd \
+      EN work/wb_slave_interface_7seg 1709045481
+FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/wb_slave_interface_rpd_add.vhd 2024/02/22.20:08:02 P.20131013
+EN work/wb_slave_interface_PWM 1709045483 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/wb_slave_interface_rpd_add.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/wb_slave_interface_PWM/Behavioral 1709045484 \
+      FL D:/Master/SBM/ProyectosISE/PicoBlazeMaster2Slave/wb_slave_interface_rpd_add.vhd \
+      EN work/wb_slave_interface_PWM 1709045483 CP Pre_Scaler_Unit CP PWM_Unit

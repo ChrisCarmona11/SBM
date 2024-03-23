@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/Master/SBM/ProyectosISE/PicoBlazeMasterSlave/wb_intercon_p2p.xst" -ofn "D:/Master/SBM/ProyectosISE/PicoBlazeMasterSlave/wb_intercon_p2p.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Master/SBM/core_mixto_comandos/wishbone_rpd/ucf/wb_intercon_p2p_nexys2.ucf -p xc3s500e-fg320-5 wb_intercon_p2p.ngc wb_intercon_p2p.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o wb_intercon_p2p_map.ncd wb_intercon_p2p.ngd wb_intercon_p2p.pcf 
+par -w -intstyle ise -ol high -t 1 wb_intercon_p2p_map.ncd wb_intercon_p2p.ncd wb_intercon_p2p.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml wb_intercon_p2p.twx wb_intercon_p2p.ncd -o wb_intercon_p2p.twr wb_intercon_p2p.pcf 
+bitgen -intstyle ise -f wb_intercon_p2p.ut wb_intercon_p2p.ncd 

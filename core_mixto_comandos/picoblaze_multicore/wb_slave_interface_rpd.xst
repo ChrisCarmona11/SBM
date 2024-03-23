@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/picoblaze_multicore/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Docencia/Downloads/SBM-Christopher/core_mixto_comandos/picoblaze_multicore/xst"
+elaborate
+-ifn wb_slave_interface_rpd.prj
+-ifmt mixed

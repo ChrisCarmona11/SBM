@@ -1,0 +1,97 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Feb 27 17:03:08 2024
+| Host         : U211168 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    27 |
+| Unused register locations in slices containing registers |    27 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|      6 |            1 |
+|      7 |            1 |
+|      8 |            8 |
+|     12 |            1 |
+|    16+ |           14 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              96 |           26 |
+| No           | No                    | Yes                    |               2 |            2 |
+| No           | Yes                   | No                     |              54 |           19 |
+| Yes          | No                    | No                     |               8 |            2 |
+| Yes          | No                    | Yes                    |             128 |           32 |
+| Yes          | Yes                   | No                     |              61 |           19 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+---------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|       Clock Signal       |                            Enable Signal                            |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++--------------------------+---------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/processor/flag_enable                          | Inst_wbm_uart_kcpsm6/processor/I1                    |                1 |              2 |
+|  PIN_CLOCK_100_IBUF_BUFG |                                                                     | Inst_wbm_uart_kcpsm6/processor/active_interrupt      |                2 |              4 |
+|  PIN_CLOCK_100_IBUF_BUFG |                                                                     | Inst_wbm_uart_kcpsm6/processor/I1                    |                3 |              6 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/processor/ram_2k_generate.akv7.kcpsm6_rom_3[0] | Inst_wbm_uart_kcpsm6/processor/SR[0]                 |                3 |              7 |
+|  PIN_CLOCK_100_IBUF_BUFG |                                                                     | Inst_wbm_uart_kcpsm6/program_rom/INSTRUCTIONS_BUS[7] |                2 |              8 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/processor/UARTTX_WRITE_BUFFER_CE7_out          |                                                      |                1 |              8 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/processor/spm_enable                           |                                                      |                2 |              8 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/processor/E[0]                                 | PIN_RESET_IBUF                                       |                2 |              8 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/processor/write_strobe_flop_0[0]               | PIN_RESET_IBUF                                       |                2 |              8 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/processor/write_strobe_flop_1[0]               | PIN_RESET_IBUF                                       |                2 |              8 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/uartrx0/I4                                     |                                                      |                1 |              8 |
+|  PIN_CLOCK_100_IBUF_BUFG | inst_wbs/Prescaler_unit/E[0]                                        |                                                      |                2 |              8 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/processor/t_state_0                            | Inst_wbm_uart_kcpsm6/processor/I1                    |                3 |             12 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/DATA_WB_IN_7_0[7]_i_1_n_0                      | PIN_RESET_IBUF                                       |                6 |             16 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/REGISTERS_CE[3]                                | PIN_RESET_IBUF                                       |                4 |             16 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/REGISTERS_CE[1]                                | PIN_RESET_IBUF                                       |                3 |             16 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/REGISTERS_CE[6]                                | PIN_RESET_IBUF                                       |                4 |             16 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/REGISTERS_CE[7]                                | PIN_RESET_IBUF                                       |                5 |             16 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/REGISTERS_CE[4]                                | PIN_RESET_IBUF                                       |                6 |             16 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/REGISTERS_CE[2]                                | PIN_RESET_IBUF                                       |                4 |             16 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/REGISTERS_CE[0]                                | PIN_RESET_IBUF                                       |                3 |             16 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/REGISTERS_CE[5]                                | PIN_RESET_IBUF                                       |                3 |             16 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/processor/register_enable                      |                                                      |                2 |             16 |
+|  PIN_CLOCK_100_IBUF_BUFG | Inst_wbm_uart_kcpsm6/processor/t_state_0                            |                                                      |                2 |             16 |
+|  PIN_CLOCK_100_IBUF_BUFG |                                                                     | inst_wbs/Prescaler_unit/clear                        |                5 |             18 |
+|  PIN_CLOCK_100_IBUF_BUFG |                                                                     | PIN_RESET_IBUF                                       |                9 |             20 |
+|  PIN_CLOCK_100_IBUF_BUFG |                                                                     |                                                      |               26 |             96 |
++--------------------------+---------------------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+
+

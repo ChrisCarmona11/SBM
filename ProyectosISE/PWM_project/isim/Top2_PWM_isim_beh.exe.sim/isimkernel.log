@@ -1,0 +1,28 @@
+Command line:
+   Top2_PWM_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  33656
+
+Thu Feb 22 17:37:27 2024
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 200.18 Meg
+
+ Total Signals          : 112
+ Total Nets             : 311
+ Total Signal Drivers   : 45
+ Total Blocks           : 37
+ Total Primitive Blocks : 20
+ Total Processes        : 45
+ Total Traceable Variables  : 26
+ Total Scalar Nets and Variables : 705
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 276.734 Meg
+
+Thu Feb 22 17:37:50 2024
+

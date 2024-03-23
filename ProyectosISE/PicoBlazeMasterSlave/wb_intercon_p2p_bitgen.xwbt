@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Master\SBM\ProyectosISE\PicoBlazeMasterSlave\wb_intercon_p2p.ncd
+OUTFILE=D:\Master\SBM\ProyectosISE\PicoBlazeMasterSlave\wb_intercon_p2p.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=D:\Master\SBM\ProyectosISE\PicoBlazeMasterSlave
+LICENSE=ISE
+USER_INFO=174123010_174123011_210662615_504

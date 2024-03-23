@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Docencia/Downloads/diseno_sincrono/diseno_sincrono/para proyecto/RAM/PWM_top_tb_isim_beh.exe" -prj "C:/Users/Docencia/Downloads/diseno_sincrono/diseno_sincrono/para proyecto/RAM/PWM_top_tb_beh.prj" "work.PWM_top_tb" 
